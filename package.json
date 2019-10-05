@@ -59,11 +59,14 @@
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "core-js": "3.2.1",
+    "i18next": "17.0.18",
+    "i18next-browser-languagedetector": "^3.1.1",
     "lodash": "4.17.15",
     "prop-types": "15.7.2",
     "react": "16.10.2",
     "react-dom": "16.10.2",
     "react-hot-loader": "4.12.14",
+    "react-i18next": "10.13.1",
     "react-router-dom": "5.1.2"
   },
   "resolutions": {
@@ -94,6 +97,7 @@
     "browserslist": "4.7.0",
     "clean-webpack-plugin": "3.0.0",
     "connect-history-api-fallback": "1.6.0",
+    "copy-webpack-plugin": "5.0.4",
     "cross-env": "6.0.3",
     "css-loader": "3.2.0",
     "enzyme": "3.10.0",
