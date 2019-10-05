@@ -67,6 +67,7 @@ module.exports = {
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       template: commonPaths.templatePath,
+      favicon: commonPaths.faviconPath,
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async',
