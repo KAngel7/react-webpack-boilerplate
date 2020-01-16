@@ -1,4 +1,4 @@
-module.exports = function(api) {
+module.exports = api => {
   const babelEnv = api.env();
   api.cache(true);
 

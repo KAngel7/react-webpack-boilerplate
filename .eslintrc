@@ -48,6 +48,7 @@
     "react/jsx-curly-spacing": ["warn", "never"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".jsx"] }],
     "react/jsx-first-prop-new-line": ["warn", "multiline"],
+    "react/no-array-index-key": 0,
     "react/jsx-handler-names": [
       "warn",
       {

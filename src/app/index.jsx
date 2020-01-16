@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './style.css';
-import Header from './header';
-import Footer from './footer';
-import Home from '../pages/home';
+import style from './style';
+import Home from '../pages/Home';
 
 class App extends Component {
   constructor(props) {
@@ -14,15 +12,13 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Header />
-        <main className="overflow-hidden">
+        <main className={style.main}>
           <Switch>
             <Route path="/">
               <Home title="Hello from Rgfeact webpack" />
             </Route>
           </Switch>
         </main>
-        <Footer />
       </Router>
     );
   }

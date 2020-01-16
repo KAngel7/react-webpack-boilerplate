@@ -1,17 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Trans } from 'react-i18next';
-import style from './style.css';
+import style from './style';
 
-const HelloWorld = ({ title }) => (
-  <div className={style.home}>
-    {title}
-    <Trans i18nKey="welcomeMsg" />
-  </div>
-);
+const Home = ({ title }) => <div className={style.home}>{title}</div>;
 
-HelloWorld.propTypes = {
+Home.propTypes = {
   title: PropTypes.string,
 };
 
-export default HelloWorld;
+export default Home;
