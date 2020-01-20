@@ -15,7 +15,7 @@ class App extends Component {
         <main className={style.main}>
           <Switch>
             <Route path="/">
-              <Home title="Hello from Rgfeact webpack" />
+              <Home title="Progress Bars Demo" />
             </Route>
           </Switch>
         </main>
