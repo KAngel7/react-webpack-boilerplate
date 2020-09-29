@@ -121,8 +121,8 @@ const Home = () => {
                     <img
                       className="lozad-load css-15m9pmi lozad-loaded"
                       alt="BNB"
-                      data-src="./static/images/home/coin-logo/BNB.png"
-                      src="./static/images/home/coin-logo/BNB.png"
+                      data-src="./images/home/coin-logo/BNB.png"
+                      src="./images/home/coin-logo/BNB.png"
                     />
                   </div>
                   <div className="css-1q7503z">
@@ -159,8 +159,8 @@ const Home = () => {
                     <img
                       className="lozad-load css-15m9pmi lozad-loaded"
                       alt="BTC"
-                      data-src="./static/images/home/coin-logo/BTC.png"
-                      src="./static/images/home/coin-logo/BTC.png"
+                      data-src="./images/home/coin-logo/BTC.png"
+                      src="./images/home/coin-logo/BTC.png"
                     />
                   </div>
                   <div className="css-1q7503z">
@@ -200,8 +200,8 @@ const Home = () => {
                     <img
                       className="lozad-load css-15m9pmi lozad-loaded"
                       alt="ETH"
-                      data-src="./static/images/home/coin-logo/ETH.png"
-                      src="./static/images/home/coin-logo/ETH.png"
+                      data-src="./images/home/coin-logo/ETH.png"
+                      src="./images/home/coin-logo/ETH.png"
                     />
                   </div>
                   <div className="css-1q7503z">
@@ -238,7 +238,7 @@ const Home = () => {
                     <img
                       className="lozad-load css-15m9pmi"
                       alt="XRP"
-                      data-src="./static/images/home/coin-logo/XRP.png"
+                      data-src="./images/home/coin-logo/XRP.png"
                     />
                   </div>
                   <div className="css-1q7503z">
@@ -274,7 +274,7 @@ const Home = () => {
                     <img
                       className="lozad-load css-15m9pmi"
                       alt="BCH"
-                      data-src="./static/images/home/coin-logo/BCH.png"
+                      data-src="./images/home/coin-logo/BCH.png"
                     />
                   </div>
                   <div className="css-1q7503z">
@@ -313,7 +313,7 @@ const Home = () => {
                     <img
                       className="lozad-load css-15m9pmi"
                       alt="LTC"
-                      data-src="./static/images/home/coin-logo/LTC.png"
+                      data-src="./images/home/coin-logo/LTC.png"
                     />
                   </div>
                   <div className="css-1q7503z">
@@ -416,7 +416,7 @@ const Home = () => {
                         <div
                           className="lozad-load css-fflf4c"
                           alt="google play"
-                          data-src="./static/images/home/download/google-play.png"
+                          data-src="./images/home/download/google-play.png"
                         ></div>
                       </a>
                       <a
@@ -429,7 +429,7 @@ const Home = () => {
                         <div
                           className="lozad-load css-fflf4c"
                           alt="android"
-                          data-src="./static/images/home/download/android.png"
+                          data-src="./images/home/download/android.png"
                         ></div>
                       </a>
                       <a
@@ -442,7 +442,7 @@ const Home = () => {
                         <div
                           className="lozad-load css-fflf4c"
                           alt="appStore"
-                          data-src="./static/images/home/download/app-store.png"
+                          data-src="./images/home/download/app-store.png"
                         ></div>
                       </a>
                       <div className="css-ybbx55">
@@ -532,7 +532,7 @@ const Home = () => {
                         <div
                           className="lozad-load css-fflf4c"
                           alt="mac os"
-                          data-src="./static/images/home/download/mac-os.png"
+                          data-src="./images/home/download/mac-os.png"
                         ></div>
                       </a>
                       <a
@@ -545,7 +545,7 @@ const Home = () => {
                         <div
                           className="lozad-load css-fflf4c"
                           alt="windows"
-                          data-src="./static/images/home/download/windows.png"
+                          data-src="./images/home/download/windows.png"
                         ></div>
                       </a>
                       <a
@@ -558,7 +558,7 @@ const Home = () => {
                         <div
                           className="lozad-load css-51z0wo"
                           alt="windows previous"
-                          data-src="./static/images/home/download/windows-previous.svg"
+                          data-src="./images/home/download/windows-previous.svg"
                         ></div>
                       </a>
                     </div>
@@ -630,7 +630,7 @@ const Home = () => {
                       <div
                         className="lozad-load css-wmy69a"
                         alt=""
-                        data-src="./static/images/home/communication/support.svg"
+                        data-src="./images/home/communication/support.svg"
                       ></div>
                     </div>
                     <div type="text" className="css-1lmrg27">
@@ -652,7 +652,7 @@ const Home = () => {
                       <div
                         className="lozad-load css-wmy69a"
                         alt=""
-                        data-src="./static/images/home/communication/blog.svg"
+                        data-src="./images/home/communication/blog.svg"
                       ></div>
                     </div>
                     <div type="text" className="css-1lmrg27">
@@ -674,7 +674,7 @@ const Home = () => {
                       <div
                         className="lozad-load css-wmy69a"
                         alt=""
-                        data-src="./static/images/home/communication/community.svg"
+                        data-src="./images/home/communication/community.svg"
                       ></div>
                     </div>
                     <div type="text" className="css-1lmrg27">
@@ -696,7 +696,7 @@ const Home = () => {
                       <div
                         className="lozad-load css-wmy69a"
                         alt=""
-                        data-src="./static/images/home/communication/join-us.svg"
+                        data-src="./images/home/communication/join-us.svg"
                       ></div>
                     </div>
                     <div type="text" className="css-1lmrg27">

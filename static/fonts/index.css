@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'BinancePlex';
+  font-display: swap;
+  src: url('./bp/BinancePlex-Light.woff2') format('woff2'),
+    url('./bp/BinancePlex-Light.otf') format('opentype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'BinancePlex';
+  font-display: swap;
+  src: url('./bp/BinancePlex-Light.woff2') format('woff2'),
+    url('./bp/BinancePlex-Light.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'BinancePlex';
+  font-display: swap;
+  src: url('./bp/BinancePlex-Regular.woff2') format('woff2'),
+    url('./bp/BinancePlex-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'BinancePlex';
+  font-display: swap;
+  src: url('./bp/BinancePlex-Medium.woff2') format('woff2'),
+    url('./bp/BinancePlex-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'BinancePlex';
+  font-display: swap;
+  src: url('./bp/BinancePlex-SemiBold.woff2') format('woff2'),
+    url('./bp/BinancePlex-SemiBold.otf') format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'BinancePlex';
+  font-display: swap;
+  src: url('./bp/BinancePlex-SemiBold.woff2') format('woff2'),
+    url('./bp/BinancePlex-SemiBold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'BinancePlex';
+  font-display: swap;
+  src: url('./bp/BinancePlex-SemiBold.woff2') format('woff2'),
+    url('./bp/BinancePlex-SemiBold.otf') format('opentype');
+  font-weight: 800;
+}
+body {
+  font-family: BinancePlex, Arial, PingFangSC-Regular, 'Microsoft YaHei',
+    sans-serif !important;
+}
+html body {
+  font-family: BinancePlex, Arial, PingFangSC-Regular, 'Microsoft YaHei',
+    sans-serif !important;
+}
