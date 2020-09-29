@@ -1,0 +1,72 @@
+.mica-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.mica-slider > :not(.pagination) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.mica-slider .slide-wrapper {
+    display: flex;
+}
+
+.mica-slider .slide-wrapper .slide {
+    flex: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.mica-slider img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mica-slider .pagination {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.mica-slider .pagination .bullet {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mica-slider .pagination .bullet[data-active='true'] {
+    background-color: #fff;
+}
+
+.mica-slider[data-direction='vertical'] .slide-wrapper {
+    flex-direction: column;
+}
+
+.mica-slider[data-direction='vertical'] .pagination {
+    left: auto;
+    top: 0;
+    bottom: 0;
+    right: 30px;
+    flex-direction: column;
+}
+
+.mica-slider[data-direction='vertical'] .pagination .bullet {
+    margin: 12px 0;
+}
+

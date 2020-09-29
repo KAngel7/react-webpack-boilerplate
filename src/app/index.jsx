@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import style from './style';
 import Home from '../pages/Home';
+import Market from '../pages/Market';
+import Trading from '../pages/Trading';
 
 class App extends Component {
   constructor(props) {
@@ -12,13 +13,17 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <main className={style.main}>
-          <Switch>
-            <Route path="/">
-              <Home title="Progress Bars Demo" />
-            </Route>
-          </Switch>
-        </main>
+        <Switch>
+          <Route path="/trading">
+            <Trading />
+          </Route>
+          <Route path="/markets">
+            <Market />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </Router>
     );
   }
