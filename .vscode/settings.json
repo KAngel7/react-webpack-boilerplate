@@ -3,4 +3,5 @@
         "source.fixAll": true
     },
     "editor.tabSize": 2,
+    "i18n-ally.localesPaths": "src/i18n",
 }

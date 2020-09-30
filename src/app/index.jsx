@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Market from '../pages/Market';
 import Trading from '../pages/Trading';
+import Register from '../pages/Register';
+import Login from '../pages/Login';
+import ResetPassword from '../pages/User/ResetPassword';
 
 class App extends Component {
   constructor(props) {
@@ -14,6 +17,15 @@ class App extends Component {
     return (
       <Router>
         <Switch>
+          <Route path="/reset-password">
+            <ResetPassword />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
           <Route path="/trading">
             <Trading />
           </Route>
