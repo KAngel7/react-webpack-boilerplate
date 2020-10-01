@@ -2118,7 +2118,7 @@ input:checked ~ .css-1k3v5mn {
   -webkit-align-item: center;
   -webkit-box-align-item: center;
   -ms-flex-align-item: center;
-  align-item: center;
+  align-items: center;
 }
 
 .css-pqz9b0 {
@@ -3970,6 +3970,7 @@ input:checked ~ .css-1k3v5mn {
   -webkit-transition-timing-function: cubic-bezier(0, 0.1, 0.1, 1);
   transition-timing-function: cubic-bezier(0, 0.1, 0.1, 1);
   -ms-transition-duration: 0ms;
+  transition-duration: 0ms;
 }
 
 .imageLayer__1NyU2.invalidate__1wygJ {

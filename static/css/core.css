@@ -244,6 +244,7 @@ textarea {
 button {
   appearance: button;
   -webkit-writing-mode: horizontal-tb !important;
+  writing-mode: horizontal-tb !important;
   text-rendering: auto;
   color: -internal-light-dark(buttontext, rgb(170, 170, 170));
   letter-spacing: normal;

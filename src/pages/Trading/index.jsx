@@ -201,7 +201,7 @@ const Trading = () => {
             </div>
             <div className="resize-triggers">
               <div className="expand-trigger">
-                <div style="width: 680px; height: 407px;"></div>
+                <div style={{ width: '680px', height: '407px' }}></div>
               </div>
               <div className="contract-trigger"></div>
             </div>
@@ -251,7 +251,7 @@ const Trading = () => {
                 <div className="css-vurnku">
                   <div
                     className="css-vurnku"
-                    style="width: 100%; display: block;"
+                    style={{width: "100%" display: "block"}}
                   >
                     <div>
                       <div className="css-1qt2057">
@@ -273,7 +273,7 @@ const Trading = () => {
                           <div className="css-v35po8">
                             <div
                               className="css-5ccbr2"
-                              style="position: absolute; left: -217.5px; top: 22.5px; transition: opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s; opacity: 0; transform: translate3d(0px, 6px, 0px); visibility: hidden;"
+                              style={{position: "absolute", left: "-217.5px", top: "22.5px", transition: "opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s", opacity: 0, transform: "translate3d(0px, 6px, 0px)", visibility: "hidden"}}
                               data-popper-reference-hidden="false"
                               data-popper-escaped="false"
                               data-popper-placement="bottom-end"
