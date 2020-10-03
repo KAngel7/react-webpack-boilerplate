@@ -1,0 +1,59 @@
+#a1 {
+  background-color: rgb(11, 14, 17);
+  background-image: url('../images/home/top-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
+#a2 {
+  background-image: url('../../kline/BNBUSDT.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+#a3 {
+  background-image: url('../../kline/BTCUSDT.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+#a4 {
+  background-image: url('../../kline/ETHUSDT.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+#cus1 {
+  position: fixed;
+  left: 0px;
+  top: auto;
+  right: auto;
+  bottom: 0px;
+  transform: translate3d(845px, 1841px, 0px);
+}
+
+#cus2 {
+  position: fixed;
+  left: 0px;
+  top: auto;
+  right: auto;
+  bottom: 0px;
+  transform: translate3d(0px, -798px, 0px);
+}
+
+#cus3 {
+  position: fixed;
+  left: 0px;
+  top: auto;
+  right: auto;
+  bottom: 0px;
+  transform: translate3d(0px, -798px, 0px);
+}
+
+[data-direction='ltr'] {
+  direction: ltr;
+}
