@@ -1,0 +1,53 @@
+.lockIcon {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: #02c076;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  fill: #1e2026;
+  fill: #02c076;
+  width: 1em;
+  height: 1em;
+  margin-right: 4px;
+}
+
+.eyeIcon {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: currentColor;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  fill: #1e2026;
+  fill: currentColor;
+  color: #caced3;
+  width: 1em;
+  height: 1em;
+}
+
+.eyeIcon:hover {
+  color: #76808f;
+}
+
+.dropDown {
+  margin: 0;
+  min-width: 0;
+  color: currentColor;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  fill: #1e2026;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+}
+
+.noBorderButton {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}

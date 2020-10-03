@@ -1,7 +1,13 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import Header from '../../components/Header';
+import { InputEmail, InputPassword } from './Components';
 
 const Register = () => {
+  const { handleSubmit, register, errors } = useForm();
+
+  const onSubmit = data => console.log(data);
+
   return (
     <>
       <Header />
@@ -11,7 +17,6 @@ const Register = () => {
             <div className="css-49kyll">
               <div data-bn-type="text" className="css-1lx7oj">
                 <div data-bn-type="text" className="css-v2pqf8">
-                  {' '}
                   Tạo tài khoản miễn phí
                 </div>
                 <div data-bn-type="text" className="css-glhroo">
@@ -19,121 +24,29 @@ const Register = () => {
                 </div>
               </div>
               <div className="css-vurnku">
-                <form action="#" autoComplete="off">
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  noValidate
+                  autoComplete="off"
+                >
                   <div className="css-hlfj64">
-                    <div value className="css-15651n7">
-                      <div className="css-kc8d2n">
-                        <div data-bn-type="text" className="css-itrsu7">
-                          Email
-                        </div>
-                      </div>
-                      <div className=" css-hiy16i">
-                        <div className=" css-wng3sm">
-                          <input
-                            data-bn-type="input"
-                            readOnly
-                            name="email"
-                            className="css-1thkju"
-                            defaultValue
-                          />
-                        </div>
-                      </div>
-                      <div
-                        data-bn-type="text"
-                        className="help_default css-jiaj3x"
-                      />
-                    </div>
-                    <div className="css-15651n7">
-                      <div className="css-kc8d2n">
-                        <div data-bn-type="text" className="css-itrsu7">
-                          Mật khẩu
-                        </div>
-                      </div>
-                      <div className=" css-hiy16i">
-                        <div className="css-1fymml5">
-                          <div
-                            className="css-1eeb0a2"
-                            data-popper-reference-hidden="false"
-                            data-popper-escaped="false"
-                            data-popper-placement="bottom"
-                            style={{
-                              position: 'absolute',
-                              left: '84px',
-                              top: '52px',
-                              transition:
-                                'opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s',
-                              opacity: 0,
-                              transform: 'translate3d(0px, 6px, 0px)',
-                              visibility: 'hidden',
-                            }}
-                          >
-                            <div className="css-vurnku">
-                              * Tối thiểu là 8 ký tự
-                              <br />* Tối thiểu 1 ký tự IN HOA
-                              <br />* Tối thiểu 1 chữ số
-                            </div>
-                            <i className="gap-fill" />
-                          </div>
-                          <div className=" css-wng3sm">
-                            <input
-                              data-bn-type="input"
-                              name="password"
-                              type="password"
-                              className="css-1thkju"
-                              defaultValue
-                            />
-                            <div className="bn-input-suffix css-vurnku">
-                              <div className="css-1jdwzw9">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  className="css-1d9nz27"
-                                >
-                                  <path
-                                    d="M13.03 15.652l1.712 1.71c-.73.219-1.481.329-2.242.329a7.92 7.92 0 01-5.576-2.299L3 11.505l2.913-2.948 2.393 2.378c-.02.18-.02.35 0 .53a4.23 4.23 0 004.194 4.227c.18 0 .35-.01.53-.04zM22 11.505l-3.934-3.997A7.842 7.842 0 0012.5 5.239c-.76 0-1.511.11-2.242.33l1.712 1.699c.18-.01.35-.01.53 0a4.232 4.232 0 014.235 4.227c0 .78-.21 1.539-.621 2.199L6.434 4 5.022 5.42l11.292 11.272.71.71L18.638 19l1.411-1.41-2.102-2.088L22 11.505z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-bn-type="text"
-                        className="help_default css-jiaj3x"
-                      />
-                    </div>
-                    <div value className="css-15651n7">
-                      <div className="css-xrxl27">
-                        <div data-bn-type="text" className="css-itrsu7">
-                          ID giới thiệu (không bắt buộc)
-                        </div>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          className="css-193gxw5"
-                        >
-                          <path d="M16 9v2l-4 4.24L8 11V9h8z" />
-                        </svg>
-                      </div>
-                      <div className="hide css-hiy16i">
-                        <div className=" css-wng3sm">
-                          <input
-                            data-bn-type="input"
-                            readOnly
-                            name="agentId"
-                            className="css-1thkju"
-                            defaultValue
-                          />
-                        </div>
-                      </div>
-                      <div
-                        data-bn-type="text"
-                        className="help_default css-jiaj3x"
-                      />
-                    </div>
+                    <InputEmail
+                      inputRef={register({
+                        required: 'Hãy nhập email của bạn',
+                        pattern: {
+                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                          message: 'Hãy nhập một địa chỉ email chính xác',
+                        },
+                      })}
+                      errors={errors}
+                    />
+                    <InputPassword
+                      inputRef={register({
+                        required: 'Hãy nhập mật khẩu của bạn',
+                        minLength: 8,
+                      })}
+                      errors={errors}
+                    />
                     <div className="css-xvxpe5">
                       <div className=" css-hiy16i">
                         <label
