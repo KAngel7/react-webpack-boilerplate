@@ -36,7 +36,14 @@ const Header = () => (
     </a>
     <div className="css-1w2cmbz">
       <span className="hoverstatus css-1qqh4qo">
-        Giao dịch
+        <a
+          target="_self"
+          id="ba-tableMarkets"
+          href="/trading"
+          className="css-1t0260p"
+        >
+          Giao dịch
+        </a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon-dropdown-arrow css-vbw7wu"

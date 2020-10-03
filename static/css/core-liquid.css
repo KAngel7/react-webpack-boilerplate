@@ -1,0 +1,250 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  font: inherit;
+  background: none;
+  color: inherit;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: inherit;
+  text-align: inherit;
+}
+
+button {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  fill: currentColor;
+  vertical-align: top;
+}
+
+iframe {
+  display: block;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+input[type='date']::-webkit-inner-spin-button {
+  display: none;
+}
+
+input {
+  min-width: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+hr {
+  border: none;
+}
+
+@font-face {
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'),
+    url(https://fonts.gstatic.com/s/ubuntumono/v8/KFOjCneDtsqEr0keqCMhbCc6CsTYl4BO.woff2)
+      format('woff2'),
+    local(sans-serif);
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Hiragino Sans, sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+body {
+  color: var(--primary);
+  background-color: var(--background-alt);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb {
+  background: var(--primary-2);
+}
+
+::-webkit-input-placeholder {
+  color: var(--primary-3);
+}
+
+::-moz-placeholder {
+  color: var(--primary-3);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: var(--primary-3);
+}
+
+::-ms-input-placeholder {
+  color: var(--primary-3);
+}
+
+.sidebar-open {
+  overflow: hidden;
+  padding-right: 6px;
+}
+
+.intro {
+  position: absolute !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+label,
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: 600;
+}

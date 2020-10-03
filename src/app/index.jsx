@@ -6,6 +6,7 @@ import Trading from '../pages/Trading';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
 import ResetPassword from '../pages/User/ResetPassword';
+import Balances from '../pages/Balances';
 
 class App extends Component {
   constructor(props) {
@@ -26,14 +27,17 @@ class App extends Component {
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/trading">
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/trading" exact>
             <Trading />
           </Route>
-          <Route path="/markets">
+          <Route path="/markets" exact>
             <Market />
           </Route>
-          <Route path="/">
-            <Home />
+          <Route path="/wallets/balances" exact>
+            <Balances />
           </Route>
         </Switch>
       </Router>
