@@ -1,10 +1,8 @@
-## Bars-demo
+## Clone binance
 
 ### Installation
 
 1- Clone the repo
-
-`git clone git@github.com:KAngel7/bars-demo.git`
 
 2- `yarn` or `npm install` to install npm packages
 
@@ -12,5 +10,4 @@
 
 3- build and bundling your resources for production `yarn build`.
 
-4- Unit testing will watch all your changes in the test files as well as create coverage folder for you. 
-`yarn test`
+4- Unit testing will watch all your changes in the test files as well as create coverage folder for you. `yarn test`
