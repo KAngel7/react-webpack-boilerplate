@@ -3,989 +3,1094 @@ import React from 'react';
 
 const Trading = () => {
   return (
-    <div className="css-13b7qdy">
-      {/* <div className="css-1puwtft">
-        <div name="header" className="css-1hvqxlf">
-          <div className="css-hn5bxc">
-            <header className="css-1ytimvi">
-              <a href="https://www.binance.com/vn">
+    <>
+      <link rel="stylesheet" type="text/css" href="./css/core-liquid.css" />
+      <div id="top-menu" className="styles_menu__hioJE styles_fixed__3VPAK">
+        <div className="styles_main__1Yig1 styles_wrapperMainMenu__3hD9h">
+          <div className="styles_left__3iolo">
+            <div className="styles_wrapperLeft__1tYJ5">
+              <a className="styles_mainLogo__35aF6" href="/vision">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 5120 1024"
-                  className="css-kd422w"
+                  width="32"
+                  height="32"
+                  className="styles_imgLogoDashboard__2bnEN"
                 >
-                  <path
-                    d="M230.997333 512L116.053333 626.986667 0 512l116.010667-116.010667L230.997333 512zM512 230.997333l197.973333 197.973334 116.053334-115.968L512 0 197.973333 314.026667l116.053334 115.968L512 230.997333z m395.989333 164.992L793.002667 512l116.010666 116.010667L1024.981333 512l-116.992-116.010667zM512 793.002667l-197.973333-198.997334-116.053334 116.010667L512 1024l314.026667-314.026667-116.053334-115.968L512 793.002667z m0-165.973334l116.010667-116.053333L512 396.032 395.989333 512 512 626.986667z m1220.010667 11.946667v-1.962667c0-75.008-40.021333-113.024-105.002667-138.026666 39.978667-21.973333 73.984-58.026667 73.984-121.002667v-1.962667c0-88.021333-70.997333-145.024-185.002667-145.024h-260.992v561.024h267.008c126.976 0.981333 210.005333-51.029333 210.005334-153.002666z m-154.026667-239.957333c0 41.984-34.005333 58.965333-89.002667 58.965333h-113.962666V338.986667h121.984c52.010667 0 80.981333 20.992 80.981333 58.026666v2.005334z m31.018667 224c0 41.984-32.981333 61.013333-87.04 61.013333h-146.944v-123.050667h142.976c63.018667 0 91.008 23.04 91.008 61.013334v1.024z m381.994666 169.984V230.997333h-123.989333v561.024h123.989333v0.981334z m664.021334 0V230.997333h-122.026667v346.026667l-262.997333-346.026667h-114.005334v561.024h122.026667v-356.010666l272 356.992h104.96z m683.946666 0L3098.026667 228.010667h-113.962667l-241.024 564.992h127.018667l50.986666-125.994667h237.013334l50.986666 125.994667h130.005334z m-224.981333-235.008h-148.992l75.008-181.973334 73.984 181.973334z m814.037333 235.008V230.997333h-122.026666v346.026667l-262.997334-346.026667h-114.005333v561.024h122.026667v-356.010666l272 356.992h104.96z m636.970667-91.008l-78.976-78.976c-44.032 39.978667-83.029333 65.962667-148.010667 65.962666-96 0-162.986667-80-162.986666-176v-2.986666c0-96 67.968-174.976 162.986666-174.976 55.978667 0 100.010667 23.978667 144 62.976l78.976-91.008c-51.968-50.986667-114.986667-86.997333-220.970666-86.997334-171.989333 0-292.992 130.986667-292.992 290.005334V512c0 160.981333 122.965333 288.981333 288 288.981333 107.989333 1.024 171.989333-36.992 229.973333-98.986666z m527.018667 91.008v-109.994667h-305.024v-118.016h265.002666v-109.994667h-265.002666V340.992h301.013333V230.997333h-422.997333v561.024h427.008v0.981334z"
-                    p-id="2935"
-                  ></path>
+                  <g fill="#0090FF" fillRule="evenodd">
+                    <path d="M30.647 0H9.904a.962.962 0 0 0-.966.957v4.157c0 .89.728 1.612 1.627 1.612h3.505a1.62 1.62 0 0 1 1.628 1.612v5.891c0 .89.728 1.612 1.627 1.612h5.188c.89-.001 1.615.705 1.63 1.586.01.674.02 3.42.02 3.42 0 .89.728 1.612 1.627 1.612h4.857a.962.962 0 0 0 .967-.957V.957A.962.962 0 0 0 30.647 0M21.049 23.096H10.45a1.62 1.62 0 0 1-1.627-1.612v-11.02a1.62 1.62 0 0 0-1.627-1.612H.966A.962.962 0 0 0 0 9.81v20.545c0 .529.433.957.966.957H21.71a.962.962 0 0 0 .966-.957v-5.647a1.62 1.62 0 0 0-1.627-1.611"></path>
+                  </g>
                 </svg>
               </a>
-              <div className="css-1h690ep"></div>
-              <div className="css-2mnlg8">
-                <span className="hoverstatus css-1qqh4qo">
-                  Hướng dẫn
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="icon-dropdown-arrow css-1leo6u1"
-                    fill="currentColor"
-                  >
-                    <use xlinkHref="#icon-h-dropdown-arrow"></use>
-                  </svg>
-                </span>
-              </div>
-              <div className="css-fqfdbm">
-                <div className="css-13b7qdy">
-                  <div className="css-104nd72">
-                    <div className="css-1h690ep">
-                      <div className="css-1igmbnp">
-                        <span type="text" className="css-kfgd33">
-                          Spot
-                        </span>
-                      </div>
-                      <div className="css-9026g9">
-                        <span type="text" className="css-kfgd33">
-                          Ký quỹ
-                        </span>
+              <div className="styles_main__E_BmW">
+                <div className="styles_outer__1t4Le">
+                  <div className="styles_main__3EaD8 styles_tradingBlock__4Yt7S styles_hoverable__2YTrJ">
+                    <div className="styles_body__3dd1F styles_body___lYnW styles_feed__1T7yq">
+                      <span className="styles_pill__2BiXH styles_spot__3NMoK">
+                        Spot
+                      </span>
+                      <div className="styles_wrapperArrow__1FXbD">
+                        <div className="styles_arrow__3SjVJ"></div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="css-1h690ep"></div>
-              <a
-                id="header_login"
-                href="https://accounts.binance.com/vn/login?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vdm4vdHJhZGUvQlRDX1VTRFQ_bGF5b3V0PWJhc2lj"
-                className="css-110svuw"
-              >
-                Đăng nhập
-              </a>
-              <a
-                href="https://accounts.binance.com/vn/register"
-                className="css-p93cyt"
-              >
-                <button
-                  type="button"
-                  id="header_register"
-                  className="css-i6znd1"
-                >
-                  Đăng ký
-                </button>
-              </a>
-              <div className="css-1lc0ebh">
-                <div className="hoverstatus css-6ok8fu">
-                  Tiếng Việt/VND
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="css-150wpyt"
-                    fill="currentColor"
-                  >
-                    <use xlinkHref="#icon-h-dropdown-arrow"></use>
-                  </svg>
-                </div>
-              </div>
-            </header>
-            <div data-testid="UIOptionSelect" className="css-1wde2ki">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                fill="none"
-                className="css-1gms6lp"
-              >
-                <path
-                  d="M7.902 6.608c-.78 0-1.414.624-1.414 1.392 0 .768.634 1.392 1.414 1.392.78 0 1.415-.624 1.415-1.392 0-.768-.634-1.392-1.415-1.392zM14 8.528v-.96h-1.805a4.258 4.258 0 00-.878-2.16l1.317-1.296-.683-.672-1.268 1.248a4.284 4.284 0 00-2.195-.912V2h-.976v1.776c-.83.096-1.56.432-2.195.912L4.05 3.44l-.683.672 1.317 1.296a3.738 3.738 0 00-.878 2.16H2v.96h1.805c.097.816.39 1.536.878 2.112l-1.317 1.296.683.672 1.268-1.248c.585.48 1.366.816 2.195.864V14h.976v-1.776a4.406 4.406 0 002.195-.864l1.268 1.248.683-.672-1.317-1.296c.488-.576.83-1.344.878-2.112H14zm-6.098 2.736c-1.804 0-3.317-1.44-3.317-3.264 0-1.824 1.464-3.264 3.317-3.264 1.854 0 3.317 1.44 3.317 3.264 0 1.824-1.463 3.264-3.317 3.264z"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeWidth="0.3"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div name="chart" className="css-18bfmqs">
-          <div className="css-o0ej6l" style={{ position: 'relative' }}>
-            <div className="css-haugtg">
-              <div className="css-2eszez">
-                <div className="css-ybbx55">
-                  <div className="css-1aftwl7" style={{ minWidth: '32px' }}>
-                    Thời gian
-                  </div>
-                </div>
-                <div className="css-ybbx55">
-                  <div className="css-lxwdql" style={{ minWidth: '32px' }}>
-                    1D
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="css-1exhegt"
-                    >
-                      <path
-                        d="M16 9v1.2L12 15l-4-4.8V9h8z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div className="css-1tz2vcm">
-                  <div className="css-dbgw4o">
-                    <div
-                      className="css-5ccbr2"
-                      style={{
-                        position: 'absolute',
-                        left: '-46px',
-                        top: '-42px',
-                        transition:
-                          'opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s',
-                        opacity: 0,
-                        transform: 'translate3d(0px, -6px, 0px)',
-                        visibility: 'hidden',
-                      }}
-                      data-popper-reference-hidden="false"
-                      data-popper-escaped="false"
-                      data-popper-placement="top"
-                    >
-                      Chỉ báo Kỹ thuật
-                      <div
-                        data-popper-arrow="true"
-                        className="css-1uumx2j"
-                        style={{ position: 'absolute', left: '51px' }}
-                      ></div>
-                      <i className="gap-fill"></i>
-                    </div>
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.4 7.18578V8.81428H12V10.1415H10.4V8.81428H1.59998V7.18578H10.4V5.8667H12V7.18578H14.4Z"
-                        fill="#848E9C"
-                      ></path>
-                      <path
-                        d="M1.59998 4.55582V2.92732H3.99998V1.6001H5.59998V2.92732H14.4V4.55582H5.59998V5.87491H3.99998V4.55582H1.59998Z"
-                        fill="#848E9C"
-                      ></path>
-                      <path
-                        d="M14.4 11.4527V13.0812H8.79998V14.4003H7.19998V13.0812H1.59998V11.4527H7.19998V10.1255H8.79998V11.4527H14.4Z"
-                        fill="#848E9C"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div className="css-nfq1dx">
-                <div className="css-zke8eu">Gốc</div>
-                <div className="css-4xvi8k">TradingView</div>
-                <div className="css-4xvi8k">Chi tiết</div>
-                <div className="css-4xvi8k">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="css-mjvgxh"
-                  >
-                    <path
-                      d="M13.5 9.1L18 4.6c-.6.1-1.2.2-1.9.2h-1.9v-2h7v7h-2V7.9c0-.6.1-1.2.2-1.9l-4.5 4.5-1.4-1.4zM10 10.5L5.5 6c.2.6.2 1.3.3 1.9v1.9h-2v-7h7v2H8.9c-.6 0-1.2-.1-1.9-.2l4.5 4.5-1.5 1.4zM11.5 13.9L7 18.4c.6-.1 1.2-.2 1.9-.2h1.9v2h-7v-7h2v1.9c0 .6-.1 1.2-.2 1.9l4.5-4.5 1.4 1.4zM14.9 12.5l4.5 4.5c-.1-.6-.2-1.2-.2-1.9v-1.9h2v7h-7v-2h1.9c.6 0 1.2.1 1.9.2l-4.5-4.5 1.4-1.4z"
-                      fill="#848E9C"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div style={{ overflow: 'visible', height: '0px', width: '0px' }}>
-              <div className="draggableCancel css-11wpyvn">
-                <div className="css-1pysja1" style={{ height: '100%' }}></div>
-              </div>
-            </div>
-            <div className="resize-triggers">
-              <div className="expand-trigger">
-                <div style={{ width: '680px', height: '407px' }}></div>
-              </div>
-              <div className="contract-trigger"></div>
-            </div>
-          </div>
-          <div className="css-15owl46"></div>
-        </div>
-        <div name="orderform" className="css-1i25268">
-          <div className="css-vurnku">
-            <div className="css-1488ivs">
-              <button type="button" className="css-eoxmko">
-                Mua
-              </button>
-              <button type="button" className="css-1ex95v">
-                Bán
-              </button>
-            </div>
-            <div className="css-kpikd1">
-              <div className="css-1eg4e7n">
-                <div type="text" className="css-2g6u41">
-                  Đặt lệnh{' '}
-                </div>
-                <div className="css-1ecmu9s">
-                  <div className="css-1k9fuzt">
-                    <span type="text" className="css-1rvpbfg"></span>
-                    <span type="text" className="css-1rvpbfg"></span>
-                    <span type="text" className="css-1rvpbfg"></span>
-                  </div>
-                </div>
-              </div>
-              <div className="css-17gt9am">
-                <div className="css-1x8apwu">
-                  <span
-                    type="text"
-                    className="tab-item css-rfy0pv"
-                    data-testid="BuyTab"
-                  >
-                    Mua
-                  </span>
-                  <span
-                    type="text"
-                    className="tab-item css-fkri85"
-                    data-testid="SellTab"
-                  >
-                    Bán
-                  </span>
-                </div>
-                <div className="css-vurnku">
-                  <div
-                    className="css-vurnku"
-                    style={{width: "100%" display: "block"}}
-                  >
-                    <div>
-                      <div className="css-1qt2057">
-                        <span
-                          type="text"
-                          data-testid="LimitType"
-                          className="css-9mxz54"
-                        >
-                          Limit
-                        </span>
-                        <span
-                          type="text"
-                          data-testid="MarketType"
-                          className="css-1cvk808"
-                        >
-                          Market
-                        </span>
-                        <div className="css-vurnku">
-                          <div className="css-v35po8">
-                            <div
-                              className="css-5ccbr2"
-                              style={{position: "absolute", left: "-217.5px", top: "22.5px", transition: "opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s", opacity: 0, transform: "translate3d(0px, 6px, 0px)", visibility: "hidden"}}
-                              data-popper-reference-hidden="false"
-                              data-popper-escaped="false"
-                              data-popper-placement="bottom-end"
-                            >
-                              <div className="css-45jxq4">
-                                <a
-                                  type="link"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  href="https://www.binance.com/vn/support/faq/115003372072"
-                                  data-testid="stopLimit"
-                                  className="css-1p021nz"
-                                >
-                                  Stop-limit{' '}
-                                </a>
-                                <div type="text" className="css-5h0skw">
-                                  Lệnh Stop-Limit là lệnh mua hoặc bán một đồng
-                                  coin khi giá chạm đến một ngưỡng nhất định
-                                </div>
-                                <a
-                                  type="link"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  href="https://www.binance.com/vn/support/faq/360032605831"
-                                  data-testid="OCOType"
-                                  className="css-8dz403"
-                                >
-                                  OCO
-                                </a>
-                                <div type="text" className="css-5h0skw">
-                                  Lệnh OCO: Đặt lệnh stop-limit và lệnh limit ở
-                                  cùng một lúc. Khi một trong hai lệnh được
-                                  khớp, lệnh còn lại sẽ bị hủy. Và nếu một trong
-                                  hai lệnh bị hủy, lệnh còn lại cũng sẽ bị hủy
-                                  luôn.
-                                </div>
-                              </div>
-                              <div
-                                data-popper-arrow="true"
-                                className="css-1uumx2j"
-                                style="position: absolute; left: 221.5px;"
-                              ></div>
-                              <i className="gap-fill"></i>
-                            </div>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              className="css-btmaic"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                clipRule="evenodd"
-                                d="M12 4c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8zm0-2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm.997 9.004h-2.009v6h2.009v-6zm-2.009-4h2.009v2.009h-2.009v-2.01z"
-                                fill="currentColor"
-                              ></path>
-                            </svg>
-                          </div>
-                          <span
-                            type="text"
-                            data-testid="stopLimit"
-                            className="css-1cvk808"
+                    <div className="styles_content__2DpoO styles_content__3AP_U">
+                      <ul className="styles_list__Kqa3G">
+                        <li>
+                          <a
+                            className="styles_listItem__3ULRz"
+                            title="Spot"
+                            href="/exchange"
                           >
-                            Stop-limit{' '}
+                            Spot
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="styles_listItem__3ULRz"
+                            title="Margin"
+                            href="/margin"
+                          >
+                            Margin
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="styles_listItem__3ULRz"
+                            title="Infinity"
+                            href="/infinity"
+                          >
+                            Infinity
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="styles_listItem__3ULRz"
+                            title="Perpetual"
+                            href="/perpetual"
+                          >
+                            Perpetual
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="styles_divider__3PLhU"></div>
+                  <div
+                    id="menu--market-pop"
+                    className="styles_wrapperProductPop__1LyVS"
+                  >
+                    <div id="menu--market-pop">
+                      <div className="styles_main__3EaD8 styles_hoverable__2YTrJ">
+                        <div className="styles_body__3dd1F styles_body__1_SNE styles_feed__1T7yq">
+                          <span className="">
+                            <strong>BTC</strong>&nbsp;/&nbsp;USD
                           </span>
-                          <div className="css-zh6lrt">
-                            <div data-testid="otherType" className="css-vurnku">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="t.third"
-                                className="css-1rj7hzl"
+                          <div className="styles_wrapperArrow__1FXbD">
+                            <div className="styles_arrow__3SjVJ"></div>
+                          </div>
+                        </div>
+                        <div className="styles_content__2DpoO styles_content__DicmM">
+                          <div className="styles_header__2K1l-">
+                            <h6>Select Market</h6>
+                            <input
+                              placeholder="Search..."
+                              className="styles_pure__1G2ap "
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <div className="styles_toolbar__3QVXY">
+                            <div className="styles_main__2dqv7">
+                              <button
+                                id="menu--product-pop--productView--content--FAV"
+                                type="button"
+                                className=" styles_btn__1YGpA styles_active__1slcJ "
                               >
-                                <path
-                                  d="M16 9v1.2L12 15l-4-4.8V9h8z"
-                                  fill="t.third"
-                                ></path>
-                              </svg>
+                                <i className="icon icon-star-f"></i>
+                              </button>
+                              <button
+                                id="menu--product-pop--productView--content--USD"
+                                type="button"
+                                className=" styles_btn__1YGpA  "
+                              >
+                                USD
+                              </button>
+                              <button
+                                id="menu--product-pop--productView--content--BTC"
+                                type="button"
+                                className=" styles_btn__1YGpA  "
+                              >
+                                BTC
+                              </button>
+                              <button
+                                id="menu--product-pop--productView--content--ETH"
+                                type="button"
+                                className=" styles_btn__1YGpA  "
+                              >
+                                ETH
+                              </button>
+                              <button
+                                id="menu--product-pop--productView--content--QASH"
+                                type="button"
+                                className=" styles_btn__1YGpA  "
+                              >
+                                QASH
+                              </button>
+                              <button
+                                id="menu--product-pop--productView--content--..."
+                                type="button"
+                                className=" styles_btn__1YGpA  "
+                              >
+                                ...
+                              </button>
+                            </div>
+                          </div>
+                          <div className="styles_list__3dbVV">
+                            <div
+                              role="button"
+                              tabIndex="0"
+                              id="menu--product-pop--productView--content--BTC / USD"
+                              className="styles_market__2XcEE"
+                            >
+                              <button
+                                id="menu--product-pop--productView--content--BTC / USD--star"
+                                type="button"
+                                className="styles_favbtn__1bZ0r"
+                              >
+                                <i className="icon icon-star-f  "></i>
+                              </button>
+                              <div className="styles_symbol__1pX2M">
+                                <span id="menu--product-pop--productView--content">
+                                  <svg width="24" height="24">
+                                    <foreignObject width="24" height="24">
+                                      <img
+                                        alt="BTC"
+                                        width="24"
+                                        height="24"
+                                        src="https://assets.liquid.com/currencies/BTC.svg"
+                                      />
+                                    </foreignObject>
+                                  </svg>
+                                </span>
+                                <span>BTC / USD</span>
+                              </div>
+                              <div className="styles_price__2411P">
+                                <span
+                                  id="money2"
+                                  className="styles_main__3hU35"
+                                  title="10566.51"
+                                  data-value="10566.51"
+                                >
+                                  <span id="money2--symbol">$</span>
+                                  <span id="money2--significant">
+                                    10,566.510
+                                  </span>
+                                </span>
+                              </div>
+                              <div className="styles_change__qudHI">
+                                <span className="styles_down__3ZvsZ">
+                                  <span
+                                    id="menu--product-pop--productView--content--BTC / USD--percent"
+                                    title="-0.008148633477638847"
+                                  >
+                                    -0.81%
+                                  </span>
+                                  <i className="icon icon-tail-down  "></i>
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              role="button"
+                              tabIndex="0"
+                              id="menu--product-pop--productView--content--ETH / USD"
+                              className="styles_market__2XcEE"
+                            >
+                              <button
+                                id="menu--product-pop--productView--content--ETH / USD--star"
+                                type="button"
+                                className="styles_favbtn__1bZ0r"
+                              >
+                                <i className="icon icon-star-f  "></i>
+                              </button>
+                              <div className="styles_symbol__1pX2M">
+                                <span id="menu--product-pop--productView--content">
+                                  <svg width="24" height="24">
+                                    <foreignObject width="24" height="24">
+                                      <img
+                                        alt="ETH"
+                                        width="24"
+                                        height="24"
+                                        src="https://assets.liquid.com/currencies/ETH.svg"
+                                      />
+                                    </foreignObject>
+                                  </svg>
+                                </span>
+                                <span>ETH / USD</span>
+                              </div>
+                              <div className="styles_price__2411P">
+                                <span
+                                  id="money2"
+                                  className="styles_main__3hU35"
+                                  title="347.6"
+                                  data-value="347.6"
+                                >
+                                  <span id="money2--symbol">$</span>
+                                  <span id="money2--significant">347.600</span>
+                                </span>
+                              </div>
+                              <div className="styles_change__qudHI">
+                                <span className="styles_down__3ZvsZ">
+                                  <span
+                                    id="menu--product-pop--productView--content--ETH / USD--percent"
+                                    title="-0.015074237787600569"
+                                  >
+                                    -1.51%
+                                  </span>
+                                  <i className="icon icon-tail-down  "></i>
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              role="button"
+                              tabIndex="0"
+                              id="menu--product-pop--productView--content--QASH / USD"
+                              className="styles_market__2XcEE"
+                            >
+                              <button
+                                id="menu--product-pop--productView--content--QASH / USD--star"
+                                type="button"
+                                className="styles_favbtn__1bZ0r"
+                              >
+                                <i className="icon icon-star-f  "></i>
+                              </button>
+                              <div className="styles_symbol__1pX2M">
+                                <span id="menu--product-pop--productView--content">
+                                  <svg width="24" height="24">
+                                    <foreignObject width="24" height="24">
+                                      <img
+                                        alt="QASH"
+                                        width="24"
+                                        height="24"
+                                        src="https://assets.liquid.com/currencies/QASH.svg"
+                                      />
+                                    </foreignObject>
+                                  </svg>
+                                </span>
+                                <span>QASH / USD</span>
+                              </div>
+                              <div className="styles_price__2411P">
+                                <span
+                                  id="money2"
+                                  className="styles_main__3hU35"
+                                  title="0.03694"
+                                  data-value="0.03694"
+                                >
+                                  <span id="money2--symbol">$</span>
+                                  <span id="money2--significant">0.037</span>
+                                </span>
+                              </div>
+                              <div className="styles_change__qudHI">
+                                <span className="styles_down__3ZvsZ">
+                                  <span
+                                    id="menu--product-pop--productView--content--QASH / USD--percent"
+                                    title="-0.01572075672795098"
+                                  >
+                                    -1.57%
+                                  </span>
+                                  <i className="icon icon-tail-down  "></i>
+                                </span>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="css-s1a85h">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          className="css-2vf4lg"
-                        >
-                          <path
-                            d="M6.093 8.889c-.567 0-1.031-.438-1.031-.972 0-.535.464-.973 1.03-.973h12.846V5H6.093C4.38 5 3 6.303 3 7.917v8.166C3 17.697 4.381 19 6.093 19H21V8.889H6.093zm12.845 8.167H6.093c-.567 0-1.031-.438-1.031-.973v-5.415c.33.107.68.165 1.03.165h12.846v6.223z"
-                            fill="currentColor"
-                          ></path>
-                          <path
-                            d="M15.845 12.573l-1.453 1.371 1.453 1.38 1.464-1.38-1.464-1.37z"
-                            fill="currentColor"
-                          ></path>
+                    </div>
+                  </div>
+                  <div className="styles_divider__3PLhU"></div>
+                  <div className="styles_wrapperDetail__9uGIF">
+                    <div className="styles_main__1lk98">
+                      <div className="styles_lastPrice__1tzUt">
+                        <div className="styles_title__3T5QR">Last Price</div>
+                        <div className="styles_content__g_toU">
+                          <span className="styles_main__1rvwL styles_lastPriveValue__8ShCi styles_positive__2NzuR">
+                            <span
+                              id="menu--detail--last"
+                              className="styles_main__3hU35"
+                              title="10566.51"
+                              data-value="10566.51"
+                            >
+                              <span id="menu--detail--last--symbol">$</span>
+                              <span id="menu--detail--last--significant">
+                                10,566.510
+                              </span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="styles_item__JCGem">
+                        <div className="styles_title__3T5QR">24h Change</div>
+                        <div className="styles_content__g_toU">
+                          <span className="styles_down__3ZvsZ">
+                            <span
+                              id="menu--detail--percent"
+                              title="-0.007981020549179856"
+                            >
+                              -0.80%
+                            </span>
+                            <i className="icon icon-tail-down  "></i>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="styles_itemAlignRight__3nR8E">
+                        <div className="styles_title__3T5QR">24h High</div>
+                        <div className="styles_content__g_toU">
+                          <span className="styles_main__1rvwL">
+                            <span
+                              id="menu--detail--high"
+                              className="styles_main__3hU35"
+                              title="10668.84"
+                              data-value="10668.84"
+                            >
+                              <span id="menu--detail--high--symbol">$</span>
+                              <span id="menu--detail--high--significant">
+                                10,668.840
+                              </span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="styles_itemAlignRight__3nR8E">
+                        <div className="styles_title__3T5QR">24h Low</div>
+                        <div className="styles_content__g_toU">
+                          <span className="styles_main__1rvwL">
+                            <span
+                              id="menu--detail--low"
+                              className="styles_main__3hU35"
+                              title="10383.63"
+                              data-value="10383.63"
+                            >
+                              <span id="menu--detail--low--symbol">$</span>
+                              <span id="menu--detail--low--significant">
+                                10,383.630
+                              </span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="styles_itemAlignRight__3nR8E">
+                        <div className="styles_title__3T5QR">24h Volume</div>
+                        <div className="styles_content__g_toU">
+                          <span
+                            id="menu--detail--volume"
+                            className="styles_main__3hU35"
+                            title="224.68982526"
+                            data-value="224.68982526"
+                          >
+                            <span id="menu--detail--volume--significant">
+                              224.69
+                            </span>
+                            <span id="menu--detail--volume--symbol"> BTC</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="styles_divider__3PLhU"></div>
+                  <div
+                    id="menu--workspace"
+                    className="styles_wrapperWorkspaces__z01jo"
+                  >
+                    <div className="styles_main__3EaD8 styles_center__r2tiz styles_hoverable__2YTrJ">
+                      <div className="styles_body__3dd1F styles_popBody__2x6xG styles_feed__1T7yq">
+                        <svg width="16" height="16">
+                          <g
+                            stroke="#4B6389"
+                            fill="none"
+                            fillRule="evenodd"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <circle cx="8" cy="8" r="2.5"></circle>
+                            <path d="M15.5 9V7l-2.177-.363a5.463 5.463 0 0 0-.595-1.437l1.283-1.796-1.415-1.414L10.8 3.272a5.463 5.463 0 0 0-1.437-.595L9 .5H7l-.363 2.177a5.463 5.463 0 0 0-1.437.595L3.404 1.99 1.99 3.404 3.272 5.2a5.463 5.463 0 0 0-.595 1.437L.5 7v2l2.177.363c.131.512.332.994.595 1.437L1.99 12.596l1.414 1.414L5.2 12.728c.443.263.925.464 1.437.595L7 15.5h2l.363-2.177a5.463 5.463 0 0 0 1.437-.595l1.796 1.283 1.414-1.414-1.282-1.797c.263-.443.464-.925.595-1.437L15.5 9z"></path>
+                          </g>
                         </svg>
-                        <span type="text" className="css-rrzt34">
-                          - USDT
-                        </span>
                       </div>
-                      <form noValidate="" autoComplete="off">
-                        <div className="css-vurnku">
-                          <div className="css-k19abv">
-                            <div className=" css-4bgq44">
-                              <div className="bn-input-prefix css-vurnku">
-                                <label
-                                  type="text"
-                                  htmlFor="FormRow-BUY-price"
-                                  className="css-1ubpqt"
-                                  style="display: inline-block; min-width: 40px; text-align: right;"
-                                >
-                                  Giá
-                                </label>
+                      <div className="styles_content__2DpoO styles_popContent__1Jsfu">
+                        <a
+                          href="/exchange/BTCUSD"
+                          className="styles_workspace__pfGXw styles_active__gFCVc"
+                        >
+                          Standard - TradingView
+                        </a>
+                        <a
+                          href="/exchange/BTCUSD"
+                          className="styles_workspace__pfGXw"
+                        >
+                          Standard - CryptoWatch
+                        </a>
+                        <h6 className="styles_title__1fK0c">
+                          Custom Workspaces
+                        </h6>
+                        <p>
+                          You can customize how your workspaces are displayed
+                          and saved.
+                        </p>
+                        <h6 className="styles_title__1fK0c">Your Workspaces</h6>
+                        <button
+                          className="styles_workspace__pfGXw styles_new__3HtWU"
+                          type="button"
+                        >
+                          Create your first custom workspace
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="styles_body__2t5HW">
+        <div className="styles_main__3OIwS" id="pro-trading-dashboard">
+          <div className="styles_spotContainer__2Sp3k">
+            <div className="styles_box__2VJDo styles_chart__1iTkb">
+              <div className="styles_main__saomR" id="panel--chart">
+                <div className="AuthWrapper_wrapper__24dvs">
+                  <div className="styles_main__2YbVl">
+                    <div className="styles_body__N9wz1">
+                      <div className="styles_main__41oFr">
+                        <div className="styles_toolbar__D0twK styles_hide__3NX_7">
+                          <div className="styles_main__kGHUI ">
+                            <div className="styles_item__2cY3v">
+                              <div className="styles_main-inline-block__1rgYM styles_main__3mpta ">
+                                <div className="styles_label-inline-block__1J7la styles_label__3SrJB">
+                                  Provider&nbsp;
+                                </div>
+                                <div className="styles_children-inline-block__WAThp styles_children__3Rv6q">
+                                  <button
+                                    id="chart--toolbar--provider--button"
+                                    type="button"
+                                    className="styles_main__VKWEX"
+                                  >
+                                    <div className="styles_content__22jau ">
+                                      <div
+                                        id="chart--toolbar--provider--value"
+                                        data-value="trading-view"
+                                        className="styles_label__2Zm-v"
+                                      >
+                                        <span className="styles_labelText__3SjQt">
+                                          TradingView
+                                        </span>
+                                      </div>
+                                      <div className="styles_icon__16oM1">
+                                        <i className="icon icon-small-down styles_icon__IoG7F "></i>
+                                      </div>
+                                    </div>
+                                  </button>
+                                </div>
                               </div>
-                              <input
-                                type="input"
-                                id="FormRow-BUY-price"
-                                name="price"
-                                className=" css-1cm76ct"
-                                min="0.01"
-                                step="0.01"
-                                value="10782.99"
-                              />
-                              <div className="bn-input-suffix css-vurnku">
-                                <label
-                                  type="text"
-                                  htmlFor="FormRow-BUY-price"
-                                  className="css-1ubpqt"
-                                  style="display: inline-block; min-width: 40px; text-align: right;"
-                                >
-                                  USDT
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="css-k19abv">
-                            <div className=" css-4bgq44">
-                              <div className="bn-input-prefix css-vurnku">
-                                <label
-                                  type="text"
-                                  htmlFor="FormRow-BUY-quantity"
-                                  className="css-1ubpqt"
-                                  style="display: inline-block; min-width: 40px; text-align: right;"
-                                >
-                                  Số lượng
-                                </label>
-                              </div>
-                              <input
-                                id="FormRow-BUY-quantity"
-                                name="quantity"
-                                className=" css-1cm76ct"
-                                type="number"
-                                min="0.00000100"
-                                step="0.00000100"
-                                value=""
-                              />
-                              <div className="bn-input-suffix css-vurnku">
-                                <label
-                                  type="text"
-                                  htmlFor="FormRow-BUY-quantity"
-                                  className="css-1ubpqt"
-                                  style="display: inline-block; min-width: 40px; text-align: right;"
-                                >
-                                  BTC
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div dir="ltr" className="css-zpf5q6">
-                            <div className="css-8y9li2">
-                              <div className="css-1axcs3s">
-                                <div className="css-1nr34sj"></div>
-                              </div>
-                              <div className="bn-tradeSlider-ratioButton css-arkd9r"></div>
-                              <label className="css-q3jtu7">0%</label>
-                              <div className="css-4l9ic"></div>
-                              <div className="css-r5qggc"></div>
-                              <div className="css-nsqynb"></div>
-                              <div className="css-80wbqm"></div>
-                              <div className="css-v6fymx"></div>
                             </div>
                           </div>
                         </div>
-                        <div className="css-g95c8m">
-                          <div className="css-11sswcu">
-                            <a
-                              type="link"
-                              href="https://accounts.binance.com/vn/login?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vdm4vdHJhZGUvQlRDX1VTRFQ_bGF5b3V0PWJhc2lj"
-                              className="css-1ow33ci"
-                            >
-                              Đăng nhập
-                            </a>
-                            &nbsp;
-                            <div type="text" className="css-vurnku">
-                              or
+                        <div className="styles_content__1J-Fh">
+                          <div className="styles_body__UcsuF">
+                            <div className="styles_root__rQeEB">
+                              <div
+                                id="chart-did-4761"
+                                className="styles_main__22qeF styles_trading-view__1foyV"
+                              ></div>
                             </div>
-                            &nbsp;
-                            <a
-                              type="link"
-                              href="https://accounts.binance.com/vn/register?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vdm4vdHJhZGUvQlRDX1VTRFQ_bGF5b3V0PWJhc2lj"
-                              className="css-1ow33ci"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="styles_boxMultiPanel__t8sNY">
+              <input
+                className="styles_check__1s0OU"
+                type="checkbox"
+                id="x-orderbook-tradefeed-responsive"
+              />
+              <div className="styles_box__2VJDo styles_boxOrderBook__2wo8m">
+                <div className="styles_main__saomR" id="panel--order-book">
+                  <div className="AuthWrapper_wrapper__24dvs">
+                    <div className="styles_main__2YbVl ">
+                      <div className="styles_body__N9wz1">
+                        <div className="styles_main__41oFr">
+                          <div className="styles_content__1J-Fh">
+                            <div className="styles_header__2hX-Y">
+                              <div className="styles_main__2YbVl ">
+                                <div className="styles_header__18m0T">
+                                  <div className="styles_noSwitcher__7rRMs">
+                                    Order Book
+                                  </div>
+                                  <div className="styles_panelSwitcher__1t1dl">
+                                    <div className="styles_main__3EaD8 styles_left__2P1Kf styles_hoverable__2YTrJ">
+                                      <div className="styles_body__3dd1F styles_switchPopoverBody__2OyQS styles_feed__1T7yq">
+                                        <div className="styles_popBodyButton__2tc-k">
+                                          Order Book
+                                        </div>
+                                        <div className="styles_arrow__2QFgV"></div>
+                                      </div>
+                                      <div className="styles_content__2DpoO  styles_popContent__100YS">
+                                        <label className="styles_contentLabel__6RHDF">
+                                          Order Book
+                                          <i className="icon icon-check styles_check__2J714 "></i>
+                                        </label>
+                                        <label
+                                          className="styles_contentLabel__6RHDF"
+                                          htmlFor="x-orderbook-tradefeed-responsive"
+                                        >
+                                          Trade Feed
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <span className="styles_label__169t9">
+                                    Grouping: (0)
+                                  </span>
+                                  <div className="styles_groupingItem__2kPuY">
+                                    <button
+                                      className="styles_button__3KLPQ"
+                                      disabled=""
+                                      type="button"
+                                    >
+                                      <div className="styles_minus__9G1KF"></div>
+                                    </button>
+                                    <button
+                                      className="styles_button__3KLPQ"
+                                      type="button"
+                                    >
+                                      <div className="styles_plus__11FOP"></div>
+                                    </button>
+                                  </div>
+                                </div>
+                                <div className="styles_main__U3vVI">
+                                  <div className="styles-common_main__2rYf_ styles_main__27DPr styles_fixed__3dGZj">
+                                    <div
+                                      id="order-book--header--price"
+                                      className="styles_item__1y6i1 styles-common_item__qg8NV price"
+                                    >
+                                      Price
+                                    </div>
+                                    <div
+                                      id="order-book--header--quantity"
+                                      className="styles_item__1y6i1 styles-common_item__qg8NV quantity"
+                                    >
+                                      Quantity
+                                    </div>
+                                    <div
+                                      id="order-book--header--cumulative"
+                                      className="styles_item__1y6i1 styles-common_item__qg8NV cumulative"
+                                    >
+                                      Total BTC
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="styles_body__UcsuF">
+                              <div className="OrderBookStyles_orderBook__3AAnf">
+                                <div className="OrderBookStyles_orderBookSideAsk__3_13c"></div>
+                                <div className="OrderBookStyles_spread__2my1Y">
+                                  <div className="styles_spread__27pCa">
+                                    <div className="styles_spreadTitle__22bOH">
+                                      Spread
+                                    </div>
+                                    <div className="styles_spreadValue__3R_Xz">
+                                      <span className="styles_main__1rvwL">
+                                        <span className="styles_item__3AoSp">
+                                          $
+                                          <span
+                                            role="button"
+                                            tabIndex="-1"
+                                            title="22.8799999999992"
+                                            className="style_numberCell__2MNWK"
+                                          >
+                                            <span className="numbercell__significant">
+                                              22.88
+                                            </span>
+                                            <span className="numbercell__zeros"></span>
+                                          </span>
+                                        </span>
+                                      </span>
+                                    </div>
+                                    <div></div>
+                                  </div>
+                                </div>
+                                <div className="OrderBookStyles_orderBookSideBid__2YML4"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="styles_box__2VJDo styles_boxExecutionBook__31au8">
+                <div className=" styles_main__saomR" id="panel--execution-book">
+                  <div className="AuthWrapper_wrapper__24dvs">
+                    <div className="styles_main__2YbVl ">
+                      <div className="styles_header__AdnlQ">
+                        <div className="styles_main__3EaD8 styles_left__2P1Kf styles_hoverable__2YTrJ">
+                          <div className="styles_body__3dd1F styles_switchPopoverBody__wyag5 styles_feed__1T7yq">
+                            <div className="styles_popBodyButton__1r-cd">
+                              Trade Feed
+                            </div>
+                            <div className="styles_arrow__2SRT5"></div>
+                          </div>
+                          <div className="styles_content__2DpoO  styles_popContent__2v52a">
+                            <div role="button" tabIndex="-1">
+                              <label
+                                className="styles_contentLabel__2itmW"
+                                htmlFor="x-orderbook-tradefeed-responsive"
+                              >
+                                Order Book
+                              </label>
+                            </div>
+                            <div role="button" tabIndex="-1">
+                              <label className="styles_contentLabel__2itmW">
+                                Trade Feed
+                                <i className="icon icon-check styles_check__1r-fq "></i>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="styles_body__N9wz1 styles_body__bbLMN">
+                        <div
+                          id="executions--models"
+                          className="styles_list__2leAr"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="styles_box__2VJDo styles_orderPanel__1sPFb undefined">
+              <div className=" styles_main__saomR" id="panel--order-entry">
+                <div className="AuthWrapper_wrapper__24dvs">
+                  <div className="styles_main__2YbVl">
+                    <div className="styles_body__N9wz1">
+                      <form>
+                        <div className="styles_formInner__ur3i9">
+                          <div className="styles_container__UYRBD styles_formBlock__icrZV">
+                            <button
+                              type="button"
+                              id="order-entry--spot--button-buy"
+                              className="styles_btn__2oTRi styles_btnBuy__1wL43 styles_active__1SlVv"
                             >
-                              Đăng ký
-                            </a>
+                              Buy
+                            </button>
+                            <button
+                              type="button"
+                              id="order-entry--spot--button-sell"
+                              className="styles_btn__2oTRi styles_btnSell__1cYHs"
+                            >
+                              Sell
+                            </button>
+                          </div>
+                          <div className="styles_orderTypesContainer__2RYpf styles_formBlock__icrZV">
+                            <button
+                              type="button"
+                              className="styles_groupBtn__JBMV3 GroupBtn_btn__f88ve GroupBtn_active__5rpSj"
+                            >
+                              <span className="HintCommon_hint__1FXyI ">
+                                Limit
+                              </span>
+                            </button>
+                            <button
+                              type="button"
+                              className="styles_groupBtn__JBMV3 GroupBtn_btn__f88ve "
+                            >
+                              <span className="HintCommon_hint__1FXyI ">
+                                Market
+                              </span>
+                            </button>
+                            <div className="GroupBtnCustom_typePulldown__2jUKy ">
+                              <button
+                                className="GroupBtnCustom_selector__27vcY"
+                                type="button"
+                              >
+                                <span className="GroupBtnCustom_panelTitle__3O70X">
+                                  Stop
+                                </span>
+                                <div className="GroupBtnCustom_wrapperArrow__2dVMa ">
+                                  <div className="GroupBtnCustom_arrow__-wy-P"></div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div className="styles_formBlockLimitPrice__gi29V undefined">
+                            <div className="styles_main-block-large__NcL2U styles_main__3mpta ">
+                              <div className="styles_label-block-large__29xAT styles_label__3SrJB">
+                                <span className="HintCommon_hint__1FXyI ">
+                                  Price
+                                </span>
+                                &nbsp;
+                              </div>
+                              <div className="styles_children-block-large__2Mofu styles_children__3Rv6q">
+                                <div className="styles_main__3lIYn">
+                                  <input
+                                    id="order-entry--spot--price--value"
+                                    min="0.01"
+                                    step="0.01"
+                                    placeholder="0.00"
+                                    required=""
+                                    autoComplete="off"
+                                    className="styles_pure__1G2ap styles_text__1KTZc"
+                                    type="number"
+                                    value=""
+                                    style={{ paddingRight: '108px' }}
+                                  />
+                                  <span className="styles_currency__R6gF_">
+                                    USD
+                                    <span className="styles_buttons__vNdhU">
+                                      <button
+                                        id="order-entry--spot--price--minus"
+                                        type="button"
+                                        className="styles_icon__2HJy2 styles_button__2h4XH"
+                                      >
+                                        －
+                                      </button>
+                                      <button
+                                        id="order-entry--spot--price--plus"
+                                        type="button"
+                                        className="styles_icon__2HJy2 styles_button__2h4XH"
+                                      >
+                                        ＋
+                                      </button>
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="PostOnly_postOnlyCheckBoxLimit__oOlzm">
+                            <label
+                              className=" styles_main__N6NYt"
+                              htmlFor="order-entry--spot--post-only--checked"
+                            >
+                              <input
+                                id="order-entry--spot--post-only--checked"
+                                className="styles_input__2U7CA"
+                                type="checkbox"
+                              />
+                              <span className="styles_check__w94zy"></span>
+                              <span className="HintCommon_hint__1FXyI ">
+                                <span className="PostOnly_postOnlyCheckBoxText__10ju2">
+                                  Post Only
+                                </span>
+                              </span>
+                            </label>
+                          </div>
+                          <div className="styles_formBlockLimitQuantity__2lMd6">
+                            <div className="styles_main-block-large__NcL2U styles_main__3mpta ">
+                              <div className="styles_label-block-large__29xAT styles_label__3SrJB">
+                                <span className="HintCommon_hint__1FXyI ">
+                                  Quantity
+                                </span>
+                                &nbsp;
+                              </div>
+                              <div className="styles_children-block-large__2Mofu styles_children__3Rv6q">
+                                <div className="styles_main__3lIYn">
+                                  <input
+                                    id="order-entry--spot--quantity--value"
+                                    min="0.001"
+                                    step="0.001"
+                                    placeholder="0.000000"
+                                    required=""
+                                    autoComplete="off"
+                                    className="styles_pure__1G2ap styles_text__1KTZc"
+                                    type="text"
+                                    value=""
+                                    style={{ paddingRight: '106px' }}
+                                  />
+                                  <span className="styles_currency__R6gF_">
+                                    BTC
+                                    <span className="styles_buttons__vNdhU">
+                                      <button
+                                        id="order-entry--spot--quantity--minus"
+                                        type="button"
+                                        className="styles_icon__2HJy2 styles_button__2h4XH"
+                                      >
+                                        －
+                                      </button>
+                                      <button
+                                        id="order-entry--spot--quantity--plus"
+                                        type="button"
+                                        className="styles_icon__2HJy2 styles_button__2h4XH"
+                                      >
+                                        ＋
+                                      </button>
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            id="order-entry--spot--quantity-percent"
+                            className="styles_list__3eYRQ styles_formBlock__icrZV"
+                          >
+                            <div className="styles_item__dg96B">
+                              <div className="styles_main__1RpHi">
+                                <input
+                                  id="order-entry--spot--quantity-percent--0.25--input"
+                                  className="styles_input__gAght"
+                                  type="radio"
+                                  name="order-entry--spot--quantity-percent"
+                                  value="0.25"
+                                />
+                                <label
+                                  id="order-entry--spot--quantity-percent--0.25--label"
+                                  className="styles_label__qBLpi styles_check__38VfN"
+                                  htmlFor="order-entry--spot--quantity-percent--0.25--input"
+                                >
+                                  25%
+                                </label>
+                              </div>
+                            </div>
+                            <div className="styles_item__dg96B">
+                              <div className="styles_main__1RpHi">
+                                <input
+                                  id="order-entry--spot--quantity-percent--0.5--input"
+                                  className="styles_input__gAght"
+                                  type="radio"
+                                  name="order-entry--spot--quantity-percent"
+                                  value="0.5"
+                                />
+                                <label
+                                  id="order-entry--spot--quantity-percent--0.5--label"
+                                  className="styles_label__qBLpi styles_check__38VfN"
+                                  htmlFor="order-entry--spot--quantity-percent--0.5--input"
+                                >
+                                  50%
+                                </label>
+                              </div>
+                            </div>
+                            <div className="styles_item__dg96B">
+                              <div className="styles_main__1RpHi">
+                                <input
+                                  id="order-entry--spot--quantity-percent--0.75--input"
+                                  className="styles_input__gAght"
+                                  type="radio"
+                                  name="order-entry--spot--quantity-percent"
+                                  value="0.75"
+                                />
+                                <label
+                                  id="order-entry--spot--quantity-percent--0.75--label"
+                                  className="styles_label__qBLpi styles_check__38VfN"
+                                  htmlFor="order-entry--spot--quantity-percent--0.75--input"
+                                >
+                                  75%
+                                </label>
+                              </div>
+                            </div>
+                            <div className="styles_item__dg96B">
+                              <div className="styles_main__1RpHi">
+                                <input
+                                  id="order-entry--spot--quantity-percent--1--input"
+                                  className="styles_input__gAght"
+                                  type="radio"
+                                  name="order-entry--spot--quantity-percent"
+                                  value="1"
+                                />
+                                <label
+                                  id="order-entry--spot--quantity-percent--1--label"
+                                  className="styles_label__qBLpi styles_check__38VfN"
+                                  htmlFor="order-entry--spot--quantity-percent--1--input"
+                                >
+                                  100%
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="styles_orderBalance__BGsCK">
+                            <span className="styles_title__1oiDT">
+                              Free Balance
+                            </span>
+                            <span
+                              id="order-entry--spot--order-balance"
+                              className="styles_main__3hU35"
+                              title="0"
+                              data-value="0"
+                            >
+                              <span id="order-entry--spot--order-balance--significant">
+                                0.000
+                              </span>
+                              <span id="order-entry--spot--order-balance--symbol">
+                                {' '}
+                                USD
+                              </span>
+                            </span>
+                          </div>
+                          <div className="styles_main__kHejA">
+                            <div>
+                              <span className="HintCommon_hint__1FXyI ">
+                                <span>Cost</span>
+                                <svg
+                                  height="19"
+                                  viewBox="0 0 24 24"
+                                  width="19"
+                                  className="styles_attention__22vYn"
+                                >
+                                  <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+                                    fillRule="nonzero"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </div>
+                            <div>
+                              <span className="styles_main__1rvwL">
+                                <span
+                                  className="styles_main__3UZrp"
+                                  title="0.00000000"
+                                  id="order-entry--spot--order-calculator--cost"
+                                  data-value="0"
+                                >
+                                  $0.000
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                          <div className="AuthWrapper_wrapper__24dvs">
+                            <div className="styles_formBlock__icrZV">
+                              <p className="styles_msg__2one0">
+                                Your account does not have permission to trade
+                                Spot, view your account abilities in your
+                                profile or
+                                <a
+                                  href="https://help.liquid.com"
+                                  rel="noopener noreferrer"
+                                  target="_blank"
+                                >
+                                  contact customer support
+                                </a>
+                                .
+                              </p>
+                            </div>
+                            <button
+                              id="button2"
+                              className="styles_main__1rTEz styles_primary__3XxmD styles_large__3mDiO styles_button__vsICp styles_disabled__EXkew"
+                              disabled=""
+                              type="button"
+                            >
+                              Place buy order
+                            </button>
                           </div>
                         </div>
                       </form>
                     </div>
                   </div>
-                  <div
-                    className="css-vurnku"
-                    style="width: 100%; display: none;"
-                  ></div>
-                </div>
-              </div>
-              <div className="css-17hq6et">
-                <div className="css-1xds647">
-                  Tài sản
-                  <a
-                    href="https://www.binance.com/vn/buy-sell-crypto?Type=spot&amp;fiat=VND&amp;crypto=BTC&amp;returnTo=https%3A%2F%2Fwww.binance.com%2Fvn%2Ftrade%2FBTC_USDT%3Flayout%3Dbasic"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="css-11huj4q"
-                  >
-                    Buy with VND
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      className="css-dd6f17"
-                    >
-                      <path
-                        d="M8.825 8L3.95 12.95 5 14l6-6-6-6-1.05 1.05L8.825 8z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div className="css-3j2kqe">
-                  <a
-                    type="text"
-                    data-sensors-click="true"
-                    id="depositBtn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="/vn/my/wallet/exchange/deposit/crypto/BTC"
-                    className="css-rfnzc4"
-                  >
-                    Nạp
-                  </a>
-                  <a
-                    type="text"
-                    data-sensors-click="true"
-                    id="withdrawBtn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="/vn/my/wallet/exchange/withdrawal/crypto/BTC"
-                    className="css-rfnzc4"
-                  >
-                    Rút
-                  </a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="css-1gyfnf2">
-          <div className="css-19pe9oc">
-            <div className="css-lvqaod">
-              <div className=" css-6rdkws">
-                <div className="draggableCancel css-ov54vn">
-                  <div
-                    className="draggableCancel active css-wwbq55"
-                    data-testid="OpenOrder"
-                  >
-                    Giao dịch đang chờ khớp lệnh(0)
-                  </div>
-                </div>
-                <div className="draggableCancel css-ov54vn">
-                  <div
-                    className="draggableCancel  css-wwbq55"
-                    data-testid="OrderHistory"
-                  >
-                    Lịch sử lệnh
-                  </div>
-                </div>
-                <div className="draggableCancel css-ov54vn">
-                  <div
-                    className="draggableCancel  css-wwbq55"
-                    data-testid="TradeHistory"
-                  >
-                    Lịch sử giao dịch
-                  </div>
-                </div>
-                <div className="draggableCancel css-ov54vn">
-                  <div
-                    className="draggableCancel  css-wwbq55"
-                    data-testid="Funds"
-                  >
-                    Quỹ
-                  </div>
-                </div>
-              </div>
-              <div className="css-4q7727">
-                <div className="draggableCancel css-15m9pmi">
-                  <div className="css-16v94o9">
-                    <div className="css-wuqm6b">
-                      <a
-                        type="link"
-                        href="https://accounts.binance.com/vn/login?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vdm4vdHJhZGUvQlRDX1VTRFQ_bGF5b3V0PWJhc2lj"
-                        className="css-m39jj3"
-                      >
-                        Đăng nhập
-                      </a>
-                      &nbsp;hoặc&nbsp;
-                      <a
-                        type="link"
-                        href="https://accounts.binance.com/vn/register?return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vdm4vdHJhZGUvQlRDX1VTRFQ_bGF5b3V0PWJhc2lj"
-                        className="css-m39jj3"
-                      >
-                        Đăng ký ngay
-                      </a>
-                      &nbsp;giao dịch
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="css-1hchg4n"></div>
-              <div className="css-1hchg4n"></div>
-              <div className="css-1hchg4n"></div>
-            </div>
-          </div>
-        </div>
-        <div className="css-gtadyr">
-          <div className="css-1rp5cvw">
-            <div className="css-cqp8ax">
-              <div className="left css-1gavoal" style="min-width: 70px;">
-                <div type="text" title="Giá(USDT)" className="css-10p5mho">
-                  Giá(USDT)
-                </div>
-              </div>
-              <div className="left css-1gavoal" style="min-width: 75px;">
-                <div type="text" title="Số lượng(BTC)" className="css-10p5mho">
-                  Số lượng(BTC)
-                </div>
-              </div>
-              <div className="right css-1gavoal" style="min-width: 60px;">
-                <div type="text" title="Thời gian" className="css-10p5mho">
-                  Thời gian
-                </div>
-              </div>
-            </div>
-            <div className="list-container css-6i3dgr">
-              <div
-                className="list-auto-sizer"
-                style="overflow: visible; height: 0px; width: 0px;"
-              >
-                <div
-                  className="fixed-size-list"
-                  style="position: relative; height: 252px; width: 338px; overflow: auto; will-change: transform; direction: ltr;"
-                ></div>
-              </div>
-              <div className="resize-triggers">
-                <div className="expand-trigger">
-                  <div style="width: 339px; height: 253px;"></div>
-                </div>
-                <div className="contract-trigger"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div name="switch" className="css-64to6h">
-          <div className="css-km7ga">
-            <div className="css-4cffwv">
-              <div className="css-1e07uyp">
-                <div className="css-11y6cix">
-                  <div className="css-kdvr7r">
-                    <div className="css-11iq8h7">
-                      <div className="css-1dzcflb">
-                        <div type="text" className="css-19egqbz">
-                          BTC/USDT
-                        </div>
-                        <span
-                          type="text"
-                          className="css-1gc3uxc"
-                          style="cursor: inherit;"
-                        >
-                          10x
-                        </span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="t.grey300"
-                          className="css-1xjeauy"
-                        >
-                          <path
-                            d="M16 9v2l-4 4.24L8 11V9h8z"
-                            fill="t.grey300"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="css-bf5g5u">
-                <div className="css-1tvgb55">
-                  <div className="css-8t380c">
-                    <div type="text" className="css-11gbogv">
-                      <div
-                        type="text"
-                        className="showPrice css-vurnku"
-                        style="color: rgb(248, 73, 96);"
-                      >
-                        10,767.35
-                      </div>
-                    </div>
-                    <div type="text" className="subPrice css-y1aimo">
-                      ₫249,705,613.85
-                    </div>
-                  </div>
-                </div>
-                <div className=" css-1hvp7lu">
-                  <div className="label css-busac4">Biến động giá 24h</div>
-                  <div
-                    className="content css-tn35j6"
-                    style="color: rgb(248, 73, 96);"
-                  >
-                    -104.11 -0.96%
-                  </div>
-                </div>
-                <div className=" css-1hvp7lu">
-                  <div className="label css-busac4">Giá cao nhất 24h</div>
-                  <div className="content css-hql3vt">10,941.99</div>
-                </div>
-                <div className=" css-1hvp7lu">
-                  <div className="label css-busac4">Giá thấp nhất 24h</div>
-                  <div className="content css-hql3vt">10,626.00</div>
-                </div>
-                <div className=" css-1hvp7lu">
-                  <div className="label css-busac4">Khối lượng 24h</div>
-                  <div className="content css-hql3vt">468,012,596.06 USDT</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div name="orderbook" className="css-1pj4tpc">
-          <div className="css-1ynkh88">
-            <div className="orderbook-header">
-              <div className="css-1f9551p">
-                <div
-                  className="css-5ccbr2"
-                  data-popper-reference-hidden="false"
-                  data-popper-escaped="false"
-                  data-popper-placement="bottom-start"
-                  style="position: absolute; left: 0px; top: 36px; transition: opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s; opacity: 0; transform: translate3d(0px, 6px, 0px); visibility: hidden;"
-                >
-                  Số lệnh
-                  <div
-                    data-popper-arrow="true"
-                    className="css-1uumx2j"
-                    style="position: absolute; left: 13px;"
-                  ></div>
-                  <i className="gap-fill"></i>
-                </div>
-                <button type="button" className="css-psuuyn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="css-1gms6lp"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M10.003 9.342H22v1.2H10.003v-1.2zm0 2.455H22v1.202H10.003v-1.202zM22 14.253H10.003v1.201H22v-1.2z"
-                      fill="#8A8A8A"
-                    ></path>
-                    <path
-                      d="M5.668 7.299l1.733 3.11 1.487-2.302h13.108v-1.2H8.235l-.758 1.172L5.762 5 3.326 8.644H2v1.2h1.967L5.668 7.3z"
-                      fill="#F84960"
-                    ></path>
-                    <path
-                      d="M7.402 14.391l-1.732 3.11-1.702-2.545H2v1.2h1.326L5.763 19.8l1.715-3.079.758 1.173h13.76v-1.201H8.89l-1.487-2.302z"
-                      fill="#2EBD85"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              <div className="css-1f9551p">
-                <div
-                  className="css-5ccbr2"
-                  data-popper-reference-hidden="false"
-                  data-popper-escaped="false"
-                  data-popper-placement="bottom-start"
-                  style="position: absolute; left: 0px; top: 36px; transition: opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s; opacity: 0; transform: translate3d(0px, 6px, 0px); visibility: hidden;"
-                >
-                  Lệnh mua
-                  <div
-                    data-popper-arrow="true"
-                    className="css-1uumx2j"
-                    style="position: absolute; left: 13px;"
-                  ></div>
-                  <i className="gap-fill"></i>
-                </div>
-                <button type="button" className="css-924ccw">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="css-1gms6lp"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M22 7H2v1.2h20V7zm0 2.427H10.003v1.2H22v-1.2zm-11.997 2.454H22v1.2H10.003v-1.2zM22 14.336H10.003v1.2H22v-1.2z"
-                      fill="#8A8A8A"
-                    ></path>
-                    <path
-                      d="M7.402 14.474L5.67 17.582l-1.702-2.544H2v1.2h1.326l2.436 3.642 1.715-3.078.758 1.173h13.76v-1.2H8.889l-1.487-2.301z"
-                      fill="#2EBD85"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              <div className="css-1f9551p">
-                <div
-                  className="css-5ccbr2"
-                  data-popper-reference-hidden="false"
-                  data-popper-escaped="false"
-                  data-popper-placement="bottom-start"
-                  style="position: absolute; left: 0px; top: 36px; transition: opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s; opacity: 0; transform: translate3d(0px, 6px, 0px); visibility: hidden;"
-                >
-                  Lệnh bán
-                  <div
-                    data-popper-arrow="true"
-                    className="css-1uumx2j"
-                    style="position: absolute; left: 13px;"
-                  ></div>
-                  <i className="gap-fill"></i>
-                </div>
-                <button type="button" className="css-924ccw">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="css-1gms6lp"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M22 9.337H10.003v1.2H22v-1.2zm0 2.452H10.003v1.2H22v-1.2zm-11.997 2.453H22v1.2H10.003v-1.2zM22 16.681H2v1.199h20v-1.2z"
-                      fill="#8A8A8A"
-                    ></path>
-                    <path
-                      d="M5.668 7.296l1.733 3.106 1.487-2.299h13.108v-1.2H8.235l-.758 1.172L5.761 5 3.326 8.639H2v1.2h1.967l1.701-2.543z"
-                      fill="#F84960"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              <div className="orderbook-tickSize">
-                <div className="css-ybbx55">
-                  <div className="tick-content">
-                    <span className="primary">0.01</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="css-1gzchbr"
-                    >
-                      <path
-                        d="M16 9v1.2L12 15l-4-4.8V9h8z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <div className="orderbook-contorl-overlay">
-                  <div className="css-1f9551p">
-                    <div
-                      className="css-5ccbr2"
-                      data-popper-reference-hidden="false"
-                      data-popper-escaped="false"
-                      data-popper-placement="bottom"
-                      style="position: absolute; left: -55px; top: 27px; transition: opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s; opacity: 0; transform: translate3d(0px, 6px, 0px); visibility: hidden;"
-                    >
-                      Display Avg.&amp;Sum
-                      <div
-                        data-popper-arrow="true"
-                        className="css-1uumx2j"
-                        style="position: absolute; left: 60px;"
-                      ></div>
-                      <i className="gap-fill"></i>
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="icon-compare active css-1l11cjt"
-                    >
-                      <path
-                        d="M13.5 6V3.3h-2V6H4.6v13h6.9v2.8h2V19h6.8V6h-6.8zm-2 11H6.6V8h4.9v9z"
-                        fill="#848E9C"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="orderbook-tbheader">
-              <div className="content">
-                <div
-                  className="item"
-                  direction="l"
-                  style="flex: 1 1 0%; justify-content: flex-start;"
-                >
-                  Giá(USDT)
-                </div>
-                <div
-                  className="item"
-                  direction="r"
-                  style="flex: 1 1 0%; justify-content: flex-end;"
-                >
-                  Số lượng(BTC)
-                </div>
-                <div
-                  className="item"
-                  direction="r"
-                  style="flex: 1 1 0%; justify-content: flex-end;"
-                >
-                  Tổng
-                </div>
-              </div>
-            </div>
-            <div className="orderlist-container">
-              <div className="orderbook-ticker">
-                <div className="contractPrice status-sell">
-                  10,767.35
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="arrow-icon status-sell css-1gms6lp"
-                  >
-                    <path
-                      d="M5 13.47l1.41-1.41 5.1 5.1V3h1.99v14.15l5.09-5.09L20 13.47l-7.5 7.5-7.5-7.5z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="markPrice">₫249,705,613.85</div>
+            <div className="styles_box__2VJDo styles_spotList__jO_jw">
+              <div className="styles_main__3mqPq">
                 <div>
-                  <a className="more" href="/vn/orderbook/BTC_USDT">
-                    Xem thêm
-                  </a>
-                  <div className="css-1f9551p">
-                    <div
-                      className="css-5ccbr2"
-                      data-popper-reference-hidden="false"
-                      data-popper-escaped="false"
-                      data-popper-placement="bottom"
-                      style="position: absolute; left: -106.5px; top: 28px; transition: opacity 120ms ease-in-out 0s, transform 120ms ease-in-out 0s; opacity: 0; transform: translate3d(0px, 6px, 0px); visibility: hidden;"
-                    >
-                      Trạng thái hệ thống: Đang hoạt động
-                      <i className="gap-fill"></i>
+                  <div className="styles_main__3IKza">
+                    <li>
+                      <button
+                        id="tab-switchable-container--type--OrderListOpen"
+                        className="styles_btn__1FU3v styles_active__1mBMl"
+                        value="OrderListOpen"
+                        type="button"
+                      >
+                        Open Orders
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        id="tab-switchable-container--type--OrderListOther"
+                        className="styles_btn__1FU3v "
+                        value="OrderListOther"
+                        type="button"
+                      >
+                        Order History
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        id="tab-switchable-container--type--ExecutionList"
+                        className="styles_btn__1FU3v "
+                        value="ExecutionList"
+                        type="button"
+                      >
+                        Executions
+                      </button>
+                    </li>
+                  </div>
+                </div>
+                <div className="styles_container__2gkhS">
+                  <div className=" styles_main__saomR" id="panel--order-list">
+                    <div className="AuthWrapper_wrapper__24dvs">
+                      <div>
+                        <table
+                          id="order-list"
+                          className="sc-fzokOt kyNeax sc-fzomME hhnKZs"
+                        >
+                          <tr>
+                            <th style={{ paddingLeft: '30px' }}>Account</th>
+                            <th style={{ paddingLeft: '30px' }}>Symbol</th>
+                            <th style={{ minWidth: '140px' }}>
+                              <label
+                                className="CheckboxFilter_check__59_F1 styles_main__N6NYt"
+                                htmlFor="order-list-leverage-margin-type-header--hideOtherPairs--checked"
+                              >
+                                <input
+                                  id="order-list-leverage-margin-type-header--hideOtherPairs--checked"
+                                  className="styles_input__2U7CA"
+                                  type="checkbox"
+                                />
+                                <span className="styles_check__w94zy"></span>
+                                <span className="CheckboxFilter_label__ZYFdt">
+                                  Hide other pairs
+                                </span>
+                              </label>
+                            </th>
+                            <th style={{ minWidth: '80px' }}>Side</th>
+                            <th>Quantity</th>
+                            <th style={{ minWidth: '140px' }}>Filled</th>
+                            <th>Price</th>
+                            <th>ID</th>
+                            <th>Type</th>
+                            <th style={{ minWidth: '160px' }}>
+                              Updated (YY/MM/DD)
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <div className="styles_main__2BFQy">
+                        <h4>No Orders</h4>
+                        <p>You have no orders.</p>
+                        <p>
+                          Once placed, orders are displayed here. Live orders
+                          can be edited or cancelled.
+                        </p>
+                        <a
+                          href="https://help.liquid.com/en/articles/2275776-how-to-place-a-limit-order"
+                          className="styles_main__3JWER "
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          See tutorial↗
+                        </a>
+                      </div>
                     </div>
-                    <svg
-                      width="16"
-                      height="12"
-                      viewBox="0 0 16 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="7"
-                        width="2.66667"
-                        height="5"
-                        fill="#00C582"
-                      ></rect>
-                      <rect
-                        x="4.44446"
-                        y="4"
-                        width="2.66667"
-                        height="8"
-                        fill="#00C582"
-                      ></rect>
-                      <rect
-                        x="8.88892"
-                        y="2"
-                        width="2.66667"
-                        height="10"
-                        fill="#00C582"
-                      ></rect>
-                      <rect
-                        x="13.3333"
-                        width="2.66667"
-                        height="12"
-                        fill="#CACED3"
-                      ></rect>
-                    </svg>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div> */}
-    </div>
+      </div>
+    </>
   );
 };
 
