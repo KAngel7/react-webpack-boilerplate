@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 const Home = () => {
   return (
     <>
-      <Header />
+      <Header userData={{ name: 'Rose' }} />
       <main className="css-1wr4jig">
         <div className="css-1pysja1">
           <div className="css-nvs2r2" id="a1">

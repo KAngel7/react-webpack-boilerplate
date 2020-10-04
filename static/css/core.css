@@ -635,12 +635,6 @@ tr.rc-table-expanded-row:hover {
   }
 }
 
-@media screen and (min-width: 767px) {
-  .css-1yztfkw {
-    display: none;
-  }
-}
-
 .css-1yztfkw {
   box-sizing: border-box;
   margin: 0px;
@@ -653,5 +647,4 @@ tr.rc-table-expanded-row:hover {
   -webkit-box-align: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  display: none;
 }

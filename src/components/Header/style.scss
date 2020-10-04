@@ -1,5 +1,375 @@
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #e5e9f0;
+}
+$primary: #e5e9f0;
+$header: #0a1b66;
+$gradient-left: #00145c;
+$accent-1: rgba(0, 85, 255, 0.2);
+$background: #020c3b;
+$headerSd: hsla(0, 0%, 0%, 1);
+
 .basic {
   margin-top: 10rem;
   font-size: 2rem;
   text-align: center;
+}
+
+.header {
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  color: #fff;
+  height: 64px;
+  background-color: #12161c;
+  align-items: center;
+  width: 100%;
+  outline: none !important;
+  justify-content: space-between;
+  padding-right: 24px;
+
+  .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+  .leftWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .rightWrapper {
+    display: flex;
+    align-items: center;
+
+    .userProfileWrapper {
+      position: relative;
+      cursor: pointer;
+
+      .avatarWrapper {
+        display: flex;
+        margin-right: 12px;
+        .avatar {
+          width: 40px;
+          height: 40px;
+          background-position: 50%;
+          background-size: cover;
+          border-radius: 50%;
+        }
+      }
+
+      .userInformation {
+        position: absolute;
+        display: none;
+        max-height: calc(100vh - 70px);
+        right: 15px;
+        top: 100%;
+        margin-top: 2px;
+        min-width: 282px;
+        border-radius: 4px;
+        box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.5);
+        background-image: -webkit-linear-gradient(
+          281deg,
+          $header,
+          $gradient-left
+        );
+        background-image: linear-gradient(169deg, $header, $gradient-left);
+        z-index: 3;
+
+        .info {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 24px;
+          background-color: $accent-1;
+          border-radius: 4px 4px 0 0;
+
+          .mainInfo {
+            overflow: hidden;
+            max-width: 282px;
+          }
+
+          .profileName {
+            margin: 0 0 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+
+          .profileEmail {
+            font-size: 14px;
+            line-height: 1.5;
+            opacity: 0.8;
+          }
+
+          .profileIdAndLink {
+            font-size: 10px;
+            line-height: 1.6;
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+
+          .profileId {
+            margin-right: 8px;
+            opacity: 0.6;
+          }
+
+          .profileStatus {
+            margin-right: 4px;
+          }
+        }
+
+        .settingMenu {
+          list-style: none;
+          padding: 0;
+
+          li {
+            position: relative;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.14;
+            letter-spacing: -0.9px;
+            width: 100%;
+            a {
+              display: flex;
+              width: 100%;
+              margin: 0;
+              padding: 15px 30px;
+              text-decoration: none;
+              color: #e5e9f0;
+            }
+          }
+
+          li::after {
+            content: '';
+            display: block;
+            width: calc(100% - 60px);
+            margin: 0 30px;
+            border-bottom: 1px solid $accent-1;
+          }
+        }
+
+        .lastMenu {
+          display: flex;
+          width: 100%;
+          padding: 15px 30px;
+          position: relative;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.14;
+          letter-spacing: -0.9px;
+          text-transform: capitalize;
+          color: $primary;
+          border-radius: 2px;
+        }
+
+        .signOutBtn {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin: 0;
+          padding: 23px 30px;
+          border-top: 1px solid $accent-1;
+        }
+      }
+
+      .userInformation::before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 8px;
+        bottom: 100%;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        cursor: pointer;
+      }
+    }
+
+    .userProfileWrapper:hover .userInformation {
+      display: block;
+    }
+
+    .mainAvatar {
+      width: 48px;
+      height: 48px;
+      background-position: 50%;
+      background-size: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  .walletBtn {
+    position: relative;
+    margin: 18px 11px;
+    margin-right: 50px;
+
+    .hoverButton {
+      cursor: pointer;
+      padding: 6px 12px;
+    }
+
+    .hoverButton:hover {
+      background-color: #00145c;
+    }
+
+    .walletsSelector {
+      display: none;
+      padding: 12px 0;
+      position: absolute;
+      left: -30px;
+      top: 40px;
+      background-color: $background;
+      flex-direction: column;
+
+      .walletOption {
+        margin: 4px 0;
+        padding: 6px 24px;
+        color: $primary;
+      }
+
+      .walletOption:hover {
+        background-color: $accent-1;
+      }
+    }
+  }
+  .walletBtn:hover .walletsSelector {
+    display: block;
+  }
+
+  .walletBtn:hover .walletsSelector::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    cursor: pointer;
+    left: 52px;
+    border-bottom-color: $background;
+  }
+
+  .depositsBtn {
+    background-color: $accent-1;
+    cursor: pointer;
+    padding: 8px 21px;
+    margin-right: 50px;
+
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 $headerSd;
+    color: $primary;
+    opacity: 1;
+  }
+}
+
+.rightContent {
+  display: flex;
+  align-items: center;
+}
+
+/* link button */
+.linkBtn {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: -0.9px;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  margin: 0 11px;
+  color: $primary;
+  border-radius: 2px;
+}
+
+.linkBtn:hover {
+  background-color: $accent-1;
+}
+
+.linkBtn:active {
+  background-color: $background;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+.linkBtn.active {
+  background-color: $accent-1;
+}
+
+/* hover able */
+.hoverAble {
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
+.popupBody {
+  display: flex;
+  margin: 18px 11px 0;
+  padding-bottom: 18px;
+}
+
+.popupBody:hover a {
+  background-color: $accent-1;
+}
+
+.hoverBody {
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+
+.hoverFeed {
+  display: inline-flex;
+}
+
+.contentPopupBody {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: -0.9px;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  margin: 0;
+  color: $primary;
+  border-radius: 2px;
+  opacity: 1;
+  background-color: initial;
+  white-space: nowrap;
+}
+
+.contentPopupMain {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: -0.9px;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  margin: 0 11px;
+  color: $primary;
+  border-radius: 2px;
+}
+
+.contentPopupMain:hover {
+  background-color: $accent-1;
+  filter: grayscale(50%);
 }

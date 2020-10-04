@@ -7,6 +7,10 @@ import Balances from '../pages/Balances';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
 import ResetPassword from '../pages/User/ResetPassword';
+import Deposits from '../pages/Deposits';
+import Withdrawal from '../pages/Withdraw';
+import Order from '../pages/Orders';
+import TransactionsHistory from '../pages/TransactionsHistory';
 
 class App extends Component {
   constructor(props) {
@@ -38,6 +42,18 @@ class App extends Component {
           </Route>
           <Route path="/wallets/balances" exact>
             <Balances />
+          </Route>
+          <Route path="/wallets/deposits" exact>
+            <Deposits />
+          </Route>
+          <Route path="/wallets/withdrawals" exact>
+            <Withdrawal />
+          </Route>
+          <Route path="/wallets/orders" exact>
+            <Order />
+          </Route>
+          <Route path="/wallets/transactions" exact>
+            <TransactionsHistory />
           </Route>
         </Switch>
       </Router>
