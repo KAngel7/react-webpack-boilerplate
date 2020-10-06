@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import MarketTable from '../../components/MarketTable';
 
 const Home = () => {
   return (
@@ -225,6 +226,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <MarketTable />
       </main>
       <Footer />
     </>
