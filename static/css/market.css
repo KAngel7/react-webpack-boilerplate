@@ -51,7 +51,7 @@
   width: 120px;
   min-width: 120px;
   fill: #1e2026;
-  fill: #f0b90b;
+  fill: var(--accent);
   height: 24px;
   margin-right: 16px;
   margin-left: 24px;
@@ -66,11 +66,11 @@
 }
 
 .css-jvdpa0:hover .hoverstatus {
-  color: #f0b90b;
+  color: var(--accent);
 }
 
 .css-jvdpa0:hover .hoverstatus .icon-dropdown-arrow {
-  fill: #f0b90b;
+  fill: var(--accent);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -130,7 +130,7 @@
 }
 
 .css-1qqh4qo:hover {
-  color: #f0b90b;
+  color: var(--accent);
 }
 
 .css-nj7f4l {
@@ -203,7 +203,7 @@
 }
 
 .css-bynj8:hover {
-  color: #f0b90b;
+  color: var(--accent);
   background-color: rgba(255, 255, 255, 0.04);
 }
 
@@ -217,12 +217,12 @@
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  color: #f0b90b;
+  color: var(--accent);
   width: 34px;
   height: 34px;
   font-size: 34px;
   fill: #1e2026;
-  fill: #f0b90b;
+  fill: var(--accent);
   margin-right: 16px;
 }
 
@@ -404,7 +404,7 @@
 }
 
 .css-1uthvey:hover {
-  color: #f0b90b;
+  color: var(--accent);
 }
 
 @media screen and (min-width: 767px) {
@@ -430,7 +430,7 @@
   margin: 0;
   min-width: 0;
   display: inline-block;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   width: 6px;
   height: 6px;
   position: relative;
@@ -472,7 +472,7 @@
   -ms-flex-align: center;
   align-items: center;
   height: 16px;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   color: #212822;
   line-height: 16px;
   padding-left: 4px;
@@ -494,7 +494,7 @@
   border-bottom-width: 6px;
   border-left-width: 0;
   border-top-color: transparent;
-  border-right-color: #f0b90b;
+  border-right-color: var(--accent);
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
@@ -521,11 +521,11 @@
 }
 
 .css-1b4grqw:hover .hoverstatus {
-  color: #f0b90b;
+  color: var(--accent);
 }
 
 .css-1b4grqw:hover .hoverstatus svg {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 @media screen and (min-width: 767px) {
@@ -561,7 +561,7 @@
 }
 
 .css-g44r5b:hover svg {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-1mhvr59 {
@@ -614,12 +614,12 @@
 }
 
 .css-xht75r:hover {
-  color: #f0b90b;
+  color: var(--accent);
   background-color: rgba(255, 255, 255, 0.04);
 }
 
 .css-xht75r:hover svg {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-xht75r a:visited {
@@ -708,11 +708,11 @@
 }
 
 .css-lj1rmy:hover .hoverstatus {
-  color: #f0b90b;
+  color: var(--accent);
 }
 
 .css-lj1rmy:hover .hoverstatus svg {
-  fill: #f0b90b;
+  fill: var(--accent);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1264,7 +1264,7 @@
   height: 3px;
   position: absolute;
   bottom: 0px;
-  background-color: #f0b90b;
+  background-color: var(--accent);
 }
 
 .css-m48a0f {
@@ -1276,8 +1276,8 @@
   padding-left: 8px;
   padding-right: 8px;
   font-size: 14px;
-  background-color: #f0b90b30;
-  color: #f0b90b;
+  background-color: var(--accent);
+  color: var(--accent);
   margin-right: 8px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1390,7 +1390,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #f0b90b;
+  color: var(--accent);
   border-radius: 4px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1400,7 +1400,7 @@
   padding-right: 11px;
   background-color: transparent;
   box-shadow: none;
-  border-color: #f0b90b;
+  border-color: var(--accent);
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 12px;
@@ -1473,7 +1473,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #f0b90b;
+  color: var(--accent);
   border-radius: 4px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1483,7 +1483,7 @@
   padding-right: 11px;
   background-color: transparent;
   box-shadow: none;
-  border-color: #f0b90b;
+  border-color: var(--accent);
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 12px;
@@ -1610,7 +1610,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #f0b90b;
+  color: var(--accent);
   border-radius: 4px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1620,7 +1620,7 @@
   padding-right: 11px;
   background-color: transparent;
   box-shadow: none;
-  border-color: #f0b90b;
+  border-color: var(--accent);
   padding-left: 16px;
   padding-right: 8px;
   margin-right: 0;
@@ -1708,7 +1708,7 @@
 }
 
 .css-s6cz5e:hover input:not(:disabled) ~ svg {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-p19g2b {
@@ -1735,7 +1735,7 @@
 }
 
 input:checked ~ .css-17xslwz {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-bjja6t {
@@ -1765,7 +1765,7 @@ input:disabled:checked ~ .css-bjja6t {
 }
 
 input:checked ~ .css-bjja6t {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-1k3v5mn {
@@ -1795,7 +1795,7 @@ input:disabled ~ .css-1k3v5mn {
 }
 
 input:checked ~ .css-1k3v5mn {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-hrn2ln {
@@ -1840,11 +1840,11 @@ input:checked ~ .css-1k3v5mn {
 }
 
 .css-19vqqm3:hover:not(.bn-input-status-disabled):not(.bn-input-status-error) {
-  border-color: #f0b90b;
+  border-color: var(--accent);
 }
 
 .css-19vqqm3.bn-input-status-focus {
-  border-color: #f0b90b;
+  border-color: var(--accent);
 }
 
 .css-19vqqm3.bn-input-status-disabled {
@@ -2392,8 +2392,8 @@ input:checked ~ .css-1k3v5mn {
   font-size: 12px;
   border-radius: 2px;
   line-height: 14px;
-  color: #f0b90b;
-  border: 1px solid #f0b90b;
+  color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 @media screen and (min-width: 767px) {
@@ -2815,7 +2815,7 @@ input:checked ~ .css-1k3v5mn {
   border: none;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   outline: none;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -3031,7 +3031,7 @@ input:checked ~ .css-1k3v5mn {
   border: none;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   outline: none;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -3121,7 +3121,7 @@ input:checked ~ .css-1k3v5mn {
   border: none;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   outline: none;
   padding-top: 8px;
   padding-bottom: 8px;

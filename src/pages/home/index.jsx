@@ -27,13 +27,15 @@ const Home = () => {
                     value=""
                   />
                 </div>
-                <button
-                  type="button"
-                  aria-label="register"
-                  className="css-uegzd2"
-                >
-                  Đăng ký
-                </button>
+                <a href="/register">
+                  <button
+                    type="button"
+                    aria-label="register"
+                    className="css-uegzd2"
+                  >
+                    Đăng ký
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -41,7 +43,7 @@ const Home = () => {
             <div className="css-1jqjm4r">
               <div className="css-ax4m09">
                 <a
-                  href="https://www.binance.com/vn/support/announcement/cd1801311ead4829afe2ac29a8eceb49"
+                  href="/support/announcement/cd1801311ead4829afe2ac29a8eceb49"
                   aria-label="detail"
                   className="css-n876bn"
                 >
@@ -57,8 +59,8 @@ const Home = () => {
                     ></path>
                   </svg>
                   <div type="text" className="css-vurnku">
-                    Binance Futures sẽ triển khai Hợp đồng Tương lai Vĩnh cửu
-                    HNT ký quỹ bằng USDT với đòn bẩy lên đến 50x
+                    BNX Futures sẽ triển khai Hợp đồng Tương lai Vĩnh cửu HNT ký
+                    quỹ bằng USDT với đòn bẩy lên đến 50x
                   </div>
                   <div type="text" className="css-waz29z">
                     09-28
@@ -67,7 +69,7 @@ const Home = () => {
                 <div className="css-1h0sz7g"></div>
                 <a
                   aria-label="more"
-                  href="/vn/support/announcement"
+                  href="/support/announcement"
                   className="css-mmpluh"
                 >
                   <div type="text" className="css-vurnku">
@@ -121,16 +123,16 @@ const Home = () => {
                     Di động
                   </div>
                   <div type="text" className="css-3tyy06">
-                    Toàn bộ sức mạnh của sàn giao dịch tiền mã hoá Binance giờ
-                    nằm gọn trong bàn tay của bạn. Tải ứng dụng giao dịch tiền
-                    mã hoá của Binance ngay hôm nay.
+                    Toàn bộ sức mạnh của sàn giao dịch tiền mã hoá BNX giờ nằm
+                    gọn trong bàn tay của bạn. Tải ứng dụng giao dịch tiền mã
+                    hoá của BNX ngay hôm nay.
                   </div>
                   <div className="css-18mnkst">
                     <div className="css-q2wk8b">
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://play.google.com/store/apps/details?id=com.binance.dev"
+                        href="https://play.google.com/store/apps/details?id=com.BNX.dev"
                         aria-label="google"
                         className="css-vurnku"
                       >
@@ -143,7 +145,7 @@ const Home = () => {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://ftp.binance.com/pack/Binance.apk"
+                        href="/"
                         aria-label="android"
                         className="css-vurnku"
                       >
@@ -156,7 +158,7 @@ const Home = () => {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://apps.apple.com/hk/app/binance/id1436799971?l=en"
+                        href="/"
                         aria-label="appStore"
                         className="css-vurnku"
                       >
@@ -238,15 +240,15 @@ const Home = () => {
                   </div>
                   <div type="text" className="css-3tyy06">
                     Nền tảng giao dịch tiền mã hoá mạnh mẽ dành cho những người
-                    nghiêm túc. Trải nghiệm giao dịch tiền mã hoá trên Binance
-                    được thiết kế riêng cho thiết bị Windows hoặc macOS.
+                    nghiêm túc. Trải nghiệm giao dịch tiền mã hoá trên BNX được
+                    thiết kế riêng cho thiết bị Windows hoặc macOS.
                   </div>
                   <div className="css-18mnkst">
                     <div className="css-q2wk8b">
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://ftp.binance.com/electron-desktop/mac/production/binance.dmg"
+                        href="/"
                         aria-label="mac os"
                         className="css-vurnku"
                       >
@@ -259,7 +261,7 @@ const Home = () => {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://ftp.binance.com/electron-desktop/windows/production/binance-setup.exe"
+                        href="/"
                         aria-label="windows"
                         className="css-vurnku"
                       >
@@ -272,7 +274,7 @@ const Home = () => {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://ftp.binance.com/pc_pack/Binance.exe"
+                        href="/"
                         aria-label="windows"
                         className="css-vurnku"
                       >
@@ -303,9 +305,8 @@ const Home = () => {
                     API
                   </div>
                   <div type="text" className="css-3tyy06">
-                    API của Binance được thiết kế để tích hợp ứng dụng giao dịch
-                    của bạn vào nền tảng của chúng tôi một cách đơn giản và dễ
-                    dàng.
+                    API của BNX được thiết kế để tích hợp ứng dụng giao dịch của
+                    bạn vào nền tảng của chúng tôi một cách đơn giản và dễ dàng.
                   </div>
                   <div className="css-18mnkst">
                     <div className="css-1ql84je">
@@ -324,10 +325,10 @@ const Home = () => {
                         type="link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://binance-docs.github.io/apidocs/spot/en"
+                        href="https://BNX-docs.github.io/apidocs/spot/en"
                         className={`css-tb63ef ${style.deco1}`}
                       >
-                        Tài liệu API chính thức của Binance
+                        Tài liệu API chính thức của BNX
                       </a>
                     </div>
                   </div>
@@ -344,7 +345,7 @@ const Home = () => {
                 <div className="css-mg2jj3">
                   <a
                     aria-label="Hỗ trợ khách hàng 24/7"
-                    href="/vn/support"
+                    href="/support"
                     className="css-4qu1jq"
                   >
                     <div className="css-1c1ahuy">
@@ -360,15 +361,11 @@ const Home = () => {
                   </a>
                   <div type="text" className="css-xtxu3e">
                     Bạn đang gặp vấn đề? Liên lạc với chúng tôi ngay. Đội ngũ hỗ
-                    trợ của Binance luôn túc trực 24/7.
+                    trợ của BNX luôn túc trực 24/7.
                   </div>
                 </div>
                 <div className="css-mg2jj3">
-                  <a
-                    aria-label="Binance Blog"
-                    href="/vn/blog"
-                    className="css-4qu1jq"
-                  >
+                  <a aria-label="BNX Blog" href="/blog" className="css-4qu1jq">
                     <div className="css-1c1ahuy">
                       <div
                         className="lozad-load css-wmy69a"
@@ -377,7 +374,7 @@ const Home = () => {
                       ></div>
                     </div>
                     <div type="text" className="css-1lmrg27">
-                      Binance Blog
+                      BNX Blog
                     </div>
                   </a>
                   <div type="text" className="css-xtxu3e">
@@ -388,7 +385,7 @@ const Home = () => {
                 <div className="css-mg2jj3">
                   <a
                     aria-label="Cộng đồng"
-                    href="/vn/community"
+                    href="/community"
                     className="css-4qu1jq"
                   >
                     <div className="css-1c1ahuy">
@@ -403,14 +400,14 @@ const Home = () => {
                     </div>
                   </a>
                   <div type="text" className="css-xtxu3e">
-                    Binance phủ sóng toàn cầu. Tham gia thảo luận ngay với cộng
-                    đồng của chúng tôi trên khắp thế giới.
+                    BNX phủ sóng toàn cầu. Tham gia thảo luận ngay với cộng đồng
+                    của chúng tôi trên khắp thế giới.
                   </div>
                 </div>
                 <div className="css-mg2jj3">
                   <a
                     aria-label="Cơ hội nghề nghiệp"
-                    href="/vn/career"
+                    href="/career"
                     className="css-4qu1jq"
                   >
                     <div className="css-1c1ahuy">
@@ -426,7 +423,7 @@ const Home = () => {
                   </a>
                   <div type="text" className="css-xtxu3e">
                     Giúp xây dựng tương lai của công nghệ. Bắt đầu sự nghiệp của
-                    bạn tại Binance.
+                    bạn tại BNX.
                   </div>
                 </div>
               </div>
@@ -441,13 +438,13 @@ const Home = () => {
                 type="button"
                 aria-label="register"
                 className="css-1iaeli2"
-                href="https://accounts.binance.com/vn/register"
+                href="/register"
               >
                 Đăng ký
               </a>
               <a
                 type="button"
-                href="/vn/trade/BTC_USDT"
+                href="/trading/BTC_USDT"
                 aria-label="trade"
                 className="css-8zzrcx"
               >

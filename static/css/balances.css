@@ -488,13 +488,7 @@ tr.introjs-showElement > th {
 }
 
 .styles_body__tAox4 {
-  padding: 0 12px;
-}
-
-@media (min-width: 768px) {
-  .styles_body__tAox4 {
-    padding: 0;
-  }
+  padding: 41px 12px 0 12px;
 }
 
 .styles_item__wE37l {

@@ -34,7 +34,7 @@ class App extends Component {
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/trading">
+          <Route path="/trading/:pair?">
             <Trading />
           </Route>
           <Route path="/markets" exact>

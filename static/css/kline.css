@@ -204,7 +204,7 @@
 }
 
 .draw-tool-item.active svg path {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .kline-draw-panel_down::after {
@@ -225,7 +225,7 @@
 }
 
 .kline-wrap .kline-draw-panel .kline-draw-panel_down:hover::after {
-  border-color: #f0b90b;
+  border-color: var(--accent);
 }
 
 .kline-wrap.dark .kline-draw-panel_down::after {
@@ -264,7 +264,7 @@
 }
 
 .kline-wrap .kline-draw-panel .kline-draw-panel_hidden:hover {
-  background: #f0b90b;
+  background: var(--accent);
   color: #1e2026;
 }
 

@@ -1,3 +1,7 @@
+#app {
+  padding-top: 64px;
+}
+
 #__APP {
   height: auto !important;
   overflow-x: hidden;
@@ -617,7 +621,7 @@ tr.rc-table-expanded-row:hover {
   padding: 4px 16px;
   min-height: 32px;
   border: none;
-  background-color: rgb(240, 185, 11);
+  background-color: var(--accent);
   font-size: 14px;
   font-weight: 400;
   line-height: 1;

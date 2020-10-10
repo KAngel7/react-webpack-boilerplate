@@ -7,7 +7,7 @@ const Balances = () => {
     <>
       <Header />
       <div className="styles_body__2t5HW  styles_haveFooter__2fJ9r">
-        <link rel="stylesheet" type="text/css" href="/css/core-liquid.css" />
+        <link type="text/css" href="/css/deposits.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="/css/balances.css" />
         <div className="styles_main__21Z6r" id="p-wallets">
           <div id="p-wallets--menu--main" className="styles_main__L5OqJ">
