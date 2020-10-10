@@ -9,20 +9,17 @@ const Footer = () => (
             <div data-bn-type="text" className="css-1jsf87b">
               Về chúng tôi
             </div>
-            <a href="https://www.binance.com/vn/blog" className="css-1rf5m8d">
+            <a href="/blog" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
-                Binance Blog{' '}
+                BNX Blog{' '}
               </div>
             </a>
-            <a href="https://www.binance.com/vn/terms" className="css-1rf5m8d">
+            <a href="/terms" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 Điều khoản{' '}
               </div>
             </a>
-            <a
-              href="https://www.binance.com/vn/privacy"
-              className="css-1rf5m8d"
-            >
+            <a href="/privacy" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 Riêng tư{' '}
               </div>
@@ -34,36 +31,27 @@ const Footer = () => (
             <div data-bn-type="text" className="css-1jsf87b">
               Dịch vụ
             </div>
-            <a
-              href="https://www.binance.com/vn/buy-sell-crypto"
-              className="css-1rf5m8d"
-            >
+            <a href="/buy-sell-crypto" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 Mua tiền mã hóa{' '}
               </div>
             </a>
-            <a
-              href="https://www.binance.com/vn/fee/schedule"
-              className="css-1rf5m8d"
-            >
+            <a href="/fee/schedule" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 Phí giao dịch{' '}
               </div>
             </a>
-            <a
-              href="https://www.binance.com/vn/activity/referral"
-              className="css-1rf5m8d"
-            >
+            <a href="/activity/referral" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 Giới thiệu{' '}
               </div>
             </a>
-            <a href="https://www.binance.com/vn/bnb" className="css-1rf5m8d">
+            <a href="/bnb" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 BNB{' '}
               </div>
             </a>
-            <a href="https://www.binance.com/vn/busd" className="css-1rf5m8d">
+            <a href="/busd" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 Mua BUSD{' '}
               </div>
@@ -75,18 +63,12 @@ const Footer = () => (
             <div data-bn-type="text" className="css-1jsf87b">
               Hỗ trợ
             </div>
-            <a
-              href="https://www.binance.com/vn/support"
-              className="css-1rf5m8d"
-            >
+            <a href="/support" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 Trung tâm trợ giúp{' '}
               </div>
             </a>
-            <a
-              href="https://www.binance.com/vn/support/requests/new"
-              className="css-1rf5m8d"
-            >
+            <a href="/support/requests/new" className="css-1rf5m8d">
               <div data-bn-type="text" className="css-1cjl26j">
                 Gửi yêu cầu hỗ trợ{' '}
               </div>
@@ -100,7 +82,7 @@ const Footer = () => (
         </div>
         <div className="css-vurnku">
           <a
-            href="https://www.binance.com/vn/community"
+            href="/community"
             className="css-132wsgo"
           >
             <svg
@@ -169,14 +151,14 @@ const Footer = () => (
         </div>
       </div> */}
     </div>
-    <div className="css-1jcqx7s">
+    {/* <div className="css-1jcqx7s">
       <h4 data-bn-type="text" className="css-90tmb0">
         Cộng đồng
       </h4>
-    </div>
+    </div> */}
     <div className="css-19590jh">
       <div data-bn-type="text" className="css-1n6gnxm">
-        © 2017 - 2020 Binance.com. All rights reserved
+        © 2020 BNX. All rights reserved
       </div>
     </div>
   </footer>

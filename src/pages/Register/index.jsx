@@ -15,7 +15,7 @@ const Register = () => {
                   Tạo tài khoản miễn phí
                 </div>
                 <div data-bn-type="text" className="css-glhroo">
-                  Chào mừng đến với Binance
+                  Chào mừng đến với BNX
                 </div>
               </div>
               <div className="css-vurnku">
@@ -173,11 +173,11 @@ const Register = () => {
                           <div className="css-1yig44t">
                             Tôi đã đọc và đồng ý với Điều khoản Dịch vụ&nbsp;
                             <a
-                              href="https://www.binance.com/vn/terms"
+                              href="/terms"
                               id="RegisterForm-a-termsOfUse"
                               className="css-vurnku"
                             >
-                              Điều khoản của Binance
+                              Điều khoản của BNX
                             </a>
                           </div>
                         </label>
@@ -209,7 +209,7 @@ const Register = () => {
             </div>
           </main>
           <div data-bn-type="text" className="css-1aw68ke">
-            © 2017 - 2020 Binance.com. All rights reserved
+            © 2020 BNX. All rights reserved
           </div>
         </div>
       </div>

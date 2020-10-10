@@ -175,7 +175,7 @@
   outline: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: rgb(240, 185, 11);
+  color: var(--accent);
 }
 
 .css-c350kw {
@@ -226,7 +226,7 @@
   outline: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: rgb(240, 185, 11);
+  color: var(--accent);
 }
 
 .css-49kyll {
@@ -360,8 +360,8 @@
 
 .css-74gvqa.active {
   border-bottom: 3px solid;
-  border-color: #f0b90b;
-  color: #f0b90b;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .css-74gvqa.active {
@@ -478,11 +478,11 @@
 }
 
 .css-wng3sm:hover:not(.bn-input-status-disabled):not(.bn-input-status-error) {
-  border-color: #f0b90b;
+  border-color: var(--accent);
 }
 
 .css-wng3sm.bn-input-status-focus {
-  border-color: #f0b90b;
+  border-color: var(--accent);
 }
 
 .css-wng3sm.bn-input-status-disabled {
@@ -766,7 +766,7 @@
 }
 
 .css-s6cz5e:hover input:not(:disabled) ~ svg {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-p19g2b {
@@ -796,7 +796,7 @@
 }
 
 input:checked ~ .css-13xzh44 {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-mkf9mu {
@@ -829,7 +829,7 @@ input:disabled:checked ~ .css-mkf9mu {
 }
 
 input:checked ~ .css-mkf9mu {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-2s0lax {
@@ -862,7 +862,7 @@ input:disabled ~ .css-2s0lax {
 }
 
 input:checked ~ .css-2s0lax {
-  fill: #f0b90b;
+  fill: var(--accent);
 }
 
 .css-1yig44t {
@@ -879,7 +879,7 @@ input:checked ~ .css-2s0lax {
 .css-1yig44t a {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #f0b90b;
+  color: var(--accent);
 }
 
 .css-1yig44t a:hover {
@@ -933,7 +933,7 @@ input:checked ~ .css-2s0lax {
   border: none;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   width: 100%;
   height: 40px;
 }
@@ -974,7 +974,7 @@ input:checked ~ .css-2s0lax {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   height: 100%;
   width: 3px;
   -webkit-animation: animation-hqgv56 1.2s infinite ease-in-out;
@@ -1019,7 +1019,7 @@ input:checked ~ .css-2s0lax {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   height: 100%;
   width: 3px;
   -webkit-animation: animation-hqgv56 1.2s infinite ease-in-out;
@@ -1064,7 +1064,7 @@ input:checked ~ .css-2s0lax {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   height: 100%;
   width: 3px;
   -webkit-animation: animation-hqgv56 1.2s infinite ease-in-out;
@@ -1109,7 +1109,7 @@ input:checked ~ .css-2s0lax {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  background-color: #f0b90b;
+  background-color: var(--accent);
   height: 100%;
   width: 3px;
   -webkit-animation: animation-hqgv56 1.2s infinite ease-in-out;

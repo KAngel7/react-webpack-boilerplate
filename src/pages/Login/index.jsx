@@ -32,9 +32,8 @@ const Login = () => {
                   </div>
                   <div dir="ltr" className="css-vurnku">
                     <span data-bn-type="text" className="css-17gij7">
-                      https://
+                      BNX
                     </span>
-                    accounts.binance.com
                   </div>
                 </div>
               </div>
@@ -140,7 +139,7 @@ const Login = () => {
           </div>
         </main>
         <div data-bn-type="text" className="css-1aw68ke">
-          © 2017 - 2020 Binance.com. All rights reserved
+          © 2020 BNX. All rights reserved
         </div>
       </div>
     </>

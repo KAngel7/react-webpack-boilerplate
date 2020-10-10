@@ -82,7 +82,7 @@ const ResetPassword = () => {
           <div />
         </main>
         <div data-bn-type="text" className="css-1aw68ke">
-          © 2017 - 2020 Binance.com. All rights reserved
+          © 2020 BNX. All rights reserved
         </div>
       </div>
     </>

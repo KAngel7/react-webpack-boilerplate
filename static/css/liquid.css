@@ -702,14 +702,14 @@
   --primary-1: rgba(229, 233, 240, 0.06);
   --primary-tip: #e2e6ee;
   --accent: #f0b90b;
-  --accent-3: #3c497c;
-  --accent-2: rgba(0, 85, 255, 0.4);
-  --accent-1: rgba(0, 85, 255, 0.2);
+  --accent-3: #f0b90b;
+  --accent-2: #f0b90b;
+  --accent-1: #f0b90b;
   --border: #50525c;
-  --border-sdw: #03145e;
+  --border-sdw: #f0b90b;
   --header: #303137;
   --header-sd: hsla(var(--black));
-  --spot: #2348b8;
+  --spot: #f0b90b;
   --active: #0ee1e1;
   --gradient-left: #00145c;
   --gradient-bottom: #020c3b;
@@ -1152,7 +1152,6 @@
 
 .styles_mainLogo__35aF6 {
   display: inline-block;
-  padding: 16px;
   cursor: pointer;
 }
 
