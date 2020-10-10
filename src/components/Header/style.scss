@@ -1,27 +1,27 @@
-a,
-a:active,
-a:visited {
-  text-decoration: none;
-  color: #e5e9f0;
-}
-$primary: #e5e9f0;
-$header: #0a1b66;
-$gradient-left: #00145c;
-$accent-1: rgba(0, 85, 255, 0.2);
-$background: #020c3b;
-$headerSd: hsla(0, 0%, 0%, 1);
-
 .basic {
   margin-top: 10rem;
   font-size: 2rem;
   text-align: center;
 }
 
+$primary: #e5e9f0;
+$header: #0a1b66;
+$gradient-left: #00145c;
+$accent-1: rgba(0, 85, 255, 0.2);
+$background: #020c3b;
+$headerSd: hsla(0, 0%, 0%, 1);
 .header {
+  a,
+  a:active,
+  a:visited {
+    text-decoration: none;
+    color: #e5e9f0;
+  }
+
   margin: 0;
   min-width: 0;
   display: flex;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1001;

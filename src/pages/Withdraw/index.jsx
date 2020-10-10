@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 const Withdrawal = () => {
   return (
     <main>
+      <link type="text/css" href="/css/deposits.css" rel="stylesheet" />
       <Header />
       <div className="styles_body__2t5HW  styles_haveFooter__2fJ9r">
         <div className="styles_main__21Z6r" id="p-wallets">

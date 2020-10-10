@@ -3,7 +3,8 @@ import React from 'react';
 
 const Trading = () => {
   return (
-    <>
+    <div>
+      <link type="text/css" href="/css/deposits.css" rel="stylesheet" />
       <link rel="stylesheet" type="text/css" href="./css/core-liquid.css" />
       <div id="top-menu" className="styles_menu__hioJE styles_fixed__3VPAK">
         <div className="styles_main__1Yig1 styles_wrapperMainMenu__3hD9h">
@@ -1090,7 +1091,7 @@ const Trading = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

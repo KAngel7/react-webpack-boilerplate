@@ -67,7 +67,7 @@ const Header = props => {
                 <a
                   id="quick-exchange-nav--fund-title--link"
                   className="styles_contentPopBody__2AtB2 styles_main__159n1 styles_active__2Qw29"
-                  href="/wallets"
+                  href="/wallets/balances"
                 >
                   Wallets
                 </a>
