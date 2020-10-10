@@ -464,6 +464,13 @@ tr.introjs-showElement > th {
 
 .styles_main__L5OqJ {
   height: 44px;
+  overflow: hidden;
+  width: 100%;
+  z-index: 60;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  border-bottom: 1px solid var(--primary-1);
 }
 
 .styles_content__1UzFF {
