@@ -26,3 +26,4 @@ package-lock.json
 /build/*
 # Editor/IDE
 .idea
+dev-all.pem
