@@ -4,7 +4,7 @@ import style from './style.scss';
 
 const tableData = [
   {
-    tradingLink: '/vn/trade/BNB_USDT',
+    tradingLink: '/trading/BNB_USDT',
     src: './images/home/coin-logo/BNB.png',
     shortName: 'BNB',
     longName: 'BNB',
@@ -13,7 +13,7 @@ const tableData = [
     chartSrc: './kline/BNBUSDT.svg',
   },
   {
-    tradingLink: '/vn/trade/BTC_USDT',
+    tradingLink: '/trading/BTC_USDT',
     src: './images/home/coin-logo/BTC.png',
     shortName: 'BTC',
     longName: 'Bitcoin',
@@ -22,40 +22,13 @@ const tableData = [
     chartSrc: './kline/BTCUSDT.svg',
   },
   {
-    tradingLink: '/vn/trade/ETH_USDT',
+    tradingLink: '/trading/ETH_USDT',
     src: './images/home/coin-logo/ETH.png',
     shortName: 'ETH',
     longName: 'Ethereum',
     latestPrice: '₫8,224,632.91',
     changeRate: -0.43,
     chartSrc: './kline/ETHUSDT.svg',
-  },
-  {
-    tradingLink: '/vn/trade/XRP_USDT',
-    src: './images/home/coin-logo/XRP.png',
-    shortName: 'XRP',
-    longName: 'Ripple',
-    latestPrice: '₫5,637.87',
-    changeRate: 0.12,
-    chartSrc: './kline/XRPUSDT.svg',
-  },
-  {
-    tradingLink: '/vn/trade/BCH_USDT',
-    src: './images/home/coin-logo/BCH.png',
-    shortName: 'BCH',
-    longName: 'Bitcoin Cash',
-    latestPrice: '₫5,250,022.18',
-    changeRate: -0.98,
-    chartSrc: './kline/BCHUSDT.svg',
-  },
-  {
-    tradingLink: '/vn/trade/LTC_USDT',
-    src: './images/home/coin-logo/LTC.png',
-    shortName: 'LTC',
-    longName: 'Litecoin',
-    latestPrice: '₫1,055,290.16',
-    changeRate: -1.26,
-    chartSrc: './kline/LTCUSDT.svg',
   },
 ];
 

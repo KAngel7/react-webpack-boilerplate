@@ -128,7 +128,7 @@ const Header = () => {
           target="_self"
           id="ba-tableMarkets"
           href="/markets"
-          className="css-1t0260p"
+          className="css-1t0260p css-1qqh4qo"
         >
           Thị trường
         </a>
@@ -137,20 +137,22 @@ const Header = () => {
         <div className="styles_right__2p6KI">
           <div className="styles_rightContent__2wL9Y">
             <a
-              id="quick-exchange-nav--wallets-orders--link"
-              className="styles_main__159n1"
+              target="_self"
+              id="ba-tableMarkets"
               href="/wallets/orders"
+              className="css-1t0260p css-1qqh4qo"
             >
-              Orders
+              Lệnh mua/bán
             </a>
             <div className="styles_main__3EaD8 styles_left__2P1Kf styles_hoverable__2YTrJ">
               <div className="styles_body__3dd1F styles_popupBody__2dnU5 styles_feed__1T7yq">
                 <a
-                  id="quick-exchange-nav--fund-title--link"
-                  className="styles_contentPopBody__2AtB2 styles_main__159n1 styles_active__2Qw29"
+                  target="_self"
+                  id="ba-tableMarkets"
                   href="/wallets/balances"
+                  className="css-1t0260p css-1qqh4qo"
                 >
-                  Wallets
+                  Ví của tôi
                 </a>
               </div>
               <div className="styles_content__2DpoO styles_popupContent__20--_ styles_arrowUp__VLlKP">
@@ -161,7 +163,7 @@ const Header = () => {
                       className="styles_itemDropdown__EBiWd styles_main__159n1"
                       href="/wallets/balances"
                     >
-                      Balances
+                      Số dư
                     </a>
                   </li>
                   <li>
@@ -170,7 +172,7 @@ const Header = () => {
                       className="styles_itemDropdown__EBiWd styles_main__159n1"
                       href="/wallets/withdrawals"
                     >
-                      Withdrawals
+                      Rút tiền
                     </a>
                   </li>
                   <li>
@@ -179,18 +181,19 @@ const Header = () => {
                       className="styles_itemDropdown__EBiWd styles_main__159n1 styles_active__2Qw29"
                       href="/wallets/transactions"
                     >
-                      Transactions History
+                      Lịch sử giao dịch
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
             <a
-              id="quick-exchange-nav--wallets-deposits--link"
-              className="styles_walletsDeposits__CbGeZ styles__buttonInNav__JD0Hw styles_main__159n1"
+              target="_self"
+              id="ba-tableMarkets"
               href="/wallets/deposits"
+              className="css-1t0260p css-1qqh4qo"
             >
-              Deposits
+              Nạp tiền
             </a>
             <span className="styles_divider__3c7k5">|</span>
           </div>
@@ -261,48 +264,10 @@ const Header = () => {
                     className="styles_itemLinkProfileUser__-3t2u styles_main__159n1"
                     href="/settings/profile"
                   >
-                    My Profile
-                  </a>
-                </li>
-                <li className="styles_itemLink__1Pvgv">
-                  <a
-                    id="--application-settings--link"
-                    className="styles_itemLinkProfileUser__-3t2u styles_main__159n1"
-                    href="/settings/application"
-                  >
-                    Application Settings
-                  </a>
-                </li>
-                <li className="styles_itemLink__1Pvgv">
-                  <a
-                    id="--settings-security--link"
-                    className="styles_itemLinkProfileUser__-3t2u styles_main__159n1"
-                    href="/settings/security"
-                  >
-                    Security
-                  </a>
-                </li>
-                <li className="styles_itemLink__1Pvgv">
-                  <a
-                    id="--settings-fees--link"
-                    className="styles_itemLinkProfileUser__-3t2u styles_main__159n1"
-                    href="/settings/fees"
-                  >
-                    Fees
+                    Thông tin tài khoản
                   </a>
                 </li>
               </ul>
-              <div>
-                <a
-                  id="quick-exchange-nav--user--customer-support--a-link"
-                  href="https://help.liquid.com"
-                  className="styles_itemLinkProfileUser__-3t2u styles_main__159n1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Customer Support
-                </a>
-              </div>
               <a
                 id="quick-exchange-nav--user--log-out--link"
                 className="styles_itemLinkProfileUserLogout__c6lyd styles_main__159n1"
@@ -318,7 +283,7 @@ const Header = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Logout
+                Đăng xuất
               </a>
             </div>
           </div>

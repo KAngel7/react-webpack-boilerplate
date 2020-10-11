@@ -772,9 +772,9 @@
   --accent-2: #f0b90b;
   --accent-1: #f0b90b;
   --border: #50525c;
-  --border-sdw: #f0b90b;
+  --border-sdw: #292825;
   --header: #12161c;
-  --spot: #2a9ff8;
+  --spot: #f0b90b;
   --active: #22ce9a;
   --gradient-left: #1c2331;
   --gradient-bottom: #131720;
@@ -903,19 +903,7 @@
   border-radius: 2px;
 }
 
-.styles_main__159n1:hover {
-  background-color: var(--accent-1);
-}
 
-.styles_main__159n1:active {
-  background-color: var(--background);
-  -webkit-filter: grayscale(50%);
-  filter: grayscale(50%);
-}
-
-.styles_main__159n1.styles_active__2Qw29 {
-  background-color: var(--accent-1);
-}
 
 .styles_wrapperLeft__1tYJ5 {
   display: flex;
@@ -999,10 +987,6 @@
   padding-bottom: 18px;
 }
 
-.styles_popupBody__2dnU5:hover a {
-  background-color: var(--accent-1);
-}
-
 .styles_contentPopBody__2AtB2 {
   display: inline-block;
   font-size: 14px;
@@ -1070,7 +1054,7 @@
 }
 
 .styles_itemDropdown__EBiWd:hover {
-  background-color: var(--accent-1);
+  color: var(--accent-1);
 }
 
 .styles_itemDropdownCreditCard__19IHJ {
@@ -1356,8 +1340,12 @@
   align-items: center;
   flex-direction: column;
   padding: 24px;
-  background-color: var(--accent-1);
+  background-color: var(--header);
   border-radius: 4px 4px 0 0;
+}
+
+.styles_main__159n1:hover {
+  color: var(--accent);
 }
 
 .styles_contentProfileUser__1MHyh {
@@ -1382,7 +1370,6 @@
 .styles_nameProfileUser__yMp0W {
   font-size: 20px;
   font-weight: 500;
-  line-height: 0.9;
 }
 
 .styles_emailProfileUser__2qeNF,
@@ -1415,6 +1402,7 @@
 
 .styles_userStatus__3xnee {
   margin-right: 4px;
+  color: var(--accent);
 }
 
 .styles_buttonVerify__3en92 {
@@ -1484,14 +1472,6 @@
   margin: 8px 0;
 }
 
-.styles_itemLink__1Pvgv:after {
-  content: '';
-  display: block;
-  width: calc(100% - 60px);
-  margin: 0 30px;
-  border-bottom: 1px solid var(--accent-1);
-}
-
 .styles_itemLinkProfileUser__-3t2u {
   display: flex;
   width: 100%;
@@ -1505,7 +1485,7 @@
   width: 100%;
   margin: 0;
   padding: 23px 30px;
-  border-top: 1px solid var(--accent-1);
+  border-top: 1px solid var(--border);
 }
 
 @media screen and (min-width: 768px) {
@@ -3893,7 +3873,7 @@
     display: flex;
     width: 1px;
     margin: 24px 0;
-    background-color: var(--accent-2);
+    background-color: var(--border-sdw);
   }
 }
 

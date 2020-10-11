@@ -652,3 +652,14 @@ tr.rc-table-expanded-row:hover {
   align-items: center;
   color: rgb(255, 255, 255);
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 12px;
+  background: var(--header);
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb {
+  background: var(--primary-2);
+}

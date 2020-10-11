@@ -11,6 +11,7 @@ import Deposits from '../pages/Deposits';
 import Withdrawal from '../pages/Withdraw';
 import Order from '../pages/Orders';
 import TransactionsHistory from '../pages/TransactionsHistory';
+import Profile from '../pages/Profile';
 
 class App extends Component {
   constructor(props) {
@@ -54,6 +55,9 @@ class App extends Component {
           </Route>
           <Route path="/wallets/transactions" exact>
             <TransactionsHistory />
+          </Route>
+          <Route path="/settings/profile" exact>
+            <Profile />
           </Route>
         </Switch>
       </Router>

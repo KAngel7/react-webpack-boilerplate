@@ -473,14 +473,6 @@ tr.introjs-showElement > th {
   border-bottom: 1px solid var(--primary-1);
 }
 
-.styles_content__1UzFF {
-  height: 54px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  background-color: var(--header);
-  display: grid;
-}
-
 .styles_menus__1wHWh {
   margin: 0 auto;
   display: inline-block;

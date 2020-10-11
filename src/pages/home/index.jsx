@@ -24,7 +24,6 @@ const Home = () => {
                     type="input"
                     placeholder="Địa chỉ email"
                     className="css-137fk78"
-                    value=""
                   />
                 </div>
                 <a href="/register">
