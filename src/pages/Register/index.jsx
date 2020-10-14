@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
+import { register } from '../../services/apiv1/user';
 
 const Register = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const handleSubmitRegister = async () => {
+    const { status } = await register(email, password, firstName, lastName);
+    if (status === 200) {
+      // todo
+    }
+  };
   return (
     <>
       <Header />
@@ -19,8 +31,59 @@ const Register = () => {
                 </div>
               </div>
               <div className="css-vurnku">
-                <form action="#" autoComplete="off">
+                <form
+                  onSubmit={e => {
+                    e.preventDefault();
+                    handleSubmitRegister();
+                  }}
+                >
                   <div className="css-hlfj64">
+                    <div value className="css-15651n7">
+                      <div className="css-kc8d2n">
+                        <div data-bn-type="text" className="css-itrsu7">
+                          Tên
+                        </div>
+                      </div>
+                      <div className=" css-hiy16i">
+                        <div className=" css-wng3sm">
+                          <input
+                            data-bn-type="input"
+                            name="firstName"
+                            className="css-1thkju"
+                            value={firstName}
+                            onChange={e => setFirstName(e.currentTarget.value)}
+                          />
+                        </div>
+                      </div>
+                      <div
+                        data-bn-type="text"
+                        className="help_default css-jiaj3x"
+                      />
+                    </div>
+
+                    <div value className="css-15651n7">
+                      <div className="css-kc8d2n">
+                        <div data-bn-type="text" className="css-itrsu7">
+                          Họ
+                        </div>
+                      </div>
+                      <div className=" css-hiy16i">
+                        <div className=" css-wng3sm">
+                          <input
+                            data-bn-type="input"
+                            name="lastName"
+                            className="css-1thkju"
+                            value={lastName}
+                            onChange={e => setLastName(e.currentTarget.value)}
+                          />
+                        </div>
+                      </div>
+                      <div
+                        data-bn-type="text"
+                        className="help_default css-jiaj3x"
+                      />
+                    </div>
+
                     <div value className="css-15651n7">
                       <div className="css-kc8d2n">
                         <div data-bn-type="text" className="css-itrsu7">
@@ -31,10 +94,10 @@ const Register = () => {
                         <div className=" css-wng3sm">
                           <input
                             data-bn-type="input"
-                            readOnly
                             name="email"
                             className="css-1thkju"
-                            defaultValue
+                            value={email}
+                            onChange={e => setEmail(e.currentTarget.value)}
                           />
                         </div>
                       </div>
@@ -80,7 +143,8 @@ const Register = () => {
                               name="password"
                               type="password"
                               className="css-1thkju"
-                              defaultValue
+                              value={password}
+                              onChange={e => setPassword(e.currentTarget.value)}
                             />
                             <div className="bn-input-suffix css-vurnku">
                               <div className="css-1jdwzw9">
@@ -172,13 +236,13 @@ const Register = () => {
                           </div>
                           <div className="css-1yig44t">
                             Tôi đã đọc và đồng ý với Điều khoản Dịch vụ&nbsp;
-                            <a
-                              href="/terms"
+                            <Link
+                              to="/terms"
                               id="RegisterForm-a-termsOfUse"
                               className="css-vurnku"
                             >
                               Điều khoản của BNX
-                            </a>
+                            </Link>
                           </div>
                         </label>
                       </div>
@@ -195,14 +259,14 @@ const Register = () => {
                 </form>
                 <div className="css-1t7hq76">
                   Đã đăng ký rồi?&nbsp;
-                  <a
+                  <Link
                     data-bn-type="link"
                     id="RegisterForm-a-login"
                     className="css-13685xg"
-                    href="/login"
+                    to="/login"
                   >
                     Đăng nhập
-                  </a>
+                  </Link>
                 </div>
                 <div className="i-geetest" />
               </div>

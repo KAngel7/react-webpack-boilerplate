@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 
 const Withdrawal = () => {
@@ -12,49 +13,49 @@ const Withdrawal = () => {
             <div className="styles_content__1UzFF">
               <div className="styles_menus__1wHWh">
                 <div className="styles_main__2X3da">
-                  <a
+                  <Link
                     id="p-wallets--menu--balances"
                     className="styles_normal__2IiiS styles__link__38bS2"
-                    href="/wallets/balances"
+                    to="/wallets/balances"
                   >
                     Balance
-                  </a>
+                  </Link>
                 </div>
                 <div className="styles_main__2X3da">
-                  <a
+                  <Link
                     id="p-wallets--menu--deposits"
                     className="styles_normal__2IiiS styles__link__38bS2"
-                    href="/wallets/deposits"
+                    to="/wallets/deposits"
                   >
                     Deposits
-                  </a>
+                  </Link>
                 </div>
                 <div className="styles_main__2X3da">
-                  <a
+                  <Link
                     id="p-wallets--menu--withdrawals"
                     className="styles_normal__2IiiS styles__link__38bS2 styles_active__2Evxl styles__link__38bS2"
-                    href="/wallets/withdrawals"
+                    to="/wallets/withdrawals"
                   >
                     Withdrawals
-                  </a>
+                  </Link>
                 </div>
                 <div className="styles_main__2X3da">
-                  <a
+                  <Link
                     id="p-wallets--menu--orders"
                     className="styles_normal__2IiiS styles__link__38bS2"
-                    href="/wallets/orders"
+                    to="/wallets/orders"
                   >
                     Open Orders
-                  </a>
+                  </Link>
                 </div>
                 <div className="styles_main__2X3da">
-                  <a
+                  <Link
                     id="p-wallets--menu--transactions"
                     className="styles_normal__2IiiS styles__link__38bS2"
-                    href="/wallets/transactions"
+                    to="/wallets/transactions"
                   >
                     Transactions
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

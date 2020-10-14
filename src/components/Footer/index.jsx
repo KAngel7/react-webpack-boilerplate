@@ -1,88 +1,90 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Footer = () => (
-  <footer className="css-2qpcvm">
-    <div className="css-1tr0qpm">
-      <div className="css-138yzuf">
-        <div className="css-19ph8gz">
-          <div className="css-vurnku">
-            <div data-bn-type="text" className="css-1jsf87b">
-              Về chúng tôi
+const Footer = () => {
+  return (
+    <footer className="css-2qpcvm">
+      <div className="css-1tr0qpm">
+        <div className="css-138yzuf">
+          <div className="css-19ph8gz">
+            <div className="css-vurnku">
+              <div data-bn-type="text" className="css-1jsf87b">
+                Về chúng tôi
+              </div>
+              <Link to="/blog" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  BNX Blog{' '}
+                </div>
+              </Link>
+              <Link to="/terms" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  Điều khoản{' '}
+                </div>
+              </Link>
+              <Link to="/privacy" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  Riêng tư{' '}
+                </div>
+              </Link>
             </div>
-            <a href="/blog" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                BNX Blog{' '}
+          </div>
+          <div className="css-19ph8gz">
+            <div className="css-vurnku">
+              <div data-bn-type="text" className="css-1jsf87b">
+                Dịch vụ
               </div>
-            </a>
-            <a href="/terms" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                Điều khoản{' '}
+              <Link to="/buy-sell-crypto" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  Mua tiền mã hóa{' '}
+                </div>
+              </Link>
+              <Link to="/fee/schedule" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  Phí giao dịch{' '}
+                </div>
+              </Link>
+              <Link to="/activity/referral" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  Giới thiệu{' '}
+                </div>
+              </Link>
+              <Link to="/bnb" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  BNB{' '}
+                </div>
+              </Link>
+              <Link to="/busd" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  Mua BUSD{' '}
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="css-19ph8gz">
+            <div className="css-vurnku">
+              <div data-bn-type="text" className="css-1jsf87b">
+                Hỗ trợ
               </div>
-            </a>
-            <a href="/privacy" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                Riêng tư{' '}
-              </div>
-            </a>
+              <Link to="/support" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  Trung tâm trợ giúp{' '}
+                </div>
+              </Link>
+              <Link to="/support/requests/new" className="css-1rf5m8d">
+                <div data-bn-type="text" className="css-1cjl26j">
+                  Gửi yêu cầu hỗ trợ{' '}
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="css-19ph8gz">
-          <div className="css-vurnku">
-            <div data-bn-type="text" className="css-1jsf87b">
-              Dịch vụ
-            </div>
-            <a href="/buy-sell-crypto" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                Mua tiền mã hóa{' '}
-              </div>
-            </a>
-            <a href="/fee/schedule" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                Phí giao dịch{' '}
-              </div>
-            </a>
-            <a href="/activity/referral" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                Giới thiệu{' '}
-              </div>
-            </a>
-            <a href="/bnb" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                BNB{' '}
-              </div>
-            </a>
-            <a href="/busd" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                Mua BUSD{' '}
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="css-19ph8gz">
-          <div className="css-vurnku">
-            <div data-bn-type="text" className="css-1jsf87b">
-              Hỗ trợ
-            </div>
-            <a href="/support" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                Trung tâm trợ giúp{' '}
-              </div>
-            </a>
-            <a href="/support/requests/new" className="css-1rf5m8d">
-              <div data-bn-type="text" className="css-1cjl26j">
-                Gửi yêu cầu hỗ trợ{' '}
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      {/* <div className="css-1ti7za9">
+        {/* <div className="css-1ti7za9">
         <div data-bn-type="text" className="css-1jsf87b">
           Cộng đồng
         </div>
         <div className="css-vurnku">
-          <a
-            href="/community"
+          <Link
+            to="/community"
             className="css-132wsgo"
           >
             <svg
@@ -92,7 +94,7 @@ const Footer = () => (
             >
               <use xlinkHref="#icon-h-telegram"></use>
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="css-ybbx55">
           <button type="button" className="css-1h70oqo">
@@ -150,18 +152,19 @@ const Footer = () => (
           </div>
         </div>
       </div> */}
-    </div>
-    {/* <div className="css-1jcqx7s">
+      </div>
+      {/* <div className="css-1jcqx7s">
       <h4 data-bn-type="text" className="css-90tmb0">
         Cộng đồng
       </h4>
     </div> */}
-    <div className="css-19590jh">
-      <div data-bn-type="text" className="css-1n6gnxm">
-        © 2020 BNX. All rights reserved
+      <div className="css-19590jh">
+        <div data-bn-type="text" className="css-1n6gnxm">
+          © 2020 BNX. All rights reserved
+        </div>
       </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 export default Footer;

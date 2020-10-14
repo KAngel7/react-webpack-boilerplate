@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { AuthContextProvider } from '../services/context';
+
 import Home from '../pages/Home';
 import Market from '../pages/Market';
 import Trading from '../pages/Trading';
@@ -13,14 +16,9 @@ import Order from '../pages/Orders';
 import TransactionsHistory from '../pages/TransactionsHistory';
 import Profile from '../pages/Profile';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
+const App = () => {
+  return (
+    <AuthContextProvider>
       <Router>
         <Switch>
           <Route path="/" exact>
@@ -61,8 +59,8 @@ class App extends Component {
           </Route>
         </Switch>
       </Router>
-    );
-  }
-}
+    </AuthContextProvider>
+  );
+};
 
 export default App;

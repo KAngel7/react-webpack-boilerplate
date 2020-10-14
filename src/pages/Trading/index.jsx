@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Trading = () => {
   return (
@@ -9,7 +10,7 @@ const Trading = () => {
         <div className="styles_main__1Yig1 styles_wrapperMainMenu__3hD9h">
           <div className="styles_left__3iolo">
             <div className="styles_wrapperLeft__1tYJ5">
-              <a className="styles_mainLogo__35aF6" href="/">
+              <Link className="styles_mainLogo__35aF6" to="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="60"
@@ -107,7 +108,7 @@ const Trading = () => {
                     </g>
                   </g>
                 </svg>
-              </a>
+              </Link>
               <div className="styles_main__E_BmW">
                 <div className="styles_outer__1t4Le">
                   <div className="styles_main__3EaD8 styles_tradingBlock__4Yt7S styles_hoverable__2YTrJ">
@@ -122,40 +123,40 @@ const Trading = () => {
                     <div className="styles_content__2DpoO styles_content__3AP_U">
                       <ul className="styles_list__Kqa3G">
                         <li>
-                          <a
+                          <Link
                             className="styles_listItem__3ULRz"
                             title="Spot"
-                            href="/exchange"
+                            to="/exchange"
                           >
                             Spot
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="styles_listItem__3ULRz"
                             title="Margin"
-                            href="/margin"
+                            to="/margin"
                           >
                             Margin
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="styles_listItem__3ULRz"
                             title="Infinity"
-                            href="/infinity"
+                            to="/infinity"
                           >
                             Infinity
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="styles_listItem__3ULRz"
                             title="Perpetual"
-                            href="/perpetual"
+                            to="/perpetual"
                           >
                             Perpetual
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -502,18 +503,18 @@ const Trading = () => {
                         </svg>
                       </div>
                       <div className="styles_content__2DpoO styles_popContent__1Jsfu">
-                        <a
-                          href="/exchange/BTCUSD"
+                        <Link
+                          to="/exchange/BTCUSD"
                           className="styles_workspace__pfGXw styles_active__gFCVc"
                         >
                           Standard - TradingView
-                        </a>
-                        <a
-                          href="/exchange/BTCUSD"
+                        </Link>
+                        <Link
+                          to="/exchange/BTCUSD"
                           className="styles_workspace__pfGXw"
                         >
                           Standard - CryptoWatch
-                        </a>
+                        </Link>
                         <h6 className="styles_title__1fK0c">
                           Custom Workspaces
                         </h6>
@@ -1053,13 +1054,13 @@ const Trading = () => {
                                 Your account does not have permission to trade
                                 Spot, view your account abilities in your
                                 profile or
-                                <a
-                                  href="/"
+                                <Link
+                                  to="/"
                                   rel="noopener noreferrer"
                                   target="_blank"
                                 >
                                   contact customer support
-                                </a>
+                                </Link>
                                 .
                               </p>
                             </div>
@@ -1161,14 +1162,14 @@ const Trading = () => {
                           Once placed, orders are displayed here. Live orders
                           can be edited or cancelled.
                         </p>
-                        <a
-                          href="https://help.liquid.com/en/articles/2275776-how-to-place-a-limit-order"
+                        <Link
+                          to="https://help.liquid.com/en/articles/2275776-how-to-place-a-limit-order"
                           className="styles_main__3JWER "
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           See tutorial↗
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

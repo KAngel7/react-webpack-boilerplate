@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './style.scss';
 
 const tableData = [
@@ -88,9 +89,9 @@ const MarketTable = ({ showViewMoreBtn }) => {
         </div>
         {tableData.map((d, i) => {
           return (
-            <a
+            <Link
               key={`table-data-coin-${i}`}
-              href={d.tradingLink}
+              to={d.tradingLink}
               className={`${style.tableRow}`}
             >
               <div
@@ -146,14 +147,14 @@ const MarketTable = ({ showViewMoreBtn }) => {
                   id={`a${i + 2}`}
                 ></div>
               </div>
-            </a>
+            </Link>
           );
         })}
         {showViewMoreBtn && (
           <div className={`${style.watchMoreBtn}`}>
-            <a
+            <Link
               aria-label="markets"
-              href="/markets"
+              to="/markets"
               className={`${style.linkHoverableBtn}`}
             >
               <div type="text">Xem thêm thị trường</div>
@@ -168,7 +169,7 @@ const MarketTable = ({ showViewMoreBtn }) => {
                   fill="currentColor"
                 ></path>
               </svg>
-            </a>
+            </Link>
           </div>
         )}
       </div>

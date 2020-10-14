@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import './style';
@@ -26,15 +27,15 @@ const Profile = () => {
                   className="react-gravatar ProfileAvatar_avatar__iRyo3"
                 />
                 <p className="ProfileAvatar_title__Uw3gF">Your avatar</p>
-                <a
+                <Link
                   id="profile--button"
                   className="ProfileAvatar_update__3JS-o"
-                  href="https://en.gravatar.com/emails/"
+                  to="https://en.gravatar.com/emails/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Update
-                </a>
+                </Link>
                 <hr className="styles_line__1Z7ek" />
                 <div className="SettingsField2_field__rOv6D ProfileAvatar_field__bJyq6">
                   <span className="SettingsField2_label__2mWfS">Full Name</span>
@@ -101,13 +102,13 @@ const Profile = () => {
                     Please set up 2-factor authentication first in Settings &gt;
                     Security.
                   </p>
-                  <a
+                  <Link
                     id="profile--2fa"
                     className="styles_main__1rTEz styles_primary__3XxmD "
-                    href="https://app.liquid.com/settings/security"
+                    to="https://app.liquid.com/settings/security"
                   >
                     Enable 2FA Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './style';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -26,7 +27,7 @@ const Home = () => {
                     className="css-137fk78"
                   />
                 </div>
-                <a href="/register">
+                <Link to="/register">
                   <button
                     type="button"
                     aria-label="register"
@@ -34,15 +35,15 @@ const Home = () => {
                   >
                     Đăng ký
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="css-26vijc">
             <div className="css-1jqjm4r">
               <div className="css-ax4m09">
-                <a
-                  href="/support/announcement/cd1801311ead4829afe2ac29a8eceb49"
+                <Link
+                  to="/support/announcement/cd1801311ead4829afe2ac29a8eceb49"
                   aria-label="detail"
                   className="css-n876bn"
                 >
@@ -64,11 +65,11 @@ const Home = () => {
                   <div type="text" className="css-waz29z">
                     09-28
                   </div>
-                </a>
+                </Link>
                 <div className="css-1h0sz7g"></div>
-                <a
+                <Link
                   aria-label="more"
-                  href="/support/announcement"
+                  to="/support/announcement"
                   className="css-mmpluh"
                 >
                   <div type="text" className="css-vurnku">
@@ -85,7 +86,7 @@ const Home = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -128,10 +129,10 @@ const Home = () => {
                   </div>
                   <div className="css-18mnkst">
                     <div className="css-q2wk8b">
-                      <a
+                      <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://play.google.com/store/apps/details?id=com.BNX.dev"
+                        to="https://play.google.com/store/apps/details?id=com.BNX.dev"
                         aria-label="google"
                         className="css-vurnku"
                       >
@@ -140,11 +141,11 @@ const Home = () => {
                           alt="google play"
                           data-src="./images/home/download/google-play.png"
                         ></div>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="/"
+                        to="/"
                         aria-label="android"
                         className="css-vurnku"
                       >
@@ -153,11 +154,11 @@ const Home = () => {
                           alt="android"
                           data-src="./images/home/download/android.png"
                         ></div>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="/"
+                        to="/"
                         aria-label="appStore"
                         className="css-vurnku"
                       >
@@ -166,7 +167,7 @@ const Home = () => {
                           alt="appStore"
                           data-src="./images/home/download/app-store.png"
                         ></div>
-                      </a>
+                      </Link>
                       <div className="css-ybbx55">
                         <div className="css-1ywxyf4">
                           <svg
@@ -244,10 +245,10 @@ const Home = () => {
                   </div>
                   <div className="css-18mnkst">
                     <div className="css-q2wk8b">
-                      <a
+                      <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="/"
+                        to="/"
                         aria-label="mac os"
                         className="css-vurnku"
                       >
@@ -256,11 +257,11 @@ const Home = () => {
                           alt="mac os"
                           data-src="./images/home/download/mac-os.png"
                         ></div>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="/"
+                        to="/"
                         aria-label="windows"
                         className="css-vurnku"
                       >
@@ -269,11 +270,11 @@ const Home = () => {
                           alt="windows"
                           data-src="./images/home/download/windows.png"
                         ></div>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="/"
+                        to="/"
                         aria-label="windows"
                         className="css-vurnku"
                       >
@@ -282,7 +283,7 @@ const Home = () => {
                           alt="windows previous"
                           data-src="./images/home/download/windows-previous.svg"
                         ></div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -320,15 +321,15 @@ const Home = () => {
                           fill="currentColor"
                         ></path>
                       </svg>
-                      <a
+                      <Link
                         type="link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://BNX-docs.github.io/apidocs/spot/en"
+                        to="https://BNX-docs.github.io/apidocs/spot/en"
                         className={`css-tb63ef ${style.deco1}`}
                       >
                         Tài liệu API chính thức của BNX
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -342,9 +343,9 @@ const Home = () => {
               </div>
               <div className="css-k1vknn">
                 <div className="css-mg2jj3">
-                  <a
+                  <Link
                     aria-label="Hỗ trợ khách hàng 24/7"
-                    href="/support"
+                    to="/support"
                     className="css-4qu1jq"
                   >
                     <div className="css-1c1ahuy">
@@ -357,14 +358,14 @@ const Home = () => {
                     <div type="text" className="css-1lmrg27">
                       Hỗ trợ khách hàng 24/7
                     </div>
-                  </a>
+                  </Link>
                   <div type="text" className="css-xtxu3e">
                     Bạn đang gặp vấn đề? Liên lạc với chúng tôi ngay. Đội ngũ hỗ
                     trợ của BNX luôn túc trực 24/7.
                   </div>
                 </div>
                 <div className="css-mg2jj3">
-                  <a aria-label="BNX Blog" href="/blog" className="css-4qu1jq">
+                  <Link aria-label="BNX Blog" to="/blog" className="css-4qu1jq">
                     <div className="css-1c1ahuy">
                       <div
                         className="lozad-load css-wmy69a"
@@ -375,16 +376,16 @@ const Home = () => {
                     <div type="text" className="css-1lmrg27">
                       BNX Blog
                     </div>
-                  </a>
+                  </Link>
                   <div type="text" className="css-xtxu3e">
                     Tin tức và cập nhật từ sàn giao dịch tiền mã hoá hàng đầu
                     thế giới
                   </div>
                 </div>
                 <div className="css-mg2jj3">
-                  <a
+                  <Link
                     aria-label="Cộng đồng"
-                    href="/community"
+                    to="/community"
                     className="css-4qu1jq"
                   >
                     <div className="css-1c1ahuy">
@@ -397,16 +398,16 @@ const Home = () => {
                     <div type="text" className="css-1lmrg27">
                       Cộng đồng
                     </div>
-                  </a>
+                  </Link>
                   <div type="text" className="css-xtxu3e">
                     BNX phủ sóng toàn cầu. Tham gia thảo luận ngay với cộng đồng
                     của chúng tôi trên khắp thế giới.
                   </div>
                 </div>
                 <div className="css-mg2jj3">
-                  <a
+                  <Link
                     aria-label="Cơ hội nghề nghiệp"
-                    href="/career"
+                    to="/career"
                     className="css-4qu1jq"
                   >
                     <div className="css-1c1ahuy">
@@ -419,7 +420,7 @@ const Home = () => {
                     <div type="text" className="css-1lmrg27">
                       Cơ hội nghề nghiệp
                     </div>
-                  </a>
+                  </Link>
                   <div type="text" className="css-xtxu3e">
                     Giúp xây dựng tương lai của công nghệ. Bắt đầu sự nghiệp của
                     bạn tại BNX.
@@ -433,22 +434,22 @@ const Home = () => {
               Bắt đầu giao dịch ngay
             </div>
             <div className="css-81xrsn">
-              <a
+              <Link
                 type="button"
                 aria-label="register"
                 className="css-1iaeli2"
-                href="/register"
+                to="/register"
               >
                 Đăng ký
-              </a>
-              <a
+              </Link>
+              <Link
                 type="button"
-                href="/trading/BTC_USDT"
+                to="/trading/BTC_USDT"
                 aria-label="trade"
                 className="css-8zzrcx"
               >
                 Giao dịch ngay
-              </a>
+              </Link>
             </div>
           </div>
         </div>

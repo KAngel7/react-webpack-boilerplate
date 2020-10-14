@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
+import { validate } from '../../services/apiv1/auth';
+import { saveAuthToken } from '../../services/auth';
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const handleSubmitLogin = async () => {
+    const { status, data } = await validate(email, password);
+    if (status === 200) {
+      saveAuthToken(data.access_token);
+    }
+  };
   return (
     <>
       <Header />
@@ -39,7 +50,12 @@ const Login = () => {
               </div>
               <div className="css-vurnku">
                 <div className="css-gnqbje">
-                  <form action="#" autoComplete="off">
+                  <form
+                    onSubmit={e => {
+                      e.preventDefault();
+                      handleSubmitLogin();
+                    }}
+                  >
                     <div className="css-hlfj64">
                       <div value className="css-15651n7">
                         <div className="css-kc8d2n">
@@ -54,6 +70,8 @@ const Login = () => {
                               autoComplete="section-email email"
                               type="email"
                               name="email"
+                              value={email}
+                              onChange={e => setEmail(e.currentTarget.value)}
                               className="css-1thkju"
                             />
                           </div>
@@ -76,6 +94,8 @@ const Login = () => {
                               autoComplete="section-email current-password"
                               name="password"
                               type="password"
+                              value={password}
+                              onChange={e => setPassword(e.currentTarget.value)}
                               className="css-1thkju"
                             />
                             <div className="bn-input-suffix css-vurnku">
@@ -115,24 +135,28 @@ const Login = () => {
               </div>
               <div className="i-geetest" />
               <div className="css-1xks0kt">
-                <a
+                <Link
                   data-bn-type="link"
                   className="css-6mzef3"
-                  href="/reset-password"
+                  to="/reset-password"
                 >
                   Quên mật khẩu?
-                </a>
+                </Link>
                 <div className="css-1uwb95w">
-                  <a data-bn-type="link" target="_blank" className="css-8v3e3g">
+                  <Link
+                    data-bn-type="link"
+                    target="_blank"
+                    className="css-8v3e3g"
+                  >
                     Quét để đăng nhập
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     data-bn-type="link"
                     className="css-1vmx8j8"
-                    href="/register"
+                    to="/register"
                   >
                     Đăng ký miễn phí
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

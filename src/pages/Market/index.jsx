@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import MarketTable from '../../components/MarketTable';
@@ -12,9 +13,9 @@ const Home = () => {
           <div className="css-18l81d2">
             <div className="css-1s49g8j">
               <div className="css-vurnku">
-                <a
+                <Link
                   id="marketpair-1-1"
-                  href="/trading/BNB_USDT"
+                  to="/trading/BNB_USDT"
                   className="css-1xe1go6"
                 >
                   <div data-bn-type="text" className="css-5h0skw">
@@ -62,12 +63,12 @@ const Home = () => {
                       data-src="https://bin.bnbstatic.com/kline/BNBUSDT.svg"
                     ></div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="css-vurnku">
-                <a
+                <Link
                   id="marketpair-1-2"
-                  href="/trading/BTC_USDT"
+                  to="/trading/BTC_USDT"
                   className="css-1xe1go6"
                 >
                   <div data-bn-type="text" className="css-5h0skw">
@@ -115,12 +116,12 @@ const Home = () => {
                       data-src="https://bin.bnbstatic.com/kline/BTCUSDT.svg"
                     ></div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="css-vurnku">
-                <a
+                <Link
                   id="marketpair-1-3"
-                  href="/trading/ETH_USDT"
+                  to="/trading/ETH_USDT"
                   className="css-1xe1go6"
                 >
                   <div data-bn-type="text" className="css-5h0skw">
@@ -168,12 +169,12 @@ const Home = () => {
                       data-src="https://bin.bnbstatic.com/kline/ETHUSDT.svg"
                     ></div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="css-vurnku">
-                <a
+                <Link
                   id="marketpair-1-4"
-                  href="/trading/EOS_USDT"
+                  to="/trading/EOS_USDT"
                   className="css-1xe1go6"
                 >
                   <div data-bn-type="text" className="css-5h0skw">
@@ -221,7 +222,7 @@ const Home = () => {
                       data-src="https://bin.bnbstatic.com/kline/EOSUSDT.svg"
                     ></div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

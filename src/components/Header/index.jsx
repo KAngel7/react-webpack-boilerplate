@@ -1,19 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+
 import style from './style.scss';
+import { AuthContext } from '../../services/context';
 
 const Header = () => {
-  // const { userData } = props || {};
-  const userData = {
-    id: '181998',
-    name: 'Quang',
-    email: 'ntquang98@gmail.com',
-    status: 'PENDING',
-  };
-
+  const { authenticated, user } = useContext(AuthContext);
   return (
     <header className={` ${style.header}`}>
       <div className={`${style.leftWrapper}`}>
-        <a href="/">
+        <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="60"
@@ -111,11 +107,11 @@ const Header = () => {
               </g>
             </g>
           </svg>
-        </a>
-        <a
+        </Link>
+        <Link
           target="_self"
           id="ba-tableMarkets"
-          href="/trading"
+          to="/trading"
           className="css-1t0260p"
         >
           <div className="css-1w2cmbz">
@@ -123,78 +119,78 @@ const Header = () => {
               Mua Crypto<div className="css-1rktosy">VND</div>
             </span>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           target="_self"
           id="ba-tableMarkets"
-          href="/markets"
+          to="/markets"
           className="css-1t0260p css-1qqh4qo"
         >
           Thị trường
-        </a>
+        </Link>
       </div>
-      {userData ? (
+      {authenticated ? (
         <div className="styles_right__2p6KI">
           <div className="styles_rightContent__2wL9Y">
-            <a
+            <Link
               target="_self"
               id="ba-tableMarkets"
-              href="/wallets/orders"
+              to="/wallets/orders"
               className="css-1t0260p css-1qqh4qo"
             >
               Lệnh mua/bán
-            </a>
+            </Link>
             <div className="styles_main__3EaD8 styles_left__2P1Kf styles_hoverable__2YTrJ">
               <div className="styles_body__3dd1F styles_popupBody__2dnU5 styles_feed__1T7yq">
-                <a
+                <Link
                   target="_self"
                   id="ba-tableMarkets"
-                  href="/wallets/balances"
+                  to="/wallets/balances"
                   className="css-1t0260p css-1qqh4qo"
                 >
                   Ví của tôi
-                </a>
+                </Link>
               </div>
               <div className="styles_content__2DpoO styles_popupContent__20--_ styles_arrowUp__VLlKP">
                 <ul className="styles_contentDropdown__21lgr">
                   <li>
-                    <a
+                    <Link
                       id="quick-exchange-nav--wallets-balances--link"
                       className="styles_itemDropdown__EBiWd styles_main__159n1"
-                      href="/wallets/balances"
+                      to="/wallets/balances"
                     >
                       Số dư
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       id="quick-exchange-nav--wallets-withdrawals--link"
                       className="styles_itemDropdown__EBiWd styles_main__159n1"
-                      href="/wallets/withdrawals"
+                      to="/wallets/withdrawals"
                     >
                       Rút tiền
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       id="quick-exchange-nav--wallets-transactions--link"
                       className="styles_itemDropdown__EBiWd styles_main__159n1 styles_active__2Qw29"
-                      href="/wallets/transactions"
+                      to="/wallets/transactions"
                     >
                       Lịch sử giao dịch
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <a
+            <Link
               target="_self"
               id="ba-tableMarkets"
-              href="/wallets/deposits"
+              to="/wallets/deposits"
               className="css-1t0260p css-1qqh4qo"
             >
               Nạp tiền
-            </a>
+            </Link>
             <span className="styles_divider__3c7k5">|</span>
           </div>
           <div className="styles_main__3EaD8 styles_right__2PfIe styles_hoverable__2YTrJ">
@@ -224,19 +220,19 @@ const Header = () => {
                   />
                   <div className="styles_infoProfileUser__HssgI">
                     <h3 className="styles_nameProfileUser__yMp0W">
-                      Quang Nguyen
+                      {`${user.first_name} ${user.last_name}`}
                     </h3>
                     <p
                       title="aquarius.superstar@gmail.com"
                       className="styles_emailProfileUser__2qeNF"
                     >
-                      aquarius.superstar@gmail.com
+                      {user.email}
                     </p>
                     <p className="styles_idProfileUser__3WeDL">
                       <span className="styles_userId__22d4X">ID: 814069</span>
-                      <a href="/settings/profile">
+                      <Link to="/settings/profile">
                         <span className="styles_userStatus__3xnee">
-                          Pending
+                          {user.status}
                         </span>
                         <svg
                           width={12}
@@ -252,26 +248,26 @@ const Header = () => {
                             />
                           </g>
                         </svg>
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
               </div>
               <ul className="styles_wrapperLinkProfileUser__3uc61">
                 <li className="styles_itemLink__1Pvgv">
-                  <a
+                  <Link
                     id="--my-profile--link"
                     className="styles_itemLinkProfileUser__-3t2u styles_main__159n1"
-                    href="/settings/profile"
+                    to="/settings/profile"
                   >
                     Thông tin tài khoản
-                  </a>
+                  </Link>
                 </li>
               </ul>
-              <a
+              <Link
                 id="quick-exchange-nav--user--log-out--link"
                 className="styles_itemLinkProfileUserLogout__c6lyd styles_main__159n1"
-                href="/sign-out"
+                to="/sign-out"
               >
                 <svg width={20} height={12}>
                   <path
@@ -284,28 +280,28 @@ const Header = () => {
                   />
                 </svg>
                 Đăng xuất
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       ) : (
         <div className="styles_right__2p6KI">
           <div className="styles_hiddenSm__1tdzy styles_contentWrp__2L2a5">
-            <a
+            <Link
               id="quick-exchange-nav--sign-in"
               className="styles_linkSignIn__3HCtB"
-              href="https://app.liquid.com/sign-in"
+              to="https://app.liquid.com/sign-in"
             >
               Sign In
-            </a>
-            <a
+            </Link>
+            <Link
               className="styles_linkSignUp__QOaQk styles__buttonInNav__JD0Hw"
               id="quick-exchange-nav--sign-up"
-              href="https://www.liquid.com/sign-up"
+              to="https://www.liquid.com/sign-up"
               rel="noopener nofollow noreferrer"
             >
               Sign Up
-            </a>
+            </Link>
           </div>
           <div className="styles_wrapperHamburger__Ko0q0">
             <div>
