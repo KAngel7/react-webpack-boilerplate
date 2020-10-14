@@ -5,7 +5,7 @@ import style from './style.scss';
 import { AuthContext } from '../../services/context';
 
 const Header = () => {
-  const { authenticated, user } = useContext(AuthContext);
+  const { authenticated, user, logout } = useContext(AuthContext);
   return (
     <header className={` ${style.header}`}>
       <div className={`${style.leftWrapper}`}>
@@ -267,7 +267,8 @@ const Header = () => {
               <Link
                 id="quick-exchange-nav--user--log-out--link"
                 className="styles_itemLinkProfileUserLogout__c6lyd styles_main__159n1"
-                to="/sign-out"
+                onClick={logout}
+                to="/"
               >
                 <svg width={20} height={12}>
                   <path
@@ -287,20 +288,18 @@ const Header = () => {
       ) : (
         <div className="styles_right__2p6KI">
           <div className="styles_hiddenSm__1tdzy styles_contentWrp__2L2a5">
-            <Link
-              id="quick-exchange-nav--sign-in"
-              className="styles_linkSignIn__3HCtB"
-              to="https://app.liquid.com/sign-in"
-            >
-              Sign In
+            <Link id="header_login" to="/login" class="css-1yztfkw">
+              Đăng nhập
             </Link>
             <Link
-              className="styles_linkSignUp__QOaQk styles__buttonInNav__JD0Hw"
+              className="css-p93cyt"
               id="quick-exchange-nav--sign-up"
-              to="https://www.liquid.com/sign-up"
+              to="/register"
               rel="noopener nofollow noreferrer"
             >
-              Sign Up
+              <button type="button" id="header_register" className="css-yotb4s">
+                Đăng ký
+              </button>
             </Link>
           </div>
           <div className="styles_wrapperHamburger__Ko0q0">

@@ -1,7 +1,7 @@
 const AUTH_TOKEN_STRING = 'AUTH_TOKEN';
 let authToken;
 
-export const saveAuthToken = token => {
+export const setAuthToken = token => {
   localStorage.setItem(AUTH_TOKEN_STRING, token);
   authToken = token;
 };

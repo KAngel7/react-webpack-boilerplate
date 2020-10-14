@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext } from 'react';
-import { getAuthToken } from '../auth';
+import { getAuthToken, setAuthToken, clearAuthToken } from '../auth';
 import { getProfile } from '../apiv1/user';
 
 export const AuthContext = createContext();
@@ -9,21 +9,30 @@ export const AuthContextProvider = ({ children }) => {
   const authToken = getAuthToken();
   const [authenticated, setAuthenticated] = useState(false);
   const [user, setUser] = useState({});
+  const getProfileAsync = async () => {
+    const { status, data } = await getProfile();
+    if (status === 200) {
+      setAuthenticated(true);
+      setUser(data);
+    }
+  };
+  const login = token => {
+    setAuthToken(token);
+    getProfileAsync();
+  };
+  const logout = () => {
+    clearAuthToken();
+    setAuthenticated(false);
+    setUser({});
+  };
   useEffect(() => {
     if (authToken) {
-      const getProfileAsync = async () => {
-        const { status, data } = await getProfile();
-        if (status === 200) {
-          setAuthenticated(true);
-          setUser(data);
-        }
-      };
       getProfileAsync();
     }
   }, []);
 
   return (
-    <AuthContext.Provider value={{ authenticated, user }}>
+    <AuthContext.Provider value={{ authenticated, user, login, logout }}>
       {children}
     </AuthContext.Provider>
   );

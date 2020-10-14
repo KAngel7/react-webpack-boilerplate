@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import { Link, Redirect } from 'react-router-dom';
 import Header from '../../components/Header';
 import { validate } from '../../services/apiv1/auth';
-import { saveAuthToken } from '../../services/auth';
+import { AuthContext } from '../../services/context';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { authenticated, login } = useContext(AuthContext);
   const handleSubmitLogin = async () => {
     const { status, data } = await validate(email, password);
     if (status === 200) {
-      saveAuthToken(data.access_token);
+      login(data.access_token);
     }
   };
   return (
     <>
+      {authenticated && <Redirect to="/" />}
       <Header />
       <div className="css-vwpxuw">
         <main className="css-8fbwj6">
