@@ -2,9 +2,9 @@ import React, { useContext, useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import Header from '../../components/Header';
-import { validate } from '../../services/apiv1/auth';
+import { validate, validateWithCode } from '../../services/apiv1/auth';
 import { AuthContext } from '../../services/context';
-import { InputEmail, InputPassword } from './Components';
+import { InputEmail, InputPassword, InputTfa } from './Components';
 import style from './style.scss';
 
 const Login = () => {
@@ -12,16 +12,20 @@ const Login = () => {
     mode: 'all',
   });
   const [errorString, setErrorString] = useState('');
-
+  const [showInputTfa, setShowInputTfa] = useState(true);
   const { authenticated, login } = useContext(AuthContext);
 
-  const onSubmit = async values => {
+  const submitLogin = async values => {
     const { email, password } = values;
     try {
       const { status, data } = await validate(email, password);
       if (status === 200) {
-        login(data.access_token);
-        setErrorString('');
+        if (verify_code) {
+          setShowInputTfa(true);
+        } else {
+          login(data.access_token);
+          setErrorString('');
+        }
       }
     } catch (ex) {
       if (ex.response) {
@@ -47,6 +51,39 @@ const Login = () => {
       );
     }
   };
+  const submitTfa = async values => {
+    const { email, password, tfaCode } = values;
+    try {
+      const { status, data } = await validateWithCode(email, password, tfaCode);
+      if (status === 200) {
+        login(data.access_token);
+        setErrorString('');
+      }
+    } catch (ex) {
+      if (ex.response) {
+        const { data } = ex.response;
+        setErrorString(data.message);
+      } else {
+        setErrorString("Something's wrong");
+      }
+      reset(
+        {
+          email: '',
+          password: '',
+          tfaCode: ''
+        },
+        {
+          errors: true, // errors will not be reset
+          dirtyFields: true, // dirtyFields will not be reset
+          isDirty: true, // dirty will not be reset
+          isSubmitted: false,
+          touched: false,
+          isValid: false,
+          submitCount: false,
+        },
+      );
+    }
+  };
   return (
     <>
       {authenticated && <Redirect to="/" />}
@@ -54,7 +91,7 @@ const Login = () => {
       <div className="css-vwpxuw">
         <main className="css-8fbwj6">
           <div className="css-1naf0np">
-            <div className="css-yqufh">
+            {!showInputTfa ? <div className="css-yqufh">
               <div data-bn-type="text" className="css-leflpn">
                 <div data-bn-type="text" className="css-knmrty">
                   Đăng nhập
@@ -147,7 +184,40 @@ const Login = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> : <div className="css-yqufh">
+              <div data-bn-type="text" className="css-leflpn">
+                <div data-bn-type="text" className="css-knmrty">
+                  Nhập mã 2FA
+                </div>
+              </div>
+              <div className="css-vurnku">
+                <div className="css-gnqbje">
+                  <form onSubmit={handleSubmit(submitTfa)} noValidate>
+                    <div className="css-hlfj64">
+                      <InputTfa
+                        inputRef={register({
+                          required: 'Hãy nhập mã 2FA',
+                        })}
+                        errors={errors}
+                        reset={reset}
+                      />
+                      <div className={`${style.errorHelper}`}>
+                        {errorString}
+                      </div>
+                    </div>
+                    <button
+                      data-bn-type="button"
+                      id="click_login_submit"
+                      type="submit"
+                      className="css-1l5sce"
+                    >
+                      Xác nhận
+                    </button>
+                  </form>
+                </div>
+                <div className="css-1bzb8nq" />
+              </div>
+            </div>}
           </div>
         </main>
         <div data-bn-type="text" className="css-1aw68ke">

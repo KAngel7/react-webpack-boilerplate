@@ -41,7 +41,7 @@ export default {
   // called when the user attempts to log in
   login: async ({ email, password, code = '' }) => {
       try{
-          const {status, data} = await login(email, password);
+          const {status, data} = await validate(email, password);
           console.log(status, data);
           if (status === 200){
             setAuthToken(data.access_token);

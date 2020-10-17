@@ -30,6 +30,33 @@ export const InputEmail = props => {
   );
 };
 
+export const InputTfa = props => {
+  const { inputRef, errors } = props;
+  return (
+    <div value className={`${style.inputGroup}`}>
+      <div className={`${style.labelWrapper}`}>
+        <div className={`${style.label}`}>Mã 2FA</div>
+      </div>
+      <div className={`${style.inputContainer}`}>
+        <div
+          className={`${style.inputWrapper} ${errors.tfa ? style.error : ''}`}
+        >
+          <input
+            autoComplete="2FA"
+            type="string"
+            name="tfaCode"
+            className={`${style.input} `}
+            ref={inputRef}
+          />
+        </div>
+      </div>
+      <div className={`${style.helper}`}>
+        {errors.tfa && errors.tfa.message}
+      </div>
+    </div>
+  );
+};
+
 export const InputPassword = props => {
   const [showPW, setShowPW] = useState(false);
   const { inputRef, errors } = props;

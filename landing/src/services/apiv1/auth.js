@@ -4,7 +4,7 @@ const axiosInstance = axios.create({
   baseURL: 'http://18.140.198.64:8081/api/v1/auth',
 });
 
-export const login = async (email, password, code = '') => {
+export const validateWithCode = async (email, password, code = '') => {
   return axiosInstance.post('/login', {
     code,
     email,
