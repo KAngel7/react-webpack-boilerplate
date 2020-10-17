@@ -8,7 +8,9 @@ import { InputEmail, InputPassword } from './Components';
 import style from './style.scss';
 
 const Login = () => {
-  const { handleSubmit, register, errors, reset } = useForm();
+  const { handleSubmit, register, errors, reset } = useForm({
+    mode: 'all',
+  });
   const [errorString, setErrorString] = useState('');
 
   const { authenticated, login } = useContext(AuthContext);

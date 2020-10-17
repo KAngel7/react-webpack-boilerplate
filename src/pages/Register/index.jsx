@@ -13,7 +13,9 @@ import {
 } from './Components';
 
 const Register = () => {
-  const { handleSubmit, register, errors, reset } = useForm();
+  const { handleSubmit, register, errors, reset } = useForm({
+    mode: 'all',
+  });
   const [errorString, setErrorString] = useState('');
   const [ableToSubmit, setAbleToSubmit] = useState(false);
 
