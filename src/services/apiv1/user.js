@@ -21,3 +21,34 @@ export const getProfile = () => {
     },
   });
 };
+
+export const genTfa = () => {
+  return axiosInstance.get('/tfa', {
+    headers: {
+      Authorization: getAuthToken(),
+    },
+  });
+};
+
+export const verifyTfa = (code, secret) => {
+  return axiosInstance.post(
+    '/verify-tfa',
+    {
+      code,
+      secret,
+    },
+    {
+      headers: {
+        Authorization: getAuthToken(),
+      },
+    },
+  );
+};
+
+export const confirm = () => {
+  return axiosInstance.get('/confirm', {
+    headers: {
+      Authorization: getAuthToken(),
+    },
+  });
+};

@@ -70,7 +70,8 @@
     "react-hot-loader": "4.12.14",
     "react-i18next": "10.13.1",
     "react-router-dom": "5.1.2",
-    "react-toastify": "^6.0.9"
+    "react-toastify": "^6.0.9",
+    "react-modal": "^3.11.2"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"

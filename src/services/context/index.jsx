@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from 'react';
 import { getAuthToken, setAuthToken, clearAuthToken } from '../auth';
-import { getProfile } from '../apiv1/user';
+import { getProfile, genTfa } from '../apiv1/user';
 
 export const AuthContext = createContext();
 

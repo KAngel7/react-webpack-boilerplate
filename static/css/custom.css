@@ -57,3 +57,8 @@
 [data-direction='ltr'] {
   direction: ltr;
 }
+
+.ReactModal__Overlay {
+  background-color: rgb(0 0 0 / 75%)!important;
+  z-index: 9999;
+}

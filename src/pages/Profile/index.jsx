@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import { AuthContext } from '../../services/context';
+import TFAModal from './TFAModal';
 import './style';
 
 const Profile = () => {
+  const { authenticated, user } = useContext(AuthContext);
+  if (!authenticated) {
+    return null;
+  }
+  const [showTFA, setShowTFA] = useState(false);
   return (
     <>
       <Header />
@@ -96,20 +103,30 @@ const Profile = () => {
                     </p>
                   </span>
                 </div>
-                <div>
-                  <p className="KYCVerify_tfaDisabled__2A-p8">
-                    Your 2-factor authentication method is disabled or outdated.
-                    Please set up 2-factor authentication first in Settings &gt;
-                    Security.
-                  </p>
-                  <Link
-                    id="profile--2fa"
-                    className="styles_main__1rTEz styles_primary__3XxmD "
-                    to="https://app.liquid.com/settings/security"
-                  >
-                    Enable 2FA Now
-                  </Link>
-                </div>
+                {user.enable_tfa ? (
+                  <div>
+                    <p className="KYCVerify_tfaDisabled__2A-p8">
+                      2FA: Đang bật
+                    </p>
+                  </div>
+                ) : (
+                  <div>
+                    <p className="KYCVerify_tfaDisabled__2A-p8">
+                      Your 2-factor authentication method is disabled or
+                      outdated. Please set up 2-factor authentication first in
+                      Settings &gt; Security.
+                    </p>
+                    <button
+                      type="button"
+                      id="profile--2fa"
+                      className="styles_main__1rTEz styles_primary__3XxmD "
+                      to="#"
+                      onClick={() => setShowTFA(true)}
+                    >
+                      Enable 2FA Now
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
             <hr className="styles_line__1Z7ek" />
@@ -137,6 +154,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      {showTFA && <TFAModal />}
       <Footer />
     </>
   );

@@ -768,9 +768,9 @@
   --primary-tip: #dde4e9;
   --header-sd: #2b364a;
   --accent: #f0b90b;
-  --accent-3: #f0b90b;
-  --accent-2: #f0b90b;
-  --accent-1: #f0b90b;
+  --accent-3: #131720;
+  --accent-2: #131720;
+  --accent-1: #292825;
   --border: #50525c;
   --border-sdw: #292825;
   --header: #12161c;
@@ -2604,7 +2604,7 @@
 
 .styles_header__207Dh {
   position: relative;
-  background: var(--accent-1);
+  background: var(--header);
   text-align: center;
 }
 
@@ -2630,7 +2630,7 @@
   width: 48px;
   line-height: 48px;
   text-align: center;
-  border: 1px solid var(--accent-1);
+  border: 1px solid var(--accent);
   border-radius: 100%;
   margin: 0;
 }
@@ -2638,7 +2638,7 @@
 .styles_stepIndex__1GbH0 > .styles_line__3szx5 {
   width: 24px;
   height: calc(100% - 48px);
-  border-right: 1px solid var(--accent-1);
+  border-right: 1px solid var(--accent);
 }
 
 .styles_stepContent__2NgDn {
@@ -2708,7 +2708,7 @@
 .styles_codeTextBox__3H1tw > button {
   padding: 16px 20px;
   background: var(--background-alt);
-  color: var(--accent-2);
+  color: var(--accent);
 }
 
 .styles_copied__1FiGv {

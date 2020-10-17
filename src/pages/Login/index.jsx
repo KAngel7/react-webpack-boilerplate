@@ -84,7 +84,6 @@ const Login = () => {
                 </div>
               </div>
               <div className="css-vurnku">
-                <div className={`${style.errorHelper}`}>{errorString}</div>
                 <div className="css-gnqbje">
                   <form onSubmit={handleSubmit(onSubmit)} noValidate>
                     <div className="css-hlfj64">
@@ -106,6 +105,9 @@ const Login = () => {
                         errors={errors}
                         reset={reset}
                       />
+                      <div className={`${style.errorHelper}`}>
+                        {errorString}
+                      </div>
                     </div>
                     <button
                       data-bn-type="button"
