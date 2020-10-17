@@ -66,9 +66,11 @@
     "prop-types": "15.7.2",
     "react": "16.10.2",
     "react-dom": "16.10.2",
+    "react-hook-form": "^6.9.3",
     "react-hot-loader": "4.12.14",
     "react-i18next": "10.13.1",
-    "react-router-dom": "5.1.2"
+    "react-router-dom": "5.1.2",
+    "react-toastify": "^6.0.9"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"

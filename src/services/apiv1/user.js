@@ -5,7 +5,7 @@ const axiosInstance = axios.create({
   baseURL: 'http://18.140.198.64:8081/api/v1/users',
 });
 
-export const register = (email, password, firstName, lastName) => {
+export const signUp = (email, password, firstName, lastName) => {
   return axiosInstance.post('/register', {
     email,
     first_name: firstName,

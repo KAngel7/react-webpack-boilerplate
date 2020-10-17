@@ -1,17 +1,48 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 import Header from '../../components/Header';
 import { validate } from '../../services/apiv1/auth';
 import { AuthContext } from '../../services/context';
+import { InputEmail, InputPassword } from './Components';
+import style from './style.scss';
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const { handleSubmit, register, errors, reset } = useForm();
+  const [errorString, setErrorString] = useState('');
+
   const { authenticated, login } = useContext(AuthContext);
-  const handleSubmitLogin = async () => {
-    const { status, data } = await validate(email, password);
-    if (status === 200) {
-      login(data.access_token);
+
+  const onSubmit = async values => {
+    const { email, password } = values;
+    try {
+      const { status, data } = await validate(email, password);
+      if (status === 200) {
+        login(data.access_token);
+        setErrorString('');
+      }
+    } catch (ex) {
+      if (ex.response) {
+        const { data } = ex.response;
+        setErrorString(data.message);
+      } else {
+        setErrorString("Something's wrong");
+      }
+      reset(
+        {
+          email: '',
+          password: '',
+        },
+        {
+          errors: true, // errors will not be reset
+          dirtyFields: true, // dirtyFields will not be reset
+          isDirty: true, // dirty will not be reset
+          isSubmitted: false,
+          touched: false,
+          isValid: false,
+          submitCount: false,
+        },
+      );
     }
   };
   return (
@@ -51,77 +82,28 @@ const Login = () => {
                 </div>
               </div>
               <div className="css-vurnku">
+                <div className={`${style.errorHelper}`}>{errorString}</div>
                 <div className="css-gnqbje">
-                  <form
-                    onSubmit={e => {
-                      e.preventDefault();
-                      handleSubmitLogin();
-                    }}
-                  >
+                  <form onSubmit={handleSubmit(onSubmit)} noValidate>
                     <div className="css-hlfj64">
-                      <div value className="css-15651n7">
-                        <div className="css-kc8d2n">
-                          <div data-bn-type="text" className="css-itrsu7">
-                            Email
-                          </div>
-                        </div>
-                        <div className=" css-hiy16i">
-                          <div className=" css-wng3sm">
-                            <input
-                              data-bn-type="input"
-                              autoComplete="section-email email"
-                              type="email"
-                              name="email"
-                              value={email}
-                              onChange={e => setEmail(e.currentTarget.value)}
-                              className="css-1thkju"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          data-bn-type="text"
-                          className="help_default css-jiaj3x"
-                        />
-                      </div>
-                      <div className="css-15651n7">
-                        <div className="css-kc8d2n">
-                          <div data-bn-type="text" className="css-itrsu7">
-                            Mật khẩu
-                          </div>
-                        </div>
-                        <div className=" css-hiy16i">
-                          <div className=" css-wng3sm">
-                            <input
-                              data-bn-type="input"
-                              autoComplete="section-email current-password"
-                              name="password"
-                              type="password"
-                              value={password}
-                              onChange={e => setPassword(e.currentTarget.value)}
-                              className="css-1thkju"
-                            />
-                            <div className="bn-input-suffix css-vurnku">
-                              <div className="css-1jdwzw9">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  className="css-1d9nz27"
-                                >
-                                  <path
-                                    d="M13.03 15.652l1.712 1.71c-.73.219-1.481.329-2.242.329a7.92 7.92 0 01-5.576-2.299L3 11.505l2.913-2.948 2.393 2.378c-.02.18-.02.35 0 .53a4.23 4.23 0 004.194 4.227c.18 0 .35-.01.53-.04zM22 11.505l-3.934-3.997A7.842 7.842 0 0012.5 5.239c-.76 0-1.511.11-2.242.33l1.712 1.699c.18-.01.35-.01.53 0a4.232 4.232 0 014.235 4.227c0 .78-.21 1.539-.621 2.199L6.434 4 5.022 5.42l11.292 11.272.71.71L18.638 19l1.411-1.41-2.102-2.088L22 11.505z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          data-bn-type="text"
-                          className="help_default css-jiaj3x"
-                        />
-                      </div>
+                      <InputEmail
+                        inputRef={register({
+                          required: 'Hãy nhập email của bạn',
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: 'Hãy nhập một địa chỉ email chính xác',
+                          },
+                        })}
+                        errors={errors}
+                        reset={reset}
+                      />
+                      <InputPassword
+                        inputRef={register({
+                          required: 'Hãy nhập mật khẩu của bạn',
+                        })}
+                        errors={errors}
+                        reset={reset}
+                      />
                     </div>
                     <button
                       data-bn-type="button"

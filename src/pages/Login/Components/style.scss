@@ -1,0 +1,139 @@
+//css-15651n7
+.inputGroup {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  margin-bottom: 24px;
+
+  // css-kc8d2n
+  .labelWrapper {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: flex;
+    height: 16px;
+    align-items: center;
+    cursor: auto;
+    width: 100%;
+
+    // css-itrsu7
+    .label {
+      box-sizing: border-box;
+      margin: 0;
+      min-width: 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #474d57;
+    }
+  }
+  // css-hiy16i
+  .inputContainer {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+    position: relative;
+    min-height: 12px;
+
+    // css-wng3sm
+    .inputWrapper {
+      box-sizing: border-box;
+      margin: 0;
+      min-width: 0;
+      display: inline-flex;
+      position: relative;
+      height: 32px;
+      margin-top: 4px;
+      margin-bottom: 0px;
+      align-items: center;
+      line-height: 1.6;
+      border: 1px solid transparent;
+      border-color: #e6e8ea;
+      border-radius: 4px;
+      width: 100%;
+      height: 40px;
+
+      // css-1thkju
+      .input {
+        box-sizing: border-box;
+        margin: 0;
+        min-width: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        background-color: inherit;
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 8px;
+        color: #1e2026;
+      }
+
+      .input::-webkit-input-placeholder
+        .input::-moz-placeholder
+        .input:-ms-input-placeholder
+        .input::placeholder {
+        color: #aeb4bc;
+        font-size: 14px;
+      }
+
+      .input + label {
+        font-size: 14px;
+      }
+    }
+    .inputWrapper.error {
+      border-color: #d9304e;
+    }
+
+    .inputWrapper input:-webkit-autofill {
+      -webkit-transition: color 99999s ease-in-out 0s,
+        background-color 99999s ease-in-out 0s;
+      transition: color 99999s ease-in-out 0s,
+        background-color 99999s ease-in-out 0s;
+    }
+
+    .inputWrapper:hover:not(.disabled):not(.error) {
+      border-color: #f0b90b;
+    }
+  }
+
+  .hide {
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .helper {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    margin-top: 4px;
+    color: #d9304e;
+  }
+}
+
+.inputSuffix {
+  flex-shrink: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 14px;
+  line-height: 0.9;
+}
+
+.iconWrapper {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  background-color: #fff !important;
+  align-self: center;
+  margin-right: 4px;
+  border: none;
+  outline: none;
+}
