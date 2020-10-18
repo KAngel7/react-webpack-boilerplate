@@ -3079,7 +3079,7 @@
   width: 100%;
 }
 
-.styles_main__3WeTe > .styles_error__1RpBK {
+.styles_error__1RpBK {
   color: var(--negative);
   margin-top: 6px;
   margin-bottom: 20px;
@@ -3154,7 +3154,7 @@
   width: 24px;
   height: 24px;
   background: var(--background);
-  color: var(--accent-1);
+  color: var(--accent);
   box-shadow: inset 0 0 0 1px var(--accent-1);
   position: fixed;
   top: 16px;

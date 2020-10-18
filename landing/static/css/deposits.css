@@ -2885,52 +2885,6 @@ strong {
   padding-bottom: 3px;
 }
 
-.SettingsInputText_main__4Qwss {
-  position: relative;
-  flex-grow: 1;
-}
-
-.SettingsInputText_label__cX68F {
-  top: 10px;
-  left: 14px;
-  position: absolute;
-  z-index: 2;
-  color: var(--primary-3);
-  font-size: 14px;
-  cursor: text;
-}
-
-.SettingsInputText_focused__2KxNx .SettingsInputText_label__cX68F {
-  color: var(--accent);
-}
-
-.SettingsInputText_focused__2KxNx .SettingsInputText_label__cX68F,
-.SettingsInputText_nofocus__3a2Ee .SettingsInputText_labelValue__1R-OL {
-  top: -25%;
-  left: 10px;
-  font-size: 12px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(50%, var(--background)),
-    color-stop(50%, var(--background-alt))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    var(--background) 50%,
-    var(--background-alt) 0
-  );
-  background: linear-gradient(
-    180deg,
-    var(--background) 50%,
-    var(--background-alt) 0
-  );
-  padding: 0 4px;
-  position: absolute;
-  z-index: 2;
-}
-
 .SettingsInputText_nofocus__3a2Ee .SettingsInputText_labelValue__1R-OL {
   color: var(--primary-2);
 }
@@ -3042,14 +2996,6 @@ strong {
   width: 100%;
 }
 
-.styles_main__3WeTe > .styles_error__1RpBK {
-  color: var(--negative);
-  margin-top: 6px;
-  margin-bottom: 20px;
-  font-size: 12px;
-  text-align: left;
-}
-
 .styles_main__6d7zk {
   padding: 48px 40px;
   text-align: center;
@@ -3110,19 +3056,6 @@ strong {
 
 .styles_backdrop__3XjPC {
   background: var(--background-alt);
-}
-
-.styles_close__23uXs {
-  font-size: 16px;
-  width: 24px;
-  height: 24px;
-  background: var(--background);
-  color: var(--accent-1);
-  box-shadow: inset 0 0 0 1px var(--accent-1);
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 1;
 }
 
 @media (min-width: 600px) {

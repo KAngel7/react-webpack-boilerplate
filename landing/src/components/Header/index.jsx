@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={` ${style.header}`}>
       <div className={`${style.leftWrapper}`}>
-        <Link to="/">
+        <a href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="60"
@@ -107,7 +107,7 @@ const Header = () => {
               </g>
             </g>
           </svg>
-        </Link>
+        </a>
         <Link
           target="_self"
           id="ba-tableMarkets"
@@ -288,19 +288,19 @@ const Header = () => {
       ) : (
         <div className="styles_right__2p6KI">
           <div className="styles_hiddenSm__1tdzy styles_contentWrp__2L2a5">
-            <Link id="header_login" to="/login" class="css-1yztfkw">
+            <a id="header_login" href="/login" className="css-1yztfkw">
               Đăng nhập
-            </Link>
-            <Link
+            </a>
+            <a
               className="css-p93cyt"
               id="quick-exchange-nav--sign-up"
-              to="/register"
+              href="/register"
               rel="noopener nofollow noreferrer"
             >
               <button type="button" id="header_register" className="css-yotb4s">
                 Đăng ký
               </button>
-            </Link>
+            </a>
           </div>
           <div className="styles_wrapperHamburger__Ko0q0">
             <div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Modal from 'react-modal';
 import { genTfa, verifyTfa } from '../../../services/apiv1/user';
+import Loading from '../../../components/Loading';
 
 const customStyles = {
   content: {
@@ -13,11 +14,14 @@ const customStyles = {
   },
 };
 
-const TFAModal = () => {
+// eslint-disable-next-line react/prop-types
+const TfaModal = ({ onClose }) => {
   const [tfa, setTfa] = useState({});
   const [copySuccess, setCopySuccess] = useState('');
   const [step, setStep] = useState(1);
   const [tfaCode, setTfaCode] = useState('');
+  const [errorString, setErrorString] = useState('');
+
   const getTfa = async () => {
     const { status, data } = await genTfa();
     if (status === 200) {
@@ -31,23 +35,34 @@ const TFAModal = () => {
   const copySecret = e => {
     textAreaRef.current.select();
     document.execCommand('copy');
-    // This is just personal preference.
-    // I prefer to not show the whole text area selected.
     e.target.focus();
     setCopySuccess('Đã sao chép!');
   };
   const enableTfa = async () => {
-    const { status, data } = await verifyTfa(tfaCode, tfa.secret);
-    if (status === 200) {
-      console.log(data);
+    try {
+      const { status } = await verifyTfa(tfaCode, tfa.secret);
+      if (status === 200) {
+        onClose();
+        window.location.replace('/settings/profile');
+      }
+    } catch (ex) {
+      if (ex.response) {
+        const { data } = ex.response;
+        setErrorString(data.message);
+      } else {
+        setErrorString("Something's wrong");
+      }
     }
   };
   return (
     <Modal isOpen style={customStyles} className="styles_main__1qI1c">
+      <button className="styles_close__23uXs" type="button" onClick={onClose}>
+        ✖
+      </button>
       {step === 1 ? (
         <div>
           <div className="styles_header__207Dh">
-            <h2>Let&apos;s Setup 2FA Authentication</h2>
+            <h2>Thiết lập bảo mật 2FA</h2>
           </div>
           <div className="styles_body__2jyaf">
             <div className="styles_step__2KGV2">
@@ -56,10 +71,10 @@ const TFAModal = () => {
                 <div className="styles_line__3szx5"></div>
               </div>
               <div className="styles_stepContent__2NgDn">
-                <p>Install Google Authenticator</p>
+                <p>Cài đặt Google Authenticator</p>
                 <p>
-                  Follow the instructions below to set up 2FA and unlock a basic
-                  account:
+                  Làm theo hướng dẫn để thiết lập bảo mật 2FA và mở khóa tài
+                  khoản:
                 </p>
                 <div>
                   <a
@@ -216,10 +231,10 @@ const TFAModal = () => {
                 <div className=""></div>
               </div>
               <div className="styles_stepContent__2NgDn">
-                <p>Back up your secret code</p>
+                <p>Lưu mã bảo mật vào một nơi an toàn (chỉ hiện thị một lần)</p>
                 <p>
-                  Please write down or print a copy of the 16-digit secret code
-                  and put it in a safe place
+                  Xin hãy ghi lại hoặc in mã bảo mật gồm 16 ký tự và cất giữ ở
+                  một nơi an toàn
                 </p>
               </div>
             </div>
@@ -229,14 +244,14 @@ const TFAModal = () => {
                 <div className="styles_line__3szx5"></div>
               </div>
               <div className="styles_stepContent__2NgDn">
-                <p>Scan QR Code with Google Authenticator</p>
+                <p>Quét mã QR bằng cách sử dụng Google Authenticator</p>
                 <p>
-                  Scan the QR code or enter the private key with Google
-                  Authenticator app.
+                  Quét mã QR hoặc nhập mã bảo mật vào ứng dụng Google
+                  Authenticator
                 </p>
               </div>
             </div>
-            {tfa.image && (
+            {tfa.image ? (
               <>
                 <div className="styles_code__2CWv5">
                   <div>
@@ -247,13 +262,13 @@ const TFAModal = () => {
                     />
                   </div>
                   <div>
-                    Authenticator secret code
+                    Mã bảo mật
                     {copySuccess && <span> ({copySuccess})</span>}
                   </div>
                   <div className="styles_codeTextBox__3H1tw">
                     <input
                       type="text"
-                      readOnly=""
+                      readOnly
                       value={tfa.secret}
                       ref={textAreaRef}
                     />
@@ -277,6 +292,8 @@ const TFAModal = () => {
                   Tiếp tục
                 </button>
               </>
+            ) : (
+              <Loading />
             )}
           </div>
         </div>
@@ -294,10 +311,8 @@ const TFAModal = () => {
               <path d="M29.5 60.5h-25a4 4 0 0 1-4-4v-52a4 4 0 0 1 4-4h34a4 4 0 0 1 4 4v33"></path>
             </g>
           </svg>
-          <h1>Enter the 2-step verification code</h1>
-          <p>
-            Enter the 2-step verification code provided by Google Authenticator.
-          </p>
+          <h1>Nhập mã 2FA</h1>
+          <p>Xin hãy nhập mã 2FA hiển thị trên ứng dụng Google Authenticator</p>
           <div>
             <div className="SettingsInputText_main__4Qwss SettingsInputText_nofocus__3a2Ee">
               <span
@@ -321,7 +336,7 @@ const TFAModal = () => {
               </div>
             </div>
           </div>
-          <p className="styles_error__1RpBK"></p>
+          <p className="styles_error__1RpBK">{errorString}</p>
           <button
             id="tfa-manage--tfaModal--submit"
             className="styles_main__1rTEz styles_primary__3XxmD styles_large__3mDiO styles_main__drfz7 false "
@@ -337,4 +352,4 @@ const TFAModal = () => {
   );
 };
 
-export default TFAModal;
+export default TfaModal;

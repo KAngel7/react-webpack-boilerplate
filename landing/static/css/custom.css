@@ -59,6 +59,14 @@
 }
 
 .ReactModal__Overlay {
-  background-color: rgb(0 0 0 / 75%)!important;
+  background-color: rgb(0 0 0 / 75%) !important;
   z-index: 9999;
+}
+
+.styles_error__1RpBK {
+  color: var(--negative);
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-align: left;
 }

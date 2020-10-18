@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { AuthContext } from '../../services/context';
-import TFAModal from './TFAModal';
+import TfaModal from './TfaModal';
+import DisableTfaModal from './DisableTfaModal';
 import './style';
 
 const Profile = () => {
@@ -11,16 +12,18 @@ const Profile = () => {
   if (!authenticated) {
     return null;
   }
-  const [showTFA, setShowTFA] = useState(false);
+  const initialTfa = window.location.search === '?tfa=true';
+  const [showTFA, setShowTFA] = useState(initialTfa);
+  const [showDisableTFA, setShowDisableTFA] = useState(false);
   return (
     <>
       <Header />
       <link type="text/css" href="/css/deposits.css" rel="stylesheet" />
       <div className="styles_container__2kE2g Settings_main__1T00C">
-        <h2 className="Settings_title__1AnJK">Profile</h2>
+        <div className="Settings_title__1AnJK" />
         <div className="Settings_body__1dyzZ">
           <div className="SettingsHeader_main__1LlAP">
-            <h4>My Profile</h4>
+            <h4>Thông tin tài khoản</h4>
           </div>
           <div className="SettingsBody_main__1DbFm">
             <div className="styles_row__3yCaM ">
@@ -33,37 +36,38 @@ const Profile = () => {
                   width="50"
                   className="react-gravatar ProfileAvatar_avatar__iRyo3"
                 />
-                <p className="ProfileAvatar_title__Uw3gF">Your avatar</p>
+                <p className="ProfileAvatar_title__Uw3gF">Ảnh đại diện</p>
                 <Link
                   id="profile--button"
                   className="ProfileAvatar_update__3JS-o"
-                  to="https://en.gravatar.com/emails/"
-                  target="_blank"
+                  to="#"
                   rel="noopener noreferrer"
                 >
-                  Update
+                  Cập nhật
                 </Link>
                 <hr className="styles_line__1Z7ek" />
                 <div className="SettingsField2_field__rOv6D ProfileAvatar_field__bJyq6">
-                  <span className="SettingsField2_label__2mWfS">Full Name</span>
-                  <p className="SettingsField2_value__1lnL2 ">Khanh Nguyen</p>
+                  <span className="SettingsField2_label__2mWfS">Họ và tên</span>
+                  <p className="SettingsField2_value__1lnL2 ">{`${user.first_name} ${user.last_name}`}</p>
                 </div>
                 <hr className="styles_line__1Z7ek" />
                 <div className="SettingsField2_field__rOv6D ProfileAvatar_field__bJyq6">
                   <span className="SettingsField2_label__2mWfS">
-                    Email Address
+                    Địa chỉ email
                   </span>
-                  <p className="SettingsField2_value__1lnL2 ">
-                    khanh@codelynx.io
-                  </p>
+                  <p className="SettingsField2_value__1lnL2 ">{user.email}</p>
                 </div>
-                <div className="SettingsField2_field__rOv6D undefined">
-                  <span className="SettingsField2_label__2mWfS">User ID</span>
+                {/* <div className="SettingsField2_field__rOv6D undefined">
+                  <span className="SettingsField2_label__2mWfS">
+                    ID người dùng
+                  </span>
                   <p className="SettingsField2_value__1lnL2 ">816434</p>
-                </div>
+                </div> */}
               </div>
               <div className="styles_col-md-6__2EhLs ">
-                <p className="KYCVerify_verify__3RZse">Verify &amp; Upgrade</p>
+                <p className="KYCVerify_verify__3RZse">
+                  Trạng thái &amp; Bảo mật
+                </p>
                 <div
                   id="profile--status"
                   data-value="pending"
@@ -72,49 +76,64 @@ const Profile = () => {
                   <div className="KYCStatus_note__NfG0D">
                     <span className="styles_primary-3__1vvdt">
                       <span className="KYCStatus_status__66R1g">
-                        Account Status
+                        Trạng thái tài khoản
                       </span>
                       <span>: </span>
                     </span>
-                    <span className="KYCStatus_pending__yMB23">
-                      <span className="KYCStatus_title__3TtYK">Pending</span>
-                    </span>
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      className="StatusIcon_main__1dY9G"
+                    <span
+                      className={
+                        user.status === 'ACTIVATED'
+                          ? 'KYCStatus_approved__2Xk2K'
+                          : 'KYCStatus_pending__yMB23'
+                      }
                     >
-                      <g fill="none" fillRule="evenodd">
-                        <path fill="#FFF" d="M5 4H7V11H5z"></path>
-                        <path
-                          fill="#FA0"
-                          d="M6.733 1.212c.214.126.393.304.522.516l4.527 7.486c.431.712.202 1.639-.511 2.069-.236.142-.506.217-.78.217H1.51C.676 11.5 0 10.825 0 9.993c0-.271.073-.537.212-.77l4.453-7.485c.425-.716 1.352-.952 2.068-.526zM6 8.5c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75S6.414 8.5 6 8.5zM6.75 4h-1.5v3h1.5V4z"
-                        ></path>
-                      </g>
-                    </svg>
+                      <span className="KYCStatus_title__3TtYK">
+                        {user.status}
+                      </span>
+                    </span>
+                    {user.status !== 'ACTIVATED' && (
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        className="StatusIcon_main__1dY9G"
+                      >
+                        <g fill="none" fillRule="evenodd">
+                          <path fill="#FFF" d="M5 4H7V11H5z"></path>
+                          <path
+                            fill="#FA0"
+                            d="M6.733 1.212c.214.126.393.304.522.516l4.527 7.486c.431.712.202 1.639-.511 2.069-.236.142-.506.217-.78.217H1.51C.676 11.5 0 10.825 0 9.993c0-.271.073-.537.212-.77l4.453-7.485c.425-.716 1.352-.952 2.068-.526zM6 8.5c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75S6.414 8.5 6 8.5zM6.75 4h-1.5v3h1.5V4z"
+                          ></path>
+                        </g>
+                      </svg>
+                    )}
                   </div>
                   <span className="styles_primary-3__1vvdt">
                     <p>
-                      <span>
-                        Your account is unverified. Get verified to enable
-                        funding, trading, and withdrawal.
-                      </span>
+                      <span>{}</span>
                     </p>
                   </span>
                 </div>
                 {user.enable_tfa ? (
                   <div>
                     <p className="KYCVerify_tfaDisabled__2A-p8">
-                      2FA: Đang bật
+                      Trạng thái 2FA: Đang bật
                     </p>
+                    <button
+                      type="button"
+                      id="profile--2fa"
+                      className="styles_main__1rTEz styles_secondary__2Gxp8 "
+                      to="#"
+                      onClick={() => setShowDisableTFA(true)}
+                    >
+                      Tắt 2FA
+                    </button>
                   </div>
                 ) : (
                   <div>
                     <p className="KYCVerify_tfaDisabled__2A-p8">
-                      Your 2-factor authentication method is disabled or
-                      outdated. Please set up 2-factor authentication first in
-                      Settings &gt; Security.
+                      Bạn đang chưa bật bảo mật 2FA, hãy bật 2FA để bảo vệ tài
+                      khoản của bạn tốt hơn
                     </p>
                     <button
                       type="button"
@@ -123,13 +142,13 @@ const Profile = () => {
                       to="#"
                       onClick={() => setShowTFA(true)}
                     >
-                      Enable 2FA Now
+                      Bật 2FA ngay
                     </button>
                   </div>
                 )}
               </div>
             </div>
-            <hr className="styles_line__1Z7ek" />
+            {/* <hr className="styles_line__1Z7ek" />
             <div className="SettingsField2_field__rOv6D undefined">
               <span className="SettingsField2_label__2mWfS">Joined Since</span>
               <p className="SettingsField2_value__1lnL2 ">
@@ -141,20 +160,25 @@ const Profile = () => {
                   20/10/10
                 </span>
               </p>
-            </div>
+            </div> */}
             <hr className="styles_line__1Z7ek" />
             <div className="SettingsField2_field__rOv6D undefined">
-              <span className="SettingsField2_label__2mWfS">Type</span>
+              <span className="SettingsField2_label__2mWfS">
+                Loại tài khoản
+              </span>
               <p className="SettingsField2_value__1lnL2 ">
                 <span id="profile--type" data-value="individual">
-                  Personal
+                  Cá nhân
                 </span>
               </p>
             </div>
           </div>
         </div>
       </div>
-      {showTFA && <TFAModal />}
+      {showTFA && <TfaModal onClose={() => setShowTFA(false)} />}
+      {showDisableTFA && (
+        <DisableTfaModal onClose={() => setShowDisableTFA(false)} />
+      )}
       <Footer />
     </>
   );

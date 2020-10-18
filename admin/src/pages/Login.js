@@ -45,7 +45,8 @@ const Login = () => {
       actions.resetForm({
         values: {
           email: '',
-          password: ''
+          password: '',
+          code: ''
         }
       });
     });
@@ -68,6 +69,7 @@ const Login = () => {
             validationSchema={Yup.object().shape({
               email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
               password: Yup.string().max(255).required('Password is required'),
+              code: Yup.string().max(6),
             })}
             onSubmit={onSubmit}
           >
@@ -120,6 +122,19 @@ const Login = () => {
                   onChange={handleChange}
                   type="password"
                   value={values.password}
+                  variant="outlined"
+                />
+                <TextField
+                  error={Boolean(touched.code && errors.code)}
+                  fullWidth
+                  helperText={touched.code && errors.code}
+                  label="2FA Code (if enabled)"
+                  margin="normal"
+                  name="code"
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                  type="text"
+                  value={values.code}
                   variant="outlined"
                 />
                 <Box my={2}>

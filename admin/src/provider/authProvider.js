@@ -39,13 +39,17 @@ export const setAuthToken = token => {
 
 export default {
   // called when the user attempts to log in
-  login: async ({ email, password, code = '' }) => {
+  login: async ({ email, password, code }) => {
       try{
-          const {status, data} = await validate(email, password);
+          const {status, data} = code? await login(email, password, code) : await validate(email, password);
           console.log(status, data);
           if (status === 200){
-            setAuthToken(data.access_token);
-            return Promise.resolve(status);
+            if (data.access_token) {
+              setAuthToken(data.access_token);
+              return Promise.resolve(status);
+            } else {
+              return Promise.reject("This account require 2FA auth!");
+            }
           }
         return Promise.resolve(status);
       }catch(ex) {

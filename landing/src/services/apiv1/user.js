@@ -31,11 +31,19 @@ export const genTfa = () => {
 };
 
 export const verifyTfa = (code, secret) => {
+  return axiosInstance.get(`/verify-tfa?code=${code}&secret=${secret}`, {
+    headers: {
+      Authorization: getAuthToken(),
+    },
+  });
+};
+
+export const disableTfa = (code, password) => {
   return axiosInstance.post(
-    '/verify-tfa',
+    `disable-tfa`,
     {
       code,
-      secret,
+      password,
     },
     {
       headers: {
@@ -50,5 +58,20 @@ export const confirm = () => {
     headers: {
       Authorization: getAuthToken(),
     },
+  });
+};
+
+export const forgotPassword = (email, code = '') => {
+  return axiosInstance.post('/password', {
+    email,
+    code,
+  });
+};
+
+export const resetPassword = (newPassword, token, code = '') => {
+  return axiosInstance.put('/password', {
+    new_password: newPassword,
+    code,
+    token,
   });
 };

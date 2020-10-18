@@ -1242,3 +1242,139 @@ input:checked ~ .css-2s0lax {
   padding: 12px;
   color: #474d57;
 }
+
+
+
+.thank-you {
+  width: 300px;
+  margin-top: 16px
+}
+
+.thank-you__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: .3px;
+  text-align: center;
+  color: #565b6c
+}
+
+.thank-you__note {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: .45px;
+  color: #898d9f;
+  text-align: center;
+  margin-top: 40px
+}
+
+.thank-you__note>a {
+  color: #0157ff;
+  margin-left: 4px
+}
+
+.thank-you>span {
+  margin: 0
+}
+
+@media (min-width: 768px) {
+  .thank-you {
+      width:480px
+  }
+}
+
+.sign-up-form {
+  background-color: var(--light-gray-10);
+  padding-top: 56px;
+  width: 300px;
+  margin: auto
+}
+
+.sign-up-form__header {
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+}
+
+.sign-up-form__footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 480px;
+  margin: auto;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 24px;
+  font-size: 14px
+}
+
+.sign-up-form__footer>div {
+  padding: 8px 16px;
+  background-color: #eff0f5;
+  border-radius: 3px;
+  color: #898d9f;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .45px
+}
+
+.sign-up-form__footer>div:first-of-type {
+  width: 198px;
+  margin-right: 16px
+}
+
+.sign-up-form__footer>div:last-child {
+  width: 265px
+}
+
+.sign-up-form__footer>div:last-child>span {
+  font-size: 20px;
+  margin-right: 4px
+}
+
+.sign-up-form__footer a {
+  padding-left: 4px;
+  border-bottom: none;
+  font-weight: 500;
+  color: #0157ff
+}
+
+.sign-up-form__content {
+  position: relative;
+  min-height: 808px;
+}
+
+.sign-up-form__terms {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: .6px;
+  color: #898d9f;
+  text-align: center;
+  position: absolute;
+  width: 300px;
+  margin-top: 24px;
+  padding: 0 24px
+}
+
+.sign-up-form__terms>span>a {
+  -webkit-text-decoration: underline dashed;
+  text-decoration: underline dashed
+}
+
+@media (min-width: 768px) {
+  .sign-up-form {
+      padding-top:72px;
+      width: 480px
+  }
+
+  .sign-up-form__footer>div {
+      padding: 8px 16px
+  }
+
+  .sign-up-form__terms {
+      width: 480px
+  }
+}
